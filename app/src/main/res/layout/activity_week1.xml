@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="#fff"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".week1">
+    tools:context=".week1"
+    android:background="@drawable/gradient_background">
 
 
     <ScrollView
@@ -17,374 +17,452 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
+
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@id/text"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Introduction to java"
+                android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="#000"
-                android:text="Programming Language Level\n">
+                android:layout_margin="16dp"/>
 
-
-            </TextView>
-
-            <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#000"
-            android:textSize="15sp"
-                android:textStyle="bold"
-            android:text="Programming Language\n">
-
-        </TextView>
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="\t \t \t \t \t \t – A formal language, which comprises a set of instructions that produce various kinds of output. Programming languages are used in computer programing to implement specific algorithms. Most programming languages consist of instructions for computers.\n">
+                android:text="Java is an object-oriented programming language. Objects are the fundamental elements that make up a program."
+                android:layout_margin="16dp"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
 
-            </TextView>
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:text="Computer Program \n">
+                android:text="The Java language is accompanied by a library of extra software that we can use when developing programs. This software, referred to as the Java standard class library, provides the ability to create graphics, communicate over networks, and interact with databases, among many other features. The standard library that supports Java programming is huge and quite versatile. Although we won’t be able to cover all aspects of the library and will explore them."
+                android:layout_margin="16dp"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
 
-            </TextView>
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="\t \t \t \t \t \t – a collection of instructions that performs a specific task when executed by a computer. Most computer devices require programs to function properly. A computer program is usually written by a computer programmer and can be written in either high or low-level languages, depending on the task and the hardware being used. ">
-
-            </TextView>
-
-
+                android:text="Java is used in commercial environments all over the world. It is one of the fastest growing programming technologies of all time. So not only is it a good language in which to learn programming concepts, it is also a practical language that will serve you well in the future."
+                android:layout_margin="16dp"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-
-                android:textColor="#000"
-                android:text="\n\t\t\t•\t\t	When we think about computer programmers, we probably think about people who write in high-level language."></TextView>
-
-            <TextView
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="10dp"
-                android:textColor="#000"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="\n\t\t\t•\t\t	Most computer programming languages are written in a high-level programming language. They use the common English language to help make the code more understandable and to speed up the process of writing and debugging programs."></TextView>
-
-            <TextView
-                android:textColor="#000"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="\n\t\t\t•\t\t	Computers, however, use their own language written using binary called Machine code. This is known as a low-level language."></TextView>
-
-            <TextView
-                android:textColor="#000"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="\n\t\t\t•\t\tProgramming languages can be divided into two different levels:"></TextView>
-
-            <TextView
-                android:textColor="#000"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="\n\t\t\t•\t\tHigh-level Languages – Python, Visual Basic, Java, C, C++, SQL and many more."></TextView>
-
-            <TextView
-                android:textColor="#000"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="\n\t\t\t•\t\tLow-level Languages – Hardware/Processor-specific assembly languages and machine code."></TextView>
-            <ImageView
-                android:id="@+id/lesson1_pic1"
-                android:clickable="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/lesson1_pic1"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:text="White Space"
+                android:textColor="#000000"
                 android:textSize="20sp"
-                android:textColor="#000"
-                android:text="History of Java\n"></TextView>
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:textColor="#000"
-                android:text="\t\t\tThe utmost tests computer programmers today rest in controlling the power of networks. Applications produces today will definitely be executed on machines connected by a global network computing resources. The growing significance of networks is employing new requirement on current tools and increasing the demand for a fast growing list of absolutely new kinds of applications. "></TextView>
+                android:text="All Java programs use white space to separate the words and symbols used in a program. White space consists of blanks, tabs, and newline characters. The phrase white space refers to the fact that, on a white sheet of paper with black printing, the space between the words and symbols is white. The way a programmer uses white space is important because it can be used to emphasize parts of the code and can make a program to read."
+                android:layout_margin="16dp"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
 
-            <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-                android:textColor="#000"
-            android:text="An internal corporate research project codenamed Green was funded by Sun Microsystems in 1991. It resulted in the development of a language based on C++. The language was named Oak, after the oak tree outside the window of the creator, James Gosling. It was learned that there is already a language called Oak, so a group of people from Sun Microsystems suggested to change the name into Java."></TextView>
-
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="In May 1995, Sun formally introduced Java in a conference. Then, business enterprises became interested with Java because it is used to enhance web servers, develop large-scale enterprise, and provide applications for electronic devices (e.g. mobile phones and personal computers), among others. "></TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="Editors, Compilers, and Interpreters"></TextView>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/lesson1_pic2"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="Class body – area between the braces"></TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="Class declaration – contains class body with all the codes that provide for the life cycle of the objects created from the class"></TextView>
-
-            <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-                android:textColor="#000"
-            android:text="Java Virtual Machine (JVM) – abstract computing machine that enables a computer to run a Java program"></TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="With varied kinds of computers and operating systems connected to the internet, portability is a major aspect. To run Java programs virtually on the internet, different systems must be executed. Having different versions of applet for different computers is not practical. Identical codes must work on any computer. Thus, the creation of a portable executable code is necessary. The mechanism that guarantees security also aids to generate portability."></TextView>
+                android:text="Because white space is ignored, we can write a program in many different ways. For example, taking white space to one extreme, we could put as many words as possible on each line. The code in Listing 1.2, the Lincoln2 program, is formatted quite differently from Lincoln but prints the same message."
+                android:layout_margin="16dp"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/lesson1_pic3"/>
+                android:src="@drawable/image1"
+                android:layout_gravity="center"/>
 
             <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Programming Language Levels"
+                android:textColor="#000000"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_margin="20dp"
-            android:text="Development Environments"></TextView>
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suppose a particular person is giving travel directions to a friend. That person might explain those directions in any one of several languages, such as English, Russian, or Italian. The directions are the same no matter which language is used to explain them, but the manner in which the directions are expressed is different. The friend must be able to understand the language being used in order to follow the directions."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Similarly, a problem can be solved by writing a program in one of many programming languages, such as Java, Ada, C, C++, C#, Pascal, and Smalltalk. The purpose of the program is essentially the same no matter which language is used, but the particular statements used to express the instructions, and the overall organization of those instructions, vary with each language. A computer must be able to understand the instructions in order to carry them out."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Programming languages can be categorized into the following four groups. These groups basically reflect the historical development of computer languages."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="Java Development Kit (JDK) is a tool used for creating Java programs (applications and applets). In context with JDK, Java programs undergo five phases: create/edit, compile, load, verify, and execute, which are done using the JDK.  JDK and its documentations can be downloaded from a Java Website."></TextView>
+                android:text="■ machine language"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ assembly language"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ high-level languages"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ fourth-generation languages"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:textStyle="bold"
-                android:text="\nPhase 1. "></TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="Creating and editing a file using an editor done by the programmer.  This is where the programmer types the needed rectifications and save the program on a storage device as a .java file extension."></TextView>
+                android:text="In order for a program to run on a computer, it must be expressed in that computer’s machine language. Each type of CPU has its own language. For that reason, we can’t run a program specifically written for a Sun Workstation, with its Sparc processor, on a Dell PC, with its Intel processor."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
 
-        </LinearLayout>
-            <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:textStyle="bold"
-                android:text="Phase 2. "></TextView>
-            <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:layout_marginRight="10dp"
-            android:text="The Java command is used by the programmer to compile a program. In this phase, if you are going to compile a program called Greeting.java you would type: \n Javac Greeting.java"></TextView>
+                android:text="Each machine language instruction can accomplish only a simple task. For example, a single machine language instruction might copy a value into a register or compare a value to zero. It might take four separate machine language instructions to add two numbers together and to store the result. However, a computer can do millions of these instructions in a second, and therefore many simple commands can be executed quickly to accomplish complex tasks."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
 
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Machine language code is expressed as a series of binary digits and is extremely difficult for humans to read and write. Originally, programs were entered into the computer by using switches or some similarly tedious method. Early programmers found these techniques to be time consuming."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:textStyle="bold"
-                android:text="Phase 3. "></TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:layout_marginRight="10dp"
-                android:text="Before loading is performed, the program will have to place the program in the memory before it can implement a process. The .class files containing the program’s bytecodes will be taken by the class loader and transmits it to memory."></TextView>
+                android:text="These problems gave rise to the use of assembly language, which replaced binary digits with mnemonics, short English-like words that represent commands or data. It is much easier for programmers to deal with words than with binary digits. However, an assembly language program cannot be executed directly on a computer. It must first be translated into machine language."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
 
-        </LinearLayout>
-            <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:textStyle="bold"
-                android:text="Phase 4. "></TextView>
+                android:text="Generally, each assembly language instruction corresponds to an equivalent machine language instruction. Therefore, similar to machine language, each assembly language instruction accomplishes only a simple operation. Although assembly language is an improvement over machine code from a programmer’s perspective, it is still tedious to use. Both assembly language and machine language are considered low-level languages."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:layout_marginRight="10dp"
-                android:text="Bytecodes are examined by the bytecode verifier to validate that it does not defy Java restrictions. It ensures that Java programs entering over the network does not harm the user’s files or system."></TextView>
-        </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:textStyle="bold"
-                android:text="Phase 5. "></TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#000"
-                    android:layout_marginRight="10dp"
-                    android:text="The bytecodes stated in the program will be executed by the JVM. As they are interpreted, JVM analyzes the bytecodes."></TextView>
+                android:text="Today, most programmers use a high-level language to write software. A high-level language is expressed in English-like phrases, and thus is easier for programmers to read and write. A single high-level language programming statement can accomplish the equivalent of many—perhaps hundreds—of machine language instructions. The term high-level refers to the fact that the programming statements are expressed in a way that is far removed from the machine language that is ultimately executed. Java is a high-level language, as are Ada, C++, Smalltalk, and many others."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
 
-
-
-            </LinearLayout>
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="Syntax and Semantics"></TextView>
+                android:text="Figure 1.2 shows equivalent expressions in a high-level language, assembly language, and machine language. The expressions add two numbers together. The assembly language and machine language in this example are specific to a Sparc processor."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The high-level language expression in Figure 1.2 is readable and intuitive for programmers. It is similar to an algebraic expression. The equivalent assembly language code is somewhat readable, but it is more verbose and less intuitive. The machine language is basically unreadable and much longer. In fact, only a small portion of the binary machine code to add two numbers together is shown in Figure 1.2. The complete machine language code for this particular expression is over 400 bits long."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A high-level language insulates programmers from needing to know the underlying machine language for the processor. But"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image2"
+                android:layout_gravity="center"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="high-level language code must be translated into machine language in order to be executed."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:textStyle="bold"
+                android:text="History of Java"
+                android:textColor="#000000"
                 android:textSize="20sp"
-                android:text="Introducing Java Syntax"></TextView>
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:layout_width="wrap_content"
-                android:textColor="#000"
                 android:layout_height="wrap_content"
-                android:text="You’ve now seen several programming languages: BSL, ISL, ISL+, and class/0. Now time for one more: Java. Let’s start by looking at the syntax, the way Java programs are written."></TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:textColor="#000"
-                android:layout_height="wrap_content"
-                android:text="\nHere’s a comment in class/0:"></TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:textColor="#000"
-                android:textStyle="bold"
-                android:layout_height="wrap_content"
-                android:text=";; Hi there"></TextView>
+                android:text="In 1946, the ENIAC (Electronic Numerical Integrator and Computer), weighing 30 tons and filling a 1000-square-foot room was the world’s first electronic digital computer. Today, computers far more powerful than the ENIAC weigh just a few pounds and can fi t inside a briefcase with room to spare. And, contrary to the predictions of yesteryear, computers are everywhere: in homes, offices, schools, bus terminals, bookstores, and even coffee shops and cafes. Is there anyone who hasn’t used a word processor, sent email, or played a computer game? And who has not “googled” for some information? Today, computer usage is as common as driving a car, reading a book, or watching television. So what exactly is a computer? What’s going on inside the “little box” that processes data so quickly? What are “bits and bytes”? What is a computer program? This chapter addresses such questions. We begin with a general overview of a computer system: both the hardware—the physical components of a computer—as well a  the software—the programs that manipulate the hardware. We conclude with a discussion of programming languages, and in particular, the programming language Java. Software development using Java is the focus of this book. And, as you will see in subsequent chapters, Java is a very powerful programming language, easy to learn, and undeniably fun."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="\nHere’s a comment in Java:"></TextView>
+                android:text="Editors, Compilers, and Interpreters"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Several special-purpose programs are needed to help with the process of developing new programs. They are sometimes called software tools because they are used to build programs. Examples of basic software tools include an editor, a compiler, and an interpreter."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Initially, you use an editor as you type a program into a computer and store it in a file. There are many different editors with many different features. You should become familiar with the editor you will use regularly because it can dramatically affect the speed at which you enter and modify your programs."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Figure 1.3 on the next page shows a very basic view of the program development process. After editing and saving your program, you attempt to translate it from high-level code into a form that can be executed. That translation may result in errors, in which case you return to the editor to make changes to the code to fix the problems. Once the translation occurs successfully, you can execute the program and evaluate the results. If the results are not what you want, or if you want to enhance your existing program, you again return to the editor to make changes."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The translation of source code into (ultimately) machine language for a particular type of CPU can occur in a variety of ways. A compiler is a program that"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image3"
+                android:layout_gravity="center"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="translates code in one language to equivalent code in another language. The original code is called source code, and the language into which it is translated is called the target language. For many traditional compilers, the source code is translated directly into a particular machine language. In that case, the translation process occurs once (for a given version of the program), and the resulting executable program can be run."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An interpreter is similar to a compiler but has an important difference. An interpreter interweaves the translation and execution activities. A small part of the source code, such as one statement, is translated and executed. Then another statement is translated and executed, and so on. One advantage of this technique is that it eliminates the need for a separate compilation phase. However, the program generally runs more slowly because the translation process occurs during execution."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The process generally used to translate and execute Java programs combines the use of a compiler and an interpreter. This process is pictured in Figure 1.4. The Java compiler translates Java source code into Java bytecode, which is a representation of the program in a low-level form similar to machine language code. The Java interpreter reads Java bytecode and executes it on a specific machine. Another compiler could translate the bytecode into a particular machine language for efficient execution on that machine."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The difference between Java bytecode and true machine language code is that Java bytecode is not tied to any particular processor type. This approach has the distinct advantage of making Java architecture neutral, and therefore easily portable from one machine type to another. The only restriction is that there must be a Java interpreter or a bytecode compiler for each processor type on which the Java bytecode is to be executed."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Since the compilation process translates the high-level Java source code into a low-level representation, the interpretation process is more efficient than interpreting high-level code directly. Executing a program by interpreting its bytecode is still slower than executing machine code directly, but it is fast enough for most applications. Note that for efficiency, Java bytecode could be compiled in machine code."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image4"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:textStyle="bold"
-                android:text="// Hi there"></TextView>
+                android:text="Developing Environments"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:textColor="#000"
-                android:layout_height="wrap_content"
-                android:text="\nHere’s a block comment in class/0:"></TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:textColor="#000"
-                android:textStyle="bold"
-                android:layout_height="wrap_content"
-                android:text="#| Hi /n there |#"></TextView>
-
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="\nJava:"></TextView>
+                android:text="A software development environment is the set of tools used to create, test, and modify a program. Some development environments are available for free while others, which may have advanced features, must be purchased. Some environments are referred to as integrated development environments (IDEs) because they integrate various tools into software program."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"   android:textColor="#000"
-                android:textStyle="bold"
-                android:text="/* Hi /n there */"></TextView>
+                android:layout_height="wrap_content"
+                android:text="Any development environment will contain certain key tools, such as a Java compiler and interpreter. Some will include a debugger, which helps you find errors in a program. Other tools that may be included are documentation generators, archiving tools, and tools that help you visualize your program structure."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
 
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sun Microsystems, the creator of the Java programming language, provides the Java Software Development Kit (SDK), which is sometimes referred to simply as the Java Development Kit (JDK). The SDK can be downloaded free of charge for various hardware platforms from Sun’s Java Web site, java.sun.com, and is also included on the CD."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The SDK tools are not an integrated environment. The commands for compilation and interpretation are executed on the command line. That is, the SDK does not have a graphical user interface (GUI), with windows, menus, buttons, etc. It also does not include an editor, although any editor that can save a document as simple text can be used."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sun also has a Java IDE called NetBeans (www.netbeans.org) that incorporates the development tools of the SDK into one convenient GUI-based program. IBM promotes a similar IDE called Eclipse (www.eclipse.org). Both NetBeans and Eclipse are open source projects, meaning that they are developed by a wide collection of programmers and are available for free."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A research group at Auburn University has developed jGRASP, a free Java IDE that is included on the CD. It can also be downloaded from www.jgrasp.org. In addition to fundamental development tools, jGRASP contains tools to graphically display program elements."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Various other Java development environments are available. The choice of which development environment to use is important. The more you know about the capabilities of your environment, the more productive you can be during program development."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="\nA class definition in class/0:"></TextView>
+                android:text="Syntax and Semantics"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:textStyle="bold"
-                android:text=";; A Coord is a (new coord% Integer Integer)\n(define-class coord% /n (fields x y))"></TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:text="\nA class definition in Java:"></TextView>
+                android:text="Each programming language has its own unique syntax. The syntax rules of a language dictate exactly how the vocabulary elements of the language can be combined to form statements. These rules must be followed in order to create a program. We’ve already discussed several Java syntax rules. For instance, the fact that an identifier cannot begin with a digit is a syntax rule. The fact that braces are used to begin and end classes and methods is also a syntax rule."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
 
-            <TextView
+            <me.biubiubiu.justifytext.library.JustifyTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:layout_marginLeft="10dp"
-                android:textColor="#000"
-                android:text="class Coord { \nInteger x; \n Integer y; \n }"></TextView>
+                android:text="During compilation, all syntax rules are checked. If a program is not syntactically correct, the compiler will issue error messages and will not produce bytecode. Java has a similar syntax to the programming languages C and C++, and therefore the look and feel of the code is familiar to people with a background in those languages."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The semantics of a statement in a programming language define what will happen when that statement is executed. Programming languages are generally unambiguous, which means the semantics of a program are well defined. That is, there is one and only one interpretation for each statement. On the other hand, the natural languages that humans use to communicate, such as English and Italian, are full of ambiguities. A sentence can often have two or more different meanings. For example, consider the following sentence:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time flies like an arrow."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The average human is likely to interpret this sentence as a general observation: that time moves quickly in the same way that an arrow moves quickly. However, if we interpret the word time as a verb (as in “run the 50-yard dash and I’ll time you”) and the word flies as a noun (the plural of fly), the interpretation changes completely. We know that arrows don’t time things, so we wouldn’t normally interpret the sentence that way, but it is a valid interpretation of the words in the sentence. A computer would have a difficult time trying to determine which meaning is intended. Moreover, this sentence could describe the preferences of an unusual insect known as a “time fly,” which might be found near an archery range. After all, fruit flies like a banana."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The point is that one specific English sentence can have multiple valid meanings. A computer language cannot allow such ambiguities to exist. If a programming language instruction could have two different meanings, a computer would not be able to determine which one should be carried out."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
 
             <Button
                 android:text="Take Quiz"

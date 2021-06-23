@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".lecture_finals">
+    tools:context=".lecture_finals"
+    android:background="@drawable/gradient_background">
 
     <LinearLayout
         android:clickable="true"

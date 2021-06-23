@@ -19,6 +19,7 @@ import java.util.List;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
@@ -51,7 +52,8 @@ public class prelim_quiz1 extends AppCompatActivity {
             , question11, question12, question13, question14, question15, question16, question17, question18, question19, question20
             , question21, question22, question23, question24, question25;
 
-
+    //correctAnswer
+    TextView correct1;
 
     //multiple Choice Radio Group
     RadioGroup q1, q2, q3, q4, q5, q6, q7, q8, q9, q10;
@@ -120,6 +122,8 @@ public class prelim_quiz1 extends AppCompatActivity {
         submit = findViewById(R.id.submit);
 
 
+        //correct
+        correct1 = findViewById(R.id.correct1);
 
 
 
@@ -252,6 +256,10 @@ public class prelim_quiz1 extends AppCompatActivity {
             public void onClick(View v) {
                 q1.setVisibility(View.GONE);
                 q2.setVisibility(View.VISIBLE);
+                a1.setEnabled(false);
+                b1.setEnabled(false);
+                c1.setEnabled(false);
+                d1.setEnabled(false);
             }
         });
         back2 = (Button) findViewById(R.id.back2);
@@ -732,6 +740,7 @@ public class prelim_quiz1 extends AppCompatActivity {
                 q1choice.add(2, one.getOption3());
                 q1choice.add(3, one.getOption4());
                 Collections.shuffle(q1choice);
+                correct1.setText(one.getAnswer());
                 question1.setText(one.getQuestion());
                 a1.setText(q1choice.get(0));
                 b1.setText(q1choice.get(1));
@@ -743,8 +752,20 @@ public class prelim_quiz1 extends AppCompatActivity {
                         answer1 = a1.getText().toString();
                         if (a1.getText().toString().equals(one.getAnswer())) {
                             correct++;
+                            q1.setBackgroundColor(Color.GREEN);
+                            a1.setEnabled(false);
+                            b1.setEnabled(false);
+                            c1.setEnabled(false);
+                            d1.setEnabled(false);
                         } else {
                             wrong++;
+                            q1.setBackgroundColor(Color.RED);
+                            correct1.setVisibility(View.VISIBLE);
+                            a1.setEnabled(false);
+                            b1.setEnabled(false);
+                            c1.setEnabled(false);
+                            d1.setEnabled(false);
+
                         }
                     }
                 });
@@ -755,8 +776,19 @@ public class prelim_quiz1 extends AppCompatActivity {
                         answer1 = b1.getText().toString();
                         if (b1.getText().toString().equals(one.getAnswer())) {
                             correct++;
+                            q1.setBackgroundColor(Color.GREEN);
+                            a1.setEnabled(false);
+                            b1.setEnabled(false);
+                            c1.setEnabled(false);
+                            d1.setEnabled(false);
                         } else {
                             wrong++;
+                            q1.setBackgroundColor(Color.RED);
+                            correct1.setVisibility(View.VISIBLE);
+                            a1.setEnabled(false);
+                            b1.setEnabled(false);
+                            c1.setEnabled(false);
+                            d1.setEnabled(false);
                         }
                     }
                 });
@@ -767,8 +799,19 @@ public class prelim_quiz1 extends AppCompatActivity {
                         answer1 = c1.getText().toString();
                         if (c1.getText().toString().equals(one.getAnswer())) {
                             correct++;
+                            q1.setBackgroundColor(Color.GREEN);
+                            a1.setEnabled(false);
+                            b1.setEnabled(false);
+                            c1.setEnabled(false);
+                            d1.setEnabled(false);
                         } else {
                             wrong++;
+                            q1.setBackgroundColor(Color.RED);
+                            correct1.setVisibility(View.VISIBLE);
+                            a1.setEnabled(false);
+                            b1.setEnabled(false);
+                            c1.setEnabled(false);
+                            d1.setEnabled(false);
                         }
                     }
                 });
@@ -779,8 +822,19 @@ public class prelim_quiz1 extends AppCompatActivity {
                         answer1 = d1.getText().toString();
                         if (d1.getText().toString().equals(one.getAnswer())) {
                             correct++;
+                            q1.setBackgroundColor(Color.GREEN);
+                            a1.setEnabled(false);
+                            b1.setEnabled(false);
+                            c1.setEnabled(false);
+                            d1.setEnabled(false);
                         } else {
                             wrong++;
+                            q1.setBackgroundColor(Color.RED);
+                            correct1.setVisibility(View.VISIBLE);
+                            a1.setEnabled(false);
+                            b1.setEnabled(false);
+                            c1.setEnabled(false);
+                            d1.setEnabled(false);
                         }
 
                     }
@@ -868,6 +922,7 @@ public class prelim_quiz1 extends AppCompatActivity {
                         answer3 = a3.getText().toString();
                         if (a3.getText().toString().equals(three.getAnswer())) {
                             correct++;
+
                         } else {
                             wrong++;
                         }
@@ -892,6 +947,7 @@ public class prelim_quiz1 extends AppCompatActivity {
                         answer3 = c3.getText().toString();
                         if (c3.getText().toString().equals(three.getAnswer())) {
                             correct++;
+
                         } else {
                             wrong++;
                         }
@@ -1905,7 +1961,7 @@ public class prelim_quiz1 extends AppCompatActivity {
                                 positiveButton.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
-                                        Intent intent = new Intent(prelim_quiz1.this, Lecture.class);
+                                        Intent intent = new Intent(prelim_quiz1.this, prelim_quiz1.class);
                                         startActivity(intent);
                                     }
                                 });
