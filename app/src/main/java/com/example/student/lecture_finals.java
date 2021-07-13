@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class lecture_finals extends AppCompatActivity {
@@ -13,14 +14,21 @@ public class lecture_finals extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lecture_finals);
+        ImageView back = (ImageView) findViewById(R.id.backk);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-//        LinearLayout week13 = (LinearLayout)findViewById(R.id.week13);
-//        week13.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                openActivity13();
-//            }
-//        });
+                finish();
+            }
+        });
+        LinearLayout week13 = (LinearLayout)findViewById(R.id.week13);
+        week13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity13();
+            }
+        });
 //        LinearLayout week14 = (LinearLayout)findViewById(R.id.week14);
 //        week14.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -43,10 +51,7 @@ public class lecture_finals extends AppCompatActivity {
 //            }
 //        });
 //    }
-//    private void openActivity13(){
-//        Intent intent = new Intent(this,week13.class);
-//        startActivity(intent);
-//    }
+
 //    private void openActivity14(){
 //        Intent intent = new Intent(this,week14.class);
 //        startActivity(intent);
@@ -64,4 +69,10 @@ public class lecture_finals extends AppCompatActivity {
 //
 //        }
     }
+    private void openActivity13(){
+        Intent intent = new Intent(this,week13to16.class);
+        startActivity(intent);
+    }
+
+
 }

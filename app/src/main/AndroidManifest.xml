@@ -9,13 +9,100 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/comprologo"
-        android:label="@string/app_name"
+        android:label="ComPro Student"
         android:roundIcon="@drawable/comprologo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".week3"></activity>
-        <activity android:name=".week2"
-            android:label="Introduction to Java Programming Language"/>
+        <activity
+            android:name=".FW13to16_Vid"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MW11_Vid"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MW10_Vid"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MW9_Vid"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MW8_Vid"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MW7_Vid"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".PW4and5_Vid"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".PW3_Vid"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".PW2_vid"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".PW1_Vid"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".finalLink1"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".midtermLinks5"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".midtermLinks4"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".midtermLinks3"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".midtermLinks2"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".midtermLinks1"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".prelimLinks4and5"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".prelimLinks3"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".prelimLinks2"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".prelimLinks1"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".week13to16"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".week11"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".week10"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".week9"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".week8"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".week7"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Lecture"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".week4and5"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".week3"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".week2"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Chart"
             android:label="Assessment"
@@ -23,37 +110,53 @@
         <activity
             android:name=".Assessment"
             android:label="Assessment" />
-        <activity android:name=".final_quiz16" />
+        <activity
+            android:name=".final_quiz16"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".final_quiz15" />
         <activity android:name=".final_quiz14" />
         <activity android:name=".final_quiz13" />
-        <activity android:name=".midterm_quiz11" />
-        <activity android:name=".midterm_quiz10" />
-        <activity android:name=".midterm_quiz9" />
-        <activity android:name=".midterm_quiz8" />
-        <activity android:name=".midterm_quiz7" />
+        <activity
+            android:name=".midterm_quiz11"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".midterm_quiz10"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".midterm_quiz9"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".midterm_quiz8"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".midterm_quiz7"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".prelim_quiz5" />
-        <activity android:name=".prelim_quiz4" />
-        <activity android:name=".prelim_quiz3" />
-        <activity android:name=".prelim_quiz2"
-            />
+        <activity
+            android:name=".prelim_quiz4"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".prelim_quiz3"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".prelim_quiz2"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".prelim_quiz1"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".lecture_finals"
-            android:label="Final Period"
-            android:parentActivityName=".lecture1" />
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".simulation"
             android:label="Simulation"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".prelim_quiz1" />
         <activity
             android:name=".lecture_midterm"
-            android:label="Midterm Period"
-            android:parentActivityName=".lecture1" />
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".week1"
-            android:label="Introduction to Java Programming Language"
-            android:parentActivityName=".Lecture" />
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".lecture1"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
@@ -63,10 +166,6 @@
             android:label="PDF Files"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".Menu_Assessment" />
-        <activity
-            android:name=".Lecture"
-            android:label="Preliminary Period"
-            android:parentActivityName=".lecture1" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />

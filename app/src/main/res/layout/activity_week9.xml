@@ -1,0 +1,2963 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".week9"
+    android:background="@drawable/gradient_background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/bannerteacher"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/backk"
+                    android:padding="20dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/arrow"/>
+                <ImageView
+                    android:padding="20dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="250dp"
+                    android:src="@drawable/student"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:text="Introduction to Object-Oriented Programming"
+                    android:textColor="#fff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nested Class"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A class declared within another class in order to facilitate implementation and restrict access."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inner Class"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A nonstatic, nested class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java Visibility Modifiers"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For instance, a class cannot be declared with protected visibility. Note that each visibility modifier operates in the same way on classes and interfaces and in the same way on methods and variables."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Default visibility means that no visibility modifier was explicitly used. Default visibility is sometimes called package visibility, but you cannot use the reserved word package as a modifier. Classes and interfaces can have default or public visibility; this visibility determines whether a class or interface can be referenced outside of its package. Only an inner class can have private visibility, in which case only the enclosing class may access it."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Local Classes"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Local classes are classes that are defined in a block, which is a group of zero or more statements between balanced braces. You typically find local classes defined in the body of a method."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Declaring Local Classes"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You can define a local class inside any block. For example, you can define a local class in a method body, a for loop, or an if clause."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The following example, LocalClassExample, validates two phone numbers. It defines the local class PhoneNumber in the method validatePhoneNumber:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image259"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"  />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image260"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The example validates a phone number by first removing all characters from the phone number except the digits 0 through 9. After, it checks whether the phone number contains exactly ten digits (the length of a phone number in North America). This example prints the following:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image261"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accessing Members of and Enclosing Class"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A local class has access to the members of its enclosing class. In the previous example, the PhoneNumber constructor accesses the member LocalClassExample.regularExpression."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In addition, a local class has access to local variables. However, a local class can only access local variables that are declared final. When a local class accesses a local variable or parameter of the enclosing block, it captures that variable or parameter. For example, the PhoneNumber constructor can access the local variable numberLength because it is declared final; numberLength is a captured variable."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="However, starting in Java SE 8, a local class can access local variables and parameters of the enclosing block that are final or effectively final. A variable or parameter whose value is never changed after it is initialized is effectively final. For example, suppose that the variable numberLength is not declared final, and you add the highlighted assignment statement in the PhoneNumber constructor to change the length of a valid phone number to 7 digits:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image262"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because of this assignment statement, the variable numberLength is not effectively final anymore. As a result, the Java compiler generates an error message similar to 'local variables referenced from an inner class must be final or effectively final' where the inner class PhoneNumber tries to access the numberLength variable:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image263"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starting in Java SE 8, if you declare the local class in a method, it can access the method's parameters. For example, you can define the following method in the PhoneNumber local class:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image264"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The method printOriginalNumbers accesses the parameters phoneNumber1 and phoneNumber2 of the method validatePhoneNumber."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shadowing and Local Classes"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Declarations of a type (such as a variable) in a local class shadow declarations in the enclosing scope that have the same name. "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Local Classes are similar to Inner Classes"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Local classes are similar to inner classes because they cannot define or declare any static members. Local classes in static methods, such as the class PhoneNumber, which is defined in the static method validatePhoneNumber, can only refer to static members of the enclosing class. For example, if you do not define the member variable regularExpression as static, then the Java compiler generates an error similar to 'non-static variable regularExpression cannot be referenced from a static context'."
+		        android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Local classes are non-static because they have access to instance members of the enclosing block. Consequently, they cannot contain most kinds of static declarations."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You cannot declare an interface inside a block; interfaces are inherently static. For example, the following code excerpt does not compile because the interface HelloThere is defined inside the body of the method greetInEnglish:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image265"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You cannot declare static initializers or member interfaces in a local class. The following code excerpt does not compile because the method EnglishGoodbye.sayGoodbye is declared static. The compiler generates an error similar to 'modifier 'static' is only allowed in constant variable declaration' when it encounters this method definition:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image266"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A local class can have static members provided that they are constant variables. (A constant variable is a variable of primitive type or type String that is declared final and initialized with a compile-time constant expression. A compile-time constant expression is typically a string or an arithmetic expression that can be evaluated at compile time.) The following code excerpt compiles because the static member EnglishGoodbye.farewell is a constant variable:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image267"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anonymous Classes"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anonymous classes enable you to make your code more concise. They enable you to declare and instantiate a class at the same time. They are like local classes except that they do not have a name. Use them if you need to use a local class only once."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Declaring Anonymous Classes"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="While local classes are class declarations, anonymous classes are expressions, which means that you define the class in another expression. The following example, HelloWorldAnonymousClasses, uses anonymous classes in the initialization statements of the local variables frenchGreeting and spanishGreeting, but uses a local class for the initialization of the variable englishGreeting:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image268"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image269"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Syntax of Anonymous Classes"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As mentioned previously, an anonymous class is an expression. The syntax of an anonymous class expression is like the invocation of a constructor, except that there is a class definition contained in a block of code."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consider the instantiation of the frenchGreeting object:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image270"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The anonymous class expression consists of the following:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• The new operator"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• The name of an interface to implement or a class to extend. In this example, the anonymous class is implementing the interface HelloWorld."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Parentheses that contain the arguments to a constructor, just like a normal class instance creation expression. Note: When you implement an interface, there is no constructor, so you use an empty pair of parentheses, as in this example."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• A body, which is a class declaration body. More specifically, in the body, method declarations are allowed but statements are not."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because an anonymous class definition is an expression, it must be part of a statement. In this example, the anonymous class expression is part of the statement that instantiates the frenchGreeting object. (This explains why there is a semicolon after the closing brace.)"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accessing Local Variables of the Enclosing Scope, and Declaring and Accessing Members of the Anonymous Class"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Like local classes, anonymous classes can capture variables; they have the same access to local variables of the enclosing scope:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• An anonymous class has access to the members of its enclosing class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• An anonymous class cannot access local variables in its enclosing scope that are not declared as final or effectively final."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Like a nested class, a declaration of a type (such as a variable) in an anonymous class shadows any other declarations in the enclosing scope that have the same name. See Shadowing for more information."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anonymous classes also have the same restrictions as local classes with respect to their members:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• You cannot declare static initializers or member interfaces in an anonymous class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• An anonymous class can have static members provided that they are constant variables."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that you can declare the following in anonymous classes:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Fields"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Extra methods (even if they do not implement any methods of the supertype)"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Instance initializers"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Local classes"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="However, you cannot declare constructors in an anonymous class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Examples of Anonymous Classes"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anonymous classes are often used in graphical user interface (GUI) applications."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consider the JavaFX example HelloWorld.java (from the section Hello World, JavaFX Style from Getting Started with JavaFX). This sample creates a frame that contains a Say 'Hello World' button. The anonymous class expression is highlighted:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image271"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In this example, the method invocation btn.setOnAction specifies what happens when you select the Say 'Hello World' button. This method requires an object of type EventHandler ActionEvent. The EventHandler ActionEvent interface contains only one method, handle. Instead of implementing this method with a new class, the example uses an anonymous class expression. Notice that this expression is the argument passed to the btn.setOnAction method."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because the EventHandler ActionEvent interface contains only one method, you can use a lambda expression instead of an anonymous class expression. See the section Lambda Expressions for more information."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anonymous classes are ideal for implementing an interface that contains two or more methods. The following JavaFX example is from the section Customization of UI Controls. The highlighted code creates a text field that only accepts numeric values. It redefines the default implementation of the TextField class with an anonymous class by overriding the replaceText and replaceSelection methods inherited from the TextInputControl class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image272"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image273"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image274"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lambda Expressions"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="One issue with anonymous classes is that if the implementation of your anonymous class is very simple, such as an interface that contains only one method, then the syntax of anonymous classes may seem unwieldy and unclear. In these cases, you're usually trying to pass functionality as an argument to another method, such as what action should be taken when someone clicks a button. Lambda expressions enable you to do this, to treat functionality as method argument, or code as data."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The previous section, Anonymous Classes, shows you how to implement a base class without giving it a name. Although this is often more concise than a named class, for classes with only one method, even an anonymous class seems a bit excessive and cumbersome. Lambda expressions let you express instances of single-method classes more compactly."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ideal use case for Lambda Expressions"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suppose that you are creating a social networking application. You want to create a feature that enables an administrator to perform any kind of action, such as sending a message, on members of the social networking application that satisfy certain criteria. The following table describes this use case in detail:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image275"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suppose that members of this social networking application are represented by the following Person class:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image276"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suppose that the members of your social networking application are stored in a List Person instance."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This section begins with a naive approach to this use case. It improves upon this approach with local and anonymous classes, and then finishes with an efficient and concise approach using lambda expressions. Find the code excerpts described in this section in the example RosterTest."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Approach 1: Create Methods that search for members that match one Characteristic"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="One simplistic approach is to create several methods; each method searches for members that match one characteristic, such as gender or age. The following method prints members that are older than a specified age:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image277"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note: A List is an ordered Collection. A collection is an object that groups multiple elements into a single unit. Collections are used to store, retrieve, manipulate, and communicate aggregate data. For more information about collections, see the Collections trail."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This approach can potentially make your application brittle, which is the likelihood of an application not working because of the introduction of updates (such as newer data types). Suppose that you upgrade your application and change the structure of the Person class such that it contains different member variables; perhaps the class records and measures ages with a different data type or algorithm. You would have to rewrite a lot of your API to accommodate this change. In addition, this approach is unnecessarily restrictive; what if you wanted to print members younger than a certain age, for example?"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Approach 2: Create more generalized search methods"            android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The following method is more generic than printPersonsOlderThan; it prints members within a specified range of ages:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image278"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What if you want to print members of a specified sex, or a combination of a specified gender and age range? What if you decide to change the Person class and add other attributes such as relationship status or geographical location? Although this method is more generic than printPersonsOlderThan, trying to create a separate method for each possible search query can still lead to brittle code. You can instead separate the code that specifies the criteria for which you want to search in a different class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Approach 3: Specify search criteria in a Local Class"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The following method prints members that match search criteria that you specify:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image279"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This method checks each Person instance contained in the List parameter roster whether it satisfies the search criteria specified in the CheckPerson parameter tester by invoking the method tester.test. If the method tester.test returns a true value, then the method printPersons is invoked on the Person instance."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To specify the search criteria, you implement the CheckPerson interface:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image280"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The following class implements the CheckPerson interface by specifying an implementation for the method test. This method filters members that are eligible for Selective Service in the United States: it returns a true value if its Person parameter is male and between the ages of 18 and 25:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image281"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To use this class, you create a new instance of it and invoke the printPersons method:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image282"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Although this approach is less brittle you don't have to rewrite methods if you change the structure of the Person—you still have additional code: a new interface and a local class for each search you plan to perform in your application. Because CheckPersonEligibleForSelectiveService implements an interface, you can use an anonymous class instead of a local class and bypass the need to declare a new class for each search."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Approach 4: Specify criteria code in an Anonymous Class"             android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="One of the arguments of the following invocation of the method printPersons is an anonymous class that filters members that are eligible for Selective Service in the United States: those who are male and between the ages of 18 and 25:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image283"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This approach reduces the amount of code required because you don't have to create a new class for each search that you want to perform. However, the syntax of anonymous classes is bulky considering that the CheckPerson interface contains only one method. In this case, you can use a lambda expression instead of an anonymous class, as described in the next section."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Approach 5: Specify search criteria code with a Lambda Expression"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The CheckPerson interface is a functional interface. A functional interface is any interface that contains only one abstract method. (A functional interface may contain one or more default methods or static methods.) Because a functional interface contains only one abstract method, you can omit the name of that method when you implement it. To do this, instead of using an anonymous class expression, you use a lambda expression, which is highlighted in the following method invocation:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image284"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You can use a standard functional interface in place of the interface CheckPerson, which reduces even further the amount of code required."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Approach 6: Use standard functional Interfaces with lambda expressions"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reconsider the CheckPerson interface:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image285"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is a very simple interface. It's a functional interface because it contains only one abstract method. This method takes one parameter and returns a boolean value. The method is so simple that it might not be worth it to define one in your application. Consequently, the JDK defines several standard functional interfaces, which you can find in the package java.util.function."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For example, you can use the Predicate T interface in place of CheckPerson. This interface contains the method boolean test T t:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image286"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The interface Predicate T is an example of a generic interface. For more information about generics, see the Generics Updated lesson. Generic types such as generic interfaces specify one or more type parameters within angle brackets . This interface contains only one type parameter, T. When you declare or instantiate a generic type with actual type arguments, you have a parameterized type. For example, the parameterized type Predicate Person is the following:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image287"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This parameterized type contains a method that has the same return type and parameters as CheckPerson.boolean test Person p. Consequently, you can use Predicate T in place of CheckPerson as the following method demonstrates:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image288"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As a result, the following method invocation is the same as when you invoked printPersons in Approach 3: Specify Search Criteria Code in a Local Class to obtain members who are eligible for Selective Service:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image289"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is not the only possible place in this method to use a lambda expression. The following approach suggests other ways to use lambda expressions."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Approach 7: Use Lambda Expressions throughout your application"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reconsider the method printPersonsWithPredicate to see where else you could use lambda expressions:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image290"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This method checks each Person instance contained in the List parameter roster whether it satisfies the criteria specified in the Predicate parameter tester. If the Person instance does satisfy the criteria specified by tester, the method printPerson is invoked on the Person instance."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instead of invoking the method printPerson, you can specify a different action to perform on those Person instances that satisfy the criteria specified by tester. You can specify this action with a lambda expression. Suppose you want a lambda expression similar to printPerson, one that takes one argument an object of type Person and returns void. Remember, to use a lambda expression, you need to implement a functional interface. In this case, you need a functional interface that contains an abstract method that can take one argument of type Person and returns void. The Consumer T  interface contains the method void accept T t, which has these characteristics. The following method replaces the invocation p.printPerson with an instance of Consumer Person that invokes the method accept:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image291"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As a result, the following method invocation is the same as when you invoked printPersons in Approach 3: Specify Search Criteria Code in a Local Class to obtain members who are eligible for Selective Service. The lambda expression used to print members is highlighted:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image292"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What if you want to do more with your members' profiles than printing them out. Suppose that you want to validate the members' profiles or retrieve their contact information? In this case, you need a functional interface that contains an abstract method that returns a value. The Function T,R interface contains the method R apply T t. The following method retrieves the data specified by the parameter mapper, and then performs an action on it specified by the parameter block:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image293"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The following method retrieves the email address from each member contained in roster who is eligible for Selective Service and then prints it:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image294"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Approach 8: Use Generics more Extensively"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reconsider the method processPersonsWithFunction. The following is a generic version of it that accepts, as a parameter, a collection that contains elements of any data type:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image295"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To print the e-mail address of members who are eligible for Selective Service, invoke the processElements method as follows:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image296"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This method invocation performs the following actions:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Obtains a source of objects from the collection source. In this example, it obtains a source of Person objects from the collection roster. Notice that the collection roster, which is a collection of type List, is also an object of type Iterable."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Filters objects that match the Predicate object tester. In this example, the Predicate object is a lambda expression that specifies which members would be eligible for Selective Service."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Maps each filtered object to a value as specified by the Function object mapper. In this example, the Function object is a lambda expression that returns the e-mail address of a member."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Performs an action on each mapped object as specified by the Consumer object block. In this example, the Consumer object is a lambda expression that prints a string, which is the e-mail address returned by the Function object."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You can replace each of these actions with an aggregate operation."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Approach 9: Use Aggregate Operations that accepts Lambda Expressions as Parameters"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The following example uses aggregate operations to print the e-mail addresses of those members contained in the collection roster who are eligible for Selective Service:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image297"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The following table maps each of the operations the method processElements performs with the corresponding aggregate operation:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image298"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The operations filter, map, and forEach are aggregate operations. Aggregate operations process elements from a stream, not directly from a collection (which is the reason why the first method invoked in this example is stream). A stream is a sequence of elements. Unlike a collection, it is not a data structure that stores elements. Instead, a stream carries values from a source, such as collection, through a pipeline. A pipeline is a sequence of stream operations, which in this example is filter- map-forEach. In addition, aggregate operations typically accept lambda expressions as parameters, enabling you to customize how they behave."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lambda Expressions in GUI Applications"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To process events in a graphical user interface (GUI) application, such as keyboard actions, mouse actions, and scroll actions, you typically create event handlers, which usually involves implementing a particular interface. Often, event handler interfaces are functional interfaces; they tend to have only one method."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In the JavaFX example HelloWorld.java (discussed in the previous section Anonymous Classes), you can replace the highlighted anonymous class with a lambda expression in this statement:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image299"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The method invocation btn.setOnAction specifies what happens when you select the button represented by the btn object. This method requires an object of type EventHandler ActionEvent. The EventHandler ActionEvent interface contains only one method, void handle T event. This interface is a functional interface, so you could use the following highlighted lambda expression to replace it:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image300"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Syntax of Lambda Expressions"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A lambda expression consists of the following:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A comma-separated list of formal parameters enclosed in parentheses. The CheckPerson.test method contains one parameter, p, which represents an instance of the Person class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note: You can omit the data type of the parameters in a lambda expression. In addition, you can omit the parentheses if there is only one parameter. For example, the following lambda expression is also valid:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image301"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• The arrow token, ->"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• A body, which consists of a single expression or a statement block. This example uses the following expression:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image302"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you specify a single expression, then the Java runtime evaluates the expression and then returns its value. Alternatively, you can use a return statement:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image303"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A return statement is not an expression; in a lambda expression, you must enclose statements in braces ({}). However, you do not have to enclose a void method invocation in braces. For example, the following is a valid lambda expression:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image304"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that a lambda expression looks a lot like a method declaration; you can consider lambda expressions as anonymous methods—methods without a name."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The following example, Calculator, is an example of lambda expressions that take more than one formal parameter:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image305"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The method operateBinary performs a mathematical operation on two integer operands. The operation itself is specified by an instance of IntegerMath. The example defines two operations with lambda expressions, addition and subtraction. The example prints the following:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image306"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accessing Local Variables of the Enclosing Scope"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Like local and anonymous classes, lambda expressions can capture variables; they have the same access to local variables of the enclosing scope. However, unlike local and anonymous classes, lambda expressions do not have any shadowing issues (see Shadowing for more information). Lambda expressions are lexically scoped. This means that they do not inherit any names from a supertype or introduce a new level of scoping. Declarations in a lambda expression are interpreted just as they are in the enclosing environment. The following example, LambdaScopeTest, demonstrates this:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image307"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image308"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This example generates the following output:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image309"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you substitute the parameter x in place of y in the declaration of the lambda expression myConsumer, then the compiler generates an error:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image310"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The compiler generates the error 'Lambda expression's parameter x cannot redeclare another local variable defined in an enclosing scope' because the lambda expression does not introduce a new level of scoping. Consequently, you can directly access fields, methods, and local variables of the enclosing scope. For example, the lambda expression directly accesses the parameter x of the method methodInFirstLevel. To access variables in the enclosing class, use the keyword this. In this example, this.x refers to the member variable FirstLevel.x."
+                android:textColor="#000000"
+		        android:textSize="18sp"
+		        android:layout_margin="16dp"/>
+
+	         <me.biubiubiu.justifytext.library.JustifyTextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+		         android:text="However, like local and anonymous classes, a lambda expression can only access local variables and parameters of the enclosing block that are final or effectively final. In this example, the variable z is effectively final; its value is never changed after it's initialized. However, suppose that you add the following assignment statement in the the lambda expression myConsumer:"
+                 android:textColor="#000000"
+                 android:textSize="18sp"
+                 android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image311"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because of this assignment statement, the variable z is not effectively final anymore. As a result, the Java compiler generates an error message similar to 'Local variable z defined in an enclosing scope must be final or effectively final'."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Target Typing"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How do you determine the type of a lambda expression? Recall the lambda expression that selected members who are male and between the ages 18 and 25 years:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image312"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This lambda expression was used in the following two methods:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• public static void printPersons List Person  roster, CheckPerson tester in Approach 3: Specify Search Criteria Code in a Local Class"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• public void printPersonsWithPredicate List Person roster, Predicate Person  tester  in Approach 6: Use Standard Functional Interfaces with Lambda Expressions"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When the Java runtime invokes the method printPersons, it's expecting a data type of CheckPerson, so the lambda expression is of this type. However, when the Java runtime invokes the method printPersonsWithPredicate, it's expecting a data type of Predicate Person , so the lambda expression is of this type. The data type that these methods expect is called the target type. To determine the type of a lambda expression, the Java compiler uses the target type of the context or situation in which the lambda expression was found. It follows that you can only use lambda expressions in situations in which the Java compiler can determine a target type:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Variable declarations"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Assignments"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Return statements"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Array initializers"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Method or constructor arguments"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Lambda expression bodies"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Conditional expressions, ?:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Cast expressions"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Target types and Method Arguments"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For method arguments, the Java compiler determines the target type with two other language features: overload resolution and type argument inference."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consider the following two functional interfaces java.lang.Runnable and java.util.concurrent.CallableV:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image313"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The method Runnable.run does not return a value, whereas Callable V.call does."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suppose that you have overloaded the method invoke as follows see Defining Methods for more information about overloading methods:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image314"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Which method will be invoked in the following statement?"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image315"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The method invoke Callable T  will be invoked because that method returns a value; the method invoke Runnable does not. In this case, the type of the lambda expression  'done' is Callable T."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enum Types"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An enum type is a special data type that enables for a variable to be a set of predefined constants. The variable must be equal to one of the values that have been predefined for it. Common examples include compass directions values of NORTH, SOUTH, EAST, and WEST and the days of the week."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because they are constants, the names of an enum type's fields are in uppercase letters."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In the Java programming language, you define an enum type by using the enum keyword. For example, you would specify a days-of-the-week enum type as:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image316"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You should use enum types any time you need to represent a fixed set of constants. That includes natural enum types such as the planets in our solar system and data sets where you know all possible values at compile time—for example, the choices on a menu, command line flags, and so on."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Here is some code that shows you how to use the Day enum defined above:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image317"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image318"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The output is:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image319"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java programming language enum types are much more powerful than their counterparts in other languages. The enum declaration defines a class (called an enum type). The enum class body can include methods and other fields. The compiler automatically adds some special methods when it creates an enum. For example, they have a static values method that returns an array containing all of the values of the enum in the order they are declared. This method is commonly used in combination with the for-each construct to iterate over the values of an enum type. For example, this code from the Planet class example below iterates over all the planets in the solar system."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image320"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In the following example, Planet is an enum type that represents the planets in the solar system. They are defined with constant mass and radius properties."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Each enum constant is declared with values for the mass and radius parameters. These values are passed to the constructor when the constant is created. Java requires that the constants be defined first, prior to any fields or methods. Also, when there are fields and methods, the list of enum constants must end with a semicolon."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In addition to its properties and constructor, Planet has methods that allow you to retrieve the surface gravity and weight of an object on each planet. Here is a sample program that takes your weight on earth (in any unit) and calculates and prints your weight on all of the planets (in the same unit):"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image321"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image322"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you run Planet.class from the command line with an argument of 175, you get this output:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image323"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is an Interface?"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As you've already learned, objects define their interaction with the outside world through the methods that they expose. Methods form the object's interface with the outside world; the buttons on the front of your television set, for example, are the interface between you and the electrical wiring on the other side of its plastic casing. You press the 'power' button to turn the television on and off."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In its most common form, an interface is a group of related methods with empty bodies. A bicycle's behavior, if specified as an interface, might appear as follows:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image324"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To implement this interface, the name of your class would change (to a particular brand of bicycle, for example, such as ACMEBicycle), and you'd use the implements keyword in the class declaration:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image325"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Implementing an interface allows a class to become more formal about the behavior it promises to provide. Interfaces form a contract between the class and the outside world, and this contract is enforced at build time by the compiler. If your class claims to implement an interface, all methods defined by that interface must appear in its source code before the class will successfully compile."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Defining an Interface"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An interface declaration consists of modifiers, the keyword interface, the interface name, a comma-separated list of parent interfaces (if any), and the interface body. For example:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image326"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The public access specifier indicates that the interface can be used by any class in any package. If you do not specify that the interface is public, then your interface is accessible only to classes defined in the same package as the interface."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An interface can extend other interfaces, just as a class subclass or extend another class. However, whereas a class can extend only one other class, an interface can extend any number of interfaces. The interface declaration includes a comma-separated list of all the interfaces that it extends."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Interface Body"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The interface body can contain abstract methods, default methods, and static methods. An abstract method within an interface is followed by a semicolon, but no braces (an abstract method does not contain an implementation). Default methods are defined with the default modifier, and static methods with the static keyword. All abstract, default, and static methods in an interface are implicitly public, so you can omit the public modifier."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In addition, an interface can contain constant declarations. All constant values defined in an interface are implicitly public, static, and final. Once again, you can omit these modifiers."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Implementing and Interface"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To declare a class that implements an interface, you include an implements clause in the class declaration. Your class can implement more than one interface, so the implements keyword is followed by a comma-separated list of the interfaces implemented by the class. By convention, the implements clause follows the extends clause, if there is one."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A Sample Interface, Relatable"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consider an interface that defines how to compare the size of objects."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image327"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you want to be able to compare the size of similar objects, no matter what they are, the class that instantiates them should implement Relatable."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Any class can implement Relatable if there is some way to compare the relative 'size' of objects instantiated from the class. For strings, it could be number of characters; for books, it could be number of pages; for students, it could be weight; and so forth. For planar geometric objects, area would be a good choice (see the RectanglePlus class that follows), while volume would work for three-dimensional geometric objects. All such classes can implement the isLargerThan() method."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you know that a class implements Relatable, then you know that you can compare the size of the objects instantiated from that class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Implementing the Relatable Interface"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Here is the Rectangle class that was presented in the Creating Objects section, rewritten to implement Relatable."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image328"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image329"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because RectanglePlus implements Relatable, the size of any two RectanglePlus objects can be compared."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Using an Interface as a Type"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When you define a new interface, you are defining a new reference data type. You can use interface names anywhere you can use any other data type name. If you define a reference variable whose type is an interface, any object you assign to it must be an instance of a class that implements the interface."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As an example, here is a method for finding the largest object in a pair of objects, for any objects that are instantiated from a class that implements Relatable:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image330"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By casting object1 to a Relatable type, it can invoke the isLargerThan method."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you make a point of implementing Relatable in a wide variety of classes, the objects instantiated from any of those classes can be compared with the findLargest() method—provided that both objects are of the same class. Similarly, they can all be compared with the following methods:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image331"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="These methods work for any 'relatable' objects, no matter what their class inheritance is. When they implement Relatable, they can be of both their own class (or superclass) type and a Relatable type. This gives them some of the advantages of multiple inheritance, where they can have behavior from both a superclass and an interface."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evolving Interfaces"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consider an interface that you have developed called DoIt:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image332"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suppose that, at a later time, you want to add a third method to DoIt, so that the interface now becomes:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image333"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you make this change, then all classes that implement the old DoIt interface will break because they no longer implement the old interface. Programmers relying on this interface will protest loudly."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Try to anticipate all uses for your interface and specify it completely from the beginning. If you want to add additional methods to an interface, you have several options. You could create a DoItPlus interface that extends DoIt:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image334"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Now users of your code can choose to continue to use the old interface or to upgrade to the new interface."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alternatively, you can define your new methods as default methods. The following example defines a default method named didItWork:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image335"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that you must provide an implementation for default methods. You could also define new static methods to existing interfaces. Users who have classes that implement interfaces enhanced with new default or static methods do not have to modify or recompile them to accommodate the additional methods."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interfaces"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interfaces provide another way to create polymorphic references."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A Java interface is a collection of constants and abstract methods. An abstract method is a method that does not have an implementation. That is, there is no body of code defined for an abstract method. The header of the method, including its parameter list, is simply followed by a semicolon. An interface cannot be instantiated."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="It contains two abstract methods: encrypt and decrypt."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An abstract method can be preceded by the reserved word abstract, though in interfaces it usually is not. Methods in interfaces have public visibility by default."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A class implements an interface by providing method implementations for each of the abstract methods defined in the interface. The Secret class, shown in Listing 9.9 on page 418, implements the Encryptable interface."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image336"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image337"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image338"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image339"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A class that implements an interface uses the reserved word implements followed by the interface name in the class header. If a class asserts that it implements a particular interface, it must provide a definition for all methods in the interface. The compiler will produce errors if any of the methods in the interface are not given a definition in the class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In the class Secret, both the encrypt and decrypt methods are implemented, which satisfies the contract established by the interface. These methods must be declared with the same signatures as their abstract counterparts in the interface. In the Secret class, the encryption is implemented using a simple Caesar cipher, which shifts the characters of the message a certain number of places. Another class that implements the Encryptable interface may use a completely different technique for encryption."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that the Secret class also implements additional methods that are not part of the Encryptable interface. Specifically, it defines the methods isEncrypted and toString, which have nothing to do with the interface. The interface guarantees that the class implements certain methods, but it does not restrict it from having others. In fact, it is common for a class that implements an interface to have other methods."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An interface and its relationship to a class can be shown in a UML class diagram. An interface is represented similarly to a class node except that the designation is inserted above the interface name. A dotted arrow with a triangular arrowhead is drawn from the class to the interface that it implements. Figure 9.2 on page 422 shows a UML class diagram for the SecretTest program."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image340"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Multiple classes can implement the same interface, providing their own definitions for the methods. For example, we could implement a class called Password that also implements the Encryptable interface. And, as mentioned earlier, each class that implements an interface may do so in different ways. The interface specifies which methods are implemented, not how they are implemented."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A class can implement more than one interface. In these cases, the class must provide an implementation for all methods in all interfaces listed. To show that a class implements multiple interfaces, they are listed in the implements clause, separated by commas. For example:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image341"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image342"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In addition to, or instead of, abstract methods, an interface can contain constants, defined using the final modifier. When a class implements an interface, it gains access to all the constants defined in it."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interface Hierarchies"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The concept of inheritance can be applied to interfaces as well as to classes. That is, one interface can be derived from another interface. These relationships can form an interface hierarchy, which is similar to a class hierarchy. Inheritance relationships between interfaces are shown in UML diagrams using the same connection (an arrow with an open arrowhead) as they are with classes."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When a parent interface is used to derive a child interface, the child inherits all abstract methods and constants of the parent. Any class that implements the child interface must implement all of the methods. There are no visibility issues when dealing with inheritance between interfaces (as there are with protected and private members of a class) because all members of an interface are public."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class hierarchies and interface hierarchies do not overlap. That is, an interface cannot be used to derive a class, and a class cannot be used to derive an interface."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A class and an interface interact only when a class is designed to implement a particular interface."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Before we see how interfaces support polymorphism, let’s take a look at a couple of useful interfaces that are defined in the Java standard class library: Comparable and Iterator."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comparable Interface"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Java standard class library contains interfaces as well as classes. The Comparable interface, for example, is defined in the java.lang package. The Comparable interface contains only one method, compareTo, which takes an object as a parameter and returns an integer."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The purpose of this interface is to provide a common mechanism for comparing one object to another. One object calls the method and passes another as a parameter as follows:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image343"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As specified by the documentation for the interface, the integer that is returned from the compareTo method should be negative if obj1 is less than obj2, 0 if they are equal, and positive if obj1 is greater than obj2. It is up to the designer of each class to decide what it means for one object of that class to be less than, equal to, or greater than another."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Now we can clarify that the String class has this method because it implements the Comparable interface. The String class implementation of this method bases the comparison of strings on the lexicographic ordering defined by the Unicode character set."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Iterator Interface"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Iterator interface is another interface defined in the Java standard class library. It is used by a class that represents a collection of objects, providing a means to move through the collection one object at a time."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most iterators, including objects of the Scanner class, are defined using the Iterator interface."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The two primary methods in the Iterator interface are hasNext, which returns a boolean result, and next, which returns an object. Neither of these methods takes any parameters. The hasNext method returns true if there are items left to process, and next returns the next object. It is up to the designer of the class that implements the Iterator interface to decide the order in which objects will be delivered by the next method."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We should note that, according to the spirit of the interface, the next method does not remove the object from the underlying collection; it simply returns a reference to it. The Iterator interface also has a method called remove, which takes no parameters and has a void return type. A call to the remove method removes the object that was most recently returned by the next method from the underlying collection."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Polymorphism via Interfaces"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Now let’s examine how we can create polymorphic references using interfaces. As we’ve seen many times, a class name can be used to declare the type of an object reference variable. Similarly, an interface name can be used as the type of a reference variable as well. An interface reference variable can be used to refer to any object of any class that implements that interface."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suppose we declare an interface called Speaker as follows:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image344"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The interface name, Speaker, can now be used to declare an object reference variable:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image345"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The reference variable current can be used to refer to any object of any class that implements the Speaker interface. For example, if we define a class called Philosopher such that it implements the Speaker interface, we can then assign a Philosopher object to a Speaker reference as follows:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image346"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This assignment is valid because a Philosopher is a Speaker. In this sense the relationship between a class and its interface is the same as the relationship between a child class and its parent. It is an is-a relationship, similar to the relationship created via inheritance. And that relationship forms the basis of the polymorphism."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The flexibility of an interface reference allows us to create polymorphic references. As we saw earlier in this chapter, using inheritance, we can create a polymorphic reference that can refer to any one of a set of objects as long as they are related by inheritance. Using interfaces, we can create similar polymorphic references among objects that implement the same interface."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For example, if we create a class called Dog that also implements the Speaker interface, it can be assigned to a Speaker reference variable as well. The same reference variable, in fact, can at one point refer to a Philosopher object and then later refer to a Dog object. The following lines of code illustrate this:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image347"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In this code, the first time the speak method is called, it invokes the speak method defined in the Philosopher class. The second time it is called, it invokes the speak method of the Dog class. As with polymorphic references via inheritance, it is not the type of the reference that determines which method gets invoked; it is based on the type of the object that the reference points to at the moment of invocation."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that when we are using an interface reference variable, we can invoke only the methods defined in the interface, even if the object it refers to has other methods to which it can respond. For example, suppose the Philosopher class also defined a public method called pontificate. The second line of the following code segment would generate a compiler error, even though the object can in fact contain the pontificate method:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image348"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The problem is that the compiler can determine only that the object is a Speaker, and therefore can guarantee only that the object can respond to the speak and announce methods. Because the reference variable special could refer to a Dog object (which cannot pontificate), it does not allow the invocation. If we know in a particular situation that such an invocation is valid, we can cast the object into the appropriate reference so that the compiler will accept it, as follows:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image349"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As we can with polymorphic references based in inheritance, an interface name can be used as the type of a method parameter. In such situations, any object of any class that implements the interface can be passed into the method. For example, the following method takes a Speaker object as a parameter. Therefore both a Dog object and a Philosopher object can be passed into it in separate invocations:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image350"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Using a polymorphic reference as the formal parameter to a method is a powerful technique. It allows the method to control the types of parameters passed into it, yet gives it the flexibility to accept arguments of various types."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Processing"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We establish the relationship between the listener and the component it listens to by making a method call that adds the listener to the component. This situation is actually an example of polymorphism."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image351"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Once this relationship is established, the listener will respond whenever the button fires an action event (because the user pressed it). Now think about the addActionListener method carefully. It is a method of the JButton class, which was written by someone at Sun Microsystems years ago. On the other hand, we might have written the MyButtonListener class today. So how can a method written years ago take a parameter whose class was just written?"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The answer is polymorphism. If you examine the source code for the addActionListener method, you’ll discover that it accepts a parameter of type ActionListener, the interface. Therefore, instead of accepting a parameter of only one object type, the addActionListener method can accept any object of any class that implements the ActionListener interface. All other methods that add listeners work in similar ways."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The JButton object doesn’t know anything particular about the object that is passed to the addActionListener method, except for the fact that it implements the ActionListener interface (otherwise the code wouldn’t compile). The JButton object simply stores the listener object and invokes its performAction method when the event occurs."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is another example of polymorphism via interfaces, even though the listener class is created via inheritance. Each adaptor class is written to implement the appropriate listener interface, providing empty methods for all event handlers. So by extending an adaptor class, the new listener class automatically implements the corresponding listener interface. And that is what really makes it a listener such that it can be passed to an appropriate add listener method."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thus, no matter how a listener object is created, we are using polymorphism via interfaces to set up the relationship between a listener and the component it listens to. GUI events are a wonderful example of the power and versatility provided by polymorphism."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Polymorphism, whether implemented via inheritance or interfaces, is a fundamental object-oriented technique that we will use as appropriate throughout the remainder of this book."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/bgforb"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fone"
+                    android:layout_width="70dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp"
+                    app:cardMaxElevation="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/quiz"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:src="@drawable/quizz" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Take Quiz"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp"
+                    app:cardMaxElevation="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/video"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:src="@drawable/videocamera" />
+                        <!--                    android:background="@drawable/cerclebackgroundpink"-->
+                        <!--                    android:src="@drawable/ic_looks_two_black_24dp"-->
+
+                        <TextView
+                            android:layout_width="104dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Videos"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp"
+                    app:cardMaxElevation="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/link"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:src="@drawable/link" />
+                        <!--                    android:background="@drawable/cerclebackgroundpink"-->
+                        <!--                    android:src="@drawable/ic_looks_two_black_24dp"-->
+
+                        <TextView
+                            android:layout_width="104dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Links"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

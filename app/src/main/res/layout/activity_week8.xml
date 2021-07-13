@@ -1,0 +1,1224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".week8"
+    android:background="@drawable/gradient_background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/bannerteacher"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/backk"
+                    android:padding="20dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/arrow"/>
+                <ImageView
+                    android:padding="20dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="250dp"
+                    android:src="@drawable/student"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:text="Introduction to Object-Oriented Programming"
+                    android:textColor="#fff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I/O Streams"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An I/O Stream represents an input source or an output destination. A stream can represent many different kinds of sources and destinations, including disk files, devices, other programs, and memory arrays."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An I/O Stream represents an input source or an output destination. A stream can represent many different kinds of sources and destinations, including disk files, devices, other programs, and memory arrays."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No matter how they work internally, all streams present the same simple model to programs that use them: A stream is a sequence of data. A program uses an input stream to read data from a source, one item at a time:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image222"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reading information into a program."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"
+                android:gravity="center"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A program uses an output stream to write data to a destination, one item at time:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image223"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Writing information from a program."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"
+                android:gravity="center"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The data source and data destination pictured above can be anything that holds, generates, or consumes data. Obviously this includes disk files, but a source or destination can also be another program, a peripheral device, a network socket, or an array."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In the next section, we'll use the most basic kind of streams, byte streams, to demonstrate the common operations of Stream I/O."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class FileInputStream"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java FileInputStream class obtains input bytes from a file. It is used for reading byte-oriented data (streams of raw bytes) such as image data, audio, video etc. You can also read character-stream data. But, for reading streams of characters, it is recommended to use FileReader class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java FileInputStream Class"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let's see the declaration for java.io.FileInputStream class:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image224"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java FileInputStream class methods"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image225"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java FileInputStream Example"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image226"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note: Before running the code, a text file named as 'testout.txt' is required to be created. In this file, we are having following content:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image227"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="After executing the above program, you will get a single character from the file which is 87 (in byte form). To see the text, you need to convert it into character."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Output:"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image228"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java FileInputStream Example"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image229"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Output"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image230"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class FileOutputStream"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java FileOutputStream is an output stream used for writing data to a file."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you have to write primitive values into a file, use FileOutputStream class. You can write byte-oriented as well as character-oriented data through FileOutputStream class. But, for character-oriented data, it is preferred to use FileWriter than FileOutputStream."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FileOutputStream class Declaration"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let's see the declaration for Java.io.FileOutputStream class:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image231"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FileOutputStream class methods"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image232"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java FileOutputStream Example"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image233"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Output"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image234"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The content of a text file testout.txt is set with the data A."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="testout.txt"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image235"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java FileOutputStream Example"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image236"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Output"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image237"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The content of a text file testout.txt is set with the data Welcome to javaTpoint."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="testout.txt"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image238"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class FileWriter and Reader"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="File handling in Java implies reading from and writing data to a file. The File class from the java.io package, allows us to work with different formats of files. In order to use the File class, you need to create an object of the class and specify the filename or directory name."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image239"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java uses the concept of a stream to make I/O operations on a file. So let’s now understand what is a Stream in Java."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is a Stream?"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In Java, Stream is a sequence of data which can be of two types."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Byte Stream"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This mainly incorporates with byte data. When an input is provided and executed with byte data, then it is called the file handling process with a byte stream."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Character Stream"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Character Stream is a stream which incorporates with characters. Processing of input data with character is called the file handling process with a character stream."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Now that you know what is a stream, let’s dive deeper into this article on File Handling in Java and know the various methods that are useful for operations on the files like creating, reading and writing."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java File Methods"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Below table depicts the various methods that are used for performing operations on Java files."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image240"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s now understand what are the various file operations in Java and how to perform them."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="File Operations in Java"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basically, you can perform four operations on a file. They are as follows:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Create a File"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In this case, to create a file you can use the createNewFile() method. This method returns true if the file was successfully created, and false if the file already exists."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s see an example of how to create a file in Java."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image241"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In the above code, a file named NewFilef1 gets created in the specified location. If there is an error, then it gets handled in the catch block. "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. File created: NewFilef1.txt"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Having understood this, let’s see how to get File information."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Get File information"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s see how to get file information using various methods with the help of below example code"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image242"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When you execute the above program, you will get the file information as shown in the output below:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Output"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image243"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is how you need to write a program to get the information of the specific file. Now let’s move further and see two more operations on the file. i.e. read and write operations."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Write to a File"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In the following example, it used the FileWriter class together with its write() method to write some text into the file. Let’s understand this with the help of a code."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image244"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Output"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image245"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When you run the file, the above text, “Java is the prominent programming language of the millennium!” will be entered in the file that you have created. You can cross check it by opening the file in the specified location."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Now let’s move further and understand the last operation on the file, i.e. Read a file"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Read from a File"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In the following example, I have used the Scanner class to read the contents of the text file."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image246"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When you execute the above program, it will display the content present in the given file."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Output"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image247"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class BufferedReader"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BufferedReader is a Java class that reads text from the input stream. It buffers the characters so that it can get the efficient reading of characters, arrays, etc. It inherits the reader class and makes the code efficient since we can read the data line-by-line with the readline() method. There are a few pointers we have to keep in mind while working with BufferedReader class in Java."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• We may have to specify the buffer size even though the default is large enough for any purpose."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• With each request made of a reader a corresponding, a read request is also made of an underlying character."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• It is always advised to wrap a BufferedReader class around any reader such as InputStreamReaders."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• For the programs that use DataInputaStreams for textual input, an appropriate BufferedReader replaces the DataInputStream to localize it."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BufferedReader Class Declaration"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image248"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java BufferedReader Constructors"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image249"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Methods and Description"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image250"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Example"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image251"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Difference between Scanner and BufferedReader"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image252"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BufferedReader in JDK7 Example"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image253"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reading data from console by InputStreamReader and BufferedReader"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image254"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reading data from console until user writes stop"           android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image255"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scanner Class"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Scanner class is mainly used to get the user input, and it belongs to the java.util package. In order to use the Scanner class, you can create an object of the class and use any of the Scanner class methods. In the below example, It used the nextLine() method, which is used to read Strings."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image256"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is how you can use Scanner class in Java. Now let’s move further and look at the various methods of Scanner class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scanner Class Methods"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="There are various methods of Scanner class which can be used for various data types. Take a look at the below table to know about these methods."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image257"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Now let’s take an example to demonstrate the above methods."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Example"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When you run the above code, it will ask you to enter the above details like name age and salary. And it will display the output. So that was all about Scanner Class in Java. With this, we come to the end of this article. I hope you found it informative. "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image258"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/bgforb"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fone"
+                    android:layout_width="70dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp"
+                    app:cardMaxElevation="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/quiz"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:src="@drawable/quizz" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Take Quiz"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp"
+                    app:cardMaxElevation="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/video"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:src="@drawable/videocamera" />
+                        <!--                    android:background="@drawable/cerclebackgroundpink"-->
+                        <!--                    android:src="@drawable/ic_looks_two_black_24dp"-->
+
+                        <TextView
+                            android:layout_width="104dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Videos"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp"
+                    app:cardMaxElevation="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/link"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:src="@drawable/link" />
+                        <!--                    android:background="@drawable/cerclebackgroundpink"-->
+                        <!--                    android:src="@drawable/ic_looks_two_black_24dp"-->
+
+                        <TextView
+                            android:layout_width="104dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Links"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

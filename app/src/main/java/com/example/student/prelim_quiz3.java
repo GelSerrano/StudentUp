@@ -107,7 +107,7 @@ public class prelim_quiz3 extends AppCompatActivity {
         correct = 0;
 
         // Storing data into SharedPreferences
-        sharedPreferences = getSharedPreferences("P_Q1SharedPref",MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("P_Q3SharedPref",MODE_PRIVATE);
         // Creating an Editor object to edit(write to the file)
         final SharedPreferences.Editor myEdit = sharedPreferences.edit();
 
@@ -679,7 +679,7 @@ public class prelim_quiz3 extends AppCompatActivity {
 
 
 
-        reverseTimer(300, timer);
+        reverseTimer(1500, timer);
 
         databaseReference = FirebaseDatabase.getInstance().getReference().child("Quizzes/week3");
         databaseReference.keepSynced(true);
@@ -1843,7 +1843,7 @@ public class prelim_quiz3 extends AppCompatActivity {
                         }
                         //end of storing history stuff
 
-                        sharedPreferences  = getSharedPreferences("P_Q1SharedPref", MODE_PRIVATE);
+                        sharedPreferences  = getSharedPreferences("P_Q3SharedPref", MODE_PRIVATE);
                         int q3_h1_s = sharedPreferences.getInt("pq3_h1_score", 0);
                         String q3_h1_d = sharedPreferences.getString("pq3_h1_date", "");
                         int q3_h2_s = sharedPreferences.getInt("pq3_h2_score", 0);

@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_background"
+    android:layout_height="match_parent"
+    tools:context=".week11">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/bannerteacher"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/backk"
+                    android:padding="20dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/arrow"/>
+                <ImageView
+                    android:padding="20dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="250dp"
+                    android:src="@drawable/student"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:text="Introduction to Object-Oriented Programming"
+                    android:textColor="#fff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exception Handling"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As we’ve discussed briefly in other parts of the text, problems that arise in a Java program may generate exceptions or errors. An exception is an object that defines an unusual or erroneous situation. An exception is thrown by a program or the run-time environment and can be caught and handled appropriately if desired. An error is similar to an exception except that an error generally represents an unrecoverable situation and should not be caught."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java has a predefined set of exceptions and errors that may occur during the execution of a program. If the predefined exceptions don’t suffice, a programmer may choose to design a new class that represents an exception that is specific to a particular situation."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Problem situations represented by exceptions and errors can have various kinds of root causes. Here are some examples of situations that cause exceptions to be thrown:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ attempting to divide by zero"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ an array index that is out of bounds "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ a specified file that could not be found "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ a requested I/O operation that could not be completed normally "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ attempting to follow a null reference "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ attempting to execute an operation that violates some kind of security measure"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="These are just a few examples. There are dozens of others that address very specific situations."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As many of these examples show, an exception can represent a truly erroneous situation. But, as the name implies, they may simply represent an exceptional situation. That is, an exception may represent a situation that won’t occur under usual conditions. Exception handling is set up to be an efficient way to deal with such situations, especially given that they don’t happen too often."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We have several options when it comes to dealing with exceptions. A program can be designed to process an exception in one of three ways. It can:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ not handle the exception at all, "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ handle the exception where it occurs, or "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ handle the exception at another point in the program."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We explore each of these approaches in the following sections."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uncaught Exceptions"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If a program does not handle the exception at all, it will terminate abnormally and produce a message that describes what exception occurred and where in the code it was produced. The information in an exception message is often helpful in tracking down the cause of a problem."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s look at the output of an exception. The program shown in Listing 10.1 on the next page throws an ArithmeticException when an invalid arithmetic operation is attempted. In this case, the program attempts to divide by zero."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because there is no code in this program to handle the exception explicitly, it terminates when the exception occurs, printing specific information about the exception. Note that the last println statement in the program never executes because the exception occurs first."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The first line of the exception output indicates which exception was thrown and provides some information about why it was thrown. The remaining lines are the call stack trace; they indicate where the exception occurred. In this case, there is only one line in the call stack trace, but there may be several depending on where the exception originated. The first trace line indicates the method, file, and line number where the exception occurred. The other trace lines, if present, indicate the methods that were called to get to the method that produced the exception. In this program, there is only one method, and it produced the exception; therefore there is only one line in the trace."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The call stack trace information is also available by calling methods of the exception class that is being thrown. The method getMessage returns a string explaining the reason the exception was thrown. The method printStackTrace prints the call stack trace."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The try-catch Statement"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s now examine how we catch and handle an exception when it is thrown. The try-catch statement identifies a block of statements that may throw an exception. A catch clause, which follows a try block, defines how a particular kind of exception is handled. A try block can have several catch clauses associated with it. Each catch clause is called an exception handler."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When a try statement is executed, the statements in the try block are executed. If no exception is thrown during the execution of the try block, processing continues with the statement following the try statement (after all of the catch"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image373"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="clauses). This situation is the normal execution flow and should occur most of the time."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If an exception is thrown at any point during the execution of the try block, control is immediately transferred to the appropriate catch handler if it is present. That is, control transfers to the first catch clause whose exception class corresponds to the class of the exception that was thrown. After executing the statements in the catch clause, control transfers to the statement after the entire try-catch statement."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s look at an example. Suppose a hypothetical company uses codes to represent its various products. A product code includes, among other information,"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image374"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="character in the tenth position that represents the zone from which that product was made, and a four-digit integer in positions 4 through 7 that represents the district in which it will be sold. Due to some reorganization, products from zone R are banned from being sold in districts with a designation of 2000 or higher. The program shown in Listing 10.2 on the next page reads product codes from the user and counts the number of banned codes entered."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The programming statements in the try block attempt to pull out the zone and district information, and then determine whether it represents a banned product code. If there is any problem extracting the zone and district information, the product code is considered to be invalid and is not processed further. For example, a StringIndexOutOfBoundsException could be thrown by either the charAt or substring method. Furthermore, a NumberFormatException will be thrown by the parseInt method if the substring method does not contain a valid integer. A particular message is printed depending on which exception is thrown. In either case, since the exception is caught and handled, processing continues normally."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image375"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image376"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that, for each code examined, the integer variable valid is incremented only if no exception is thrown. If an exception is thrown, control transfers immediately to the appropriate catch clause. Likewise, the zone and district are tested by the if statement only if no exception is thrown."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The finally Clause"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A try-catch statement can have an optional finally clause. The finally clause defines a section of code that is executed no matter how the try block is exited. Most often, a finally clause is used to manage resources or to guarantee that particular parts of an algorithm are executed."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If no exception is generated, the statements in the finally clause are executed after the try block is complete. If an exception is generated in the try block, control first transfers to the appropriate catch clause. After executing the exception-handling code, control transfers to the finally clause and it statements are executed. A finally clause, if present, must be listed after the catch clauses."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that a try block does not need to have a catch clause at all. If there are no catch clauses, a finally clause may be used by itself if that is appropriate for the situation."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exception Propagation"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We can design our software so that an exception is caught and handled at an outer level in the method calling hierarchy. If an exception is not caught and handled in the method where it occurs, control is immediately returned to the method that invoked the method that produced the exception. If it isn’t caught there, control returns to the method that called it, and so on. This process is called exception propagation."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An exception will be propagated until it is caught and handled or until it is passed out of the main method, which causes the program to terminate and produces an exception message. To catch an exception at any level, the method that produces the exception must be invoked inside a try block that has catch clauses to handle it."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Propagation program shown in Listing 10.3 succinctly demonstrates the process of exception propagation. The main method invokes method level1 in the ExceptionScope class (see Listing 10.4 on page 442), which invokes level2, which invokes level3, which produces an exception. Method level3 does not catch and handle the exception, so control is transferred back to level2. The level2 method does not catch and handle the exception either, so control is transferred back to level1. Because the invocation of level2 is made inside a try block (in method level1), the exception is caught and handled at that point."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that the program output does not include the messages indicating that the methods level3 and level2 are ending. These println statements are never executed because an exception occurred and had not yet been caught. However, after method level1 handles the exception, processing continues normally from that point, printing the messages indicating that method level1 and the program are ending."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note also that the catch clause that handles the exception uses the getMessage and printStackTrace methods to output that information. The stack trace shows the methods that were called when the exception occurred."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A programmer must pick the most appropriate level at which to catch and handle an exception. There is no single best answer as"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image377"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image378"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image379"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to how to do this. It depends on the situation and the design of the system. Sometimes the right approach will be not to catch an exception at all and let the program terminate."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Exception Class Hierarchy"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Throwable class is the parent of both the Error class and the Exception class. Many types of exceptions are derived from the Exception class, and these classes also have many children. Though these high-level classes are defined in the java.lang package, many child classes that define specific exceptions are part of other packages. Inheritance relationships can span package boundaries."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We can define our own exceptions by deriving a new class from Exception or one of its descendants. The class we choose as the parent depends on what situation or condition the new exception represents."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The program in Listing 10.5 on page 445 instantiates an exception object and throws it. The exception is created from the OutOfRangeException class, which is shown in Listing 10.6 on page 446. This exception is not part of the Java standard class library. It was created to represent the situation in which a value is outside a particular valid range."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image380"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="After reading in an input value, the main method evaluates it to see whether it is in the valid range. If not, the throw statement is executed. A throw statement is used to begin exception propagation. Because the main method does not catch and handle the exception, the program will terminate if the exception is thrown, printing the message associated with the exception."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We created the OutOfRangeException class by extending the Exception class. Often, a new exception is nothing more than what you see in this example: an extension of some existing exception class that stores a particular message describing the situation it represents. The important point is that the class is ultimately a descendant of the Exception class and the Throwable class, which gives it the ability to be thrown using a throw statement."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image382"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image381"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The type of situation handled by this program, in which a value is out of range, does not need to be represented as an exception. We’ve previously handled such situations using conditionals or loops alone. Whether you handle a situation using an exception or take care of it in the normal flow of your program is an important design decision."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Checked and Unchecked Exceptions"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some exceptions are checked, whereas others are unchecked. A checked exception must either be caught by a method or be listed in the throws clause of any method that may throw or propagate it. A throws clause is appended to the header of a method definition to formally acknowledge that the method will throw or propagate a particular exception if it occurs. An unchecked exception requires no throws clause."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The only unchecked exceptions in Java are objects of type RuntimeException or any of its descendants. All other exceptions are considered checked exceptions. The main method of the CreatingExceptions program has a throws clause, indicating that it may throw an OutOfRangeException. This throws clause is required because the OutOfRangeException was derived from the Exception class, making it a checked exception."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I/O Exceptions"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Processing input and output is a task that often produces tenuous situations, given that it relies on external resources such as user data and files. These resources can have various problems that lead to exceptions being thrown. Let’s explore some I/O issues and the problems that may arise."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A stream is an ordered sequence of bytes. The term stream comes from the analogy that as we read and write information, the data flows from a source to a destination (or sink) as water flows down a stream. The source of the information is like a spring filling the stream, and the destination is like a cave into which the stream flows."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In a program, we treat a stream as either an input stream, from which we read information, or as an output stream, to which we write information. A program can deal with multiple input and output streams at one time. "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A particular store of data, such as a file, can serve either as an input stream or as an output stream to a program, but it generally cannot be both at the same time."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="There are three streams that are referred to as the standard I/O streams. They are listed in Figure 10.2. The System class contains three object reference variables (in, out, and err) that represent the three standard I/O streams. These references are declared as both public and static, which allows them to be accessed directly through the System class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We’ve been using the standard output stream, with calls to System.out. prinln for instance, in examples throughout this book. We’ve also used the standard input stream to create a Scanner object when we want to process input read interactively from the user. The Scanner class manages the input read"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image383"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="from the standard input stream in various ways that makes our programming tasks easier. It also processes various I/O exceptions internally, producing an InputMismatchException when needed."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The standard I/O streams, by default, represent particular I/O devices. System.in typically represents keyboard input, whereas System.out and System.err typically represent a particular window on the monitor screen. The System.out and System.err streams write output to the same window by default (usually the one in which the program was executed), though they could be set up to write to different places. The System.err stream is usually where error messages are sent."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In addition to the standard input streams, the java.io package of the Java standard class library provides many classes that let us define streams with particular characteristics. Some of the classes deal with files, others with memory, and others with strings. Some classes assume that the data they handle consists of characters, whereas others assume the data consists of raw bytes of binary information. Some classes provide the means to manipulate the data in the stream in some way, such as buffering the information or numbering it. By combining classes in appropriate ways, we can create objects that represent a stream of information that has the exact characteristics we want for a particular situation."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Many operations performed by I/O classes can potentially throw an IOException. The IOException class is the parent of several exception classes that represent problems when trying to perform I/O."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An IOException is a checked exception. The exception must be caught or all methods that propagate it must list it in a throws clause of the method header."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because I/O often deals with external resources, many problems can arise in programs that attempt to perform I/O operations. For example, a file from which we want to read might not exist; when we attempt to open the file, an exception will be thrown because that file can’t be found. In general, we should try to design programs to be as robust as possible when dealing with potential problems."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We’ve seen in previous examples how we can use the Scanner class to read and process input read from a text file. Now let’s explore an example that writes data to a text output file. Writing output to a text file requires simply that we use the appropriate classes to create the output stream, then call the appropriate methods to write the data."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suppose we want to test a program we are writing, but don’t have the real data available. We could write a program that generates a test data file that contains random values. The program shown in Listing 10.7 generates a file that contains random integer values within a particular range. It also writes one line of standard output, confirming that the data file has been written."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The FileWriter class represents a text output file, but has minimal method support for manipulating data. The PrintWriter class provides print and println methods similar to the standard I/O PrintStream class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Although we do not need to do so for the program to work, we have added a layer in the file stream configuration to include a BufferedWriter. This addition simply gives the output stream buffering capabilities, which makes the processing more efficient. While buffering is not crucial in this situation, it is usually a good idea when writing text files."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that in the TestData program, we have eliminated explicit exception handling. That is, if something goes wrong, we simply allow the program to terminate instead of specifically catching and handling the problem. Because all IOExceptions are checked exceptions, we must include the throws clause on the"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image384"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image385"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="method header to indicate that they may be thrown. For each program, we must carefully consider how best to handle the exceptions that may be thrown. This requirement is especially important when dealing with I/O, which is fraught with potential problems that cannot always be foreseen."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The TestData program uses nested for loops to compute random values and write them to the output file. After all values are printed, the file is closed. Output files must be closed explicitly to ensure that the data is retained. In general, it is good practice to close all file streams explicitly when they are no longer needed."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The data that is contained in the file test.dat after the TestData program is run might look like this:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image386"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+
+
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/bgforb"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/fone"
+                        android:layout_width="70dp"
+                        android:layout_height="95dp"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="10dp"
+                        app:cardMaxElevation="30dp">
+
+                        <LinearLayout
+                            android:id="@+id/quiz"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:padding="10dp"
+                                android:src="@drawable/quizz" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Take Quiz"
+                                android:textColor="#000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="70dp"
+                        android:layout_height="95dp"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="10dp"
+                        app:cardMaxElevation="30dp">
+
+                        <LinearLayout
+                            android:id="@+id/video"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:padding="10dp"
+                                android:src="@drawable/videocamera" />
+                            <!--                    android:background="@drawable/cerclebackgroundpink"-->
+                            <!--                    android:src="@drawable/ic_looks_two_black_24dp"-->
+
+                            <TextView
+                                android:layout_width="104dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:text="Videos"
+                                android:textAlignment="center"
+                                android:textColor="#000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="70dp"
+                        android:layout_height="95dp"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="10dp"
+                        app:cardMaxElevation="30dp">
+
+                        <LinearLayout
+                            android:id="@+id/link"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:padding="10dp"
+                                android:src="@drawable/link" />
+                            <!--                    android:background="@drawable/cerclebackgroundpink"-->
+                            <!--                    android:src="@drawable/ic_looks_two_black_24dp"-->
+
+                            <TextView
+                                android:layout_width="104dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:text="Links"
+                                android:textAlignment="center"
+                                android:textColor="#000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

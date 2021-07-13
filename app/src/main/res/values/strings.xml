@@ -5,5 +5,171 @@
     <string name="tab_text_2">Tab 2</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="PW1link1">
+    <a href="https://www.w3schools.com/java/java_intro.asp">Java and Other Featured Resources
+    </a>
+    </string>
+    <string name="PW1link2">
+    <a href="https://docs.oracle.com/javase/tutorial/">The Java Tutorials: Trails Covering the Basics
+    </a>
+    </string>
 
+
+    <string name="PW2link1">
+    <a href="https://press.rebus.community/programmingfundamentals/chapter/java-examples-1/">Java Examples and Overviews
+    </a>
+    </string>
+    <string name="PW2link2">
+    <a href="https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/692/3/Programming-Fundamentals-1570222270.pdf">Programming Fundamentals
+    </a>
+    </string>
+    <string name="PW2link3">
+    <a href="https://www.w3schools.com/java/java_intro.asp">Java Introduction
+    </a>
+    </string>
+    <string name="PW2link4">
+    <a href="https://www.javatpoint.com/java-comments">Java Types of Comments
+    </a>
+    </string>
+    <string name="PW2link5">
+        <a href="https://www.javatpoint.com/identifiers-in-java">Identifiers in Java</a>
+    </string>
+
+
+    <string name="PW3Link1">
+        <a href="https://www.w3schools.com/java/java_oop.asp">Java Object-Oriented Programming </a>
+    </string>
+    <string name="PW3Link2">
+        <a href="https://www.tutorialspoint.com/java/java_object_classes.htm">Java Object and Classes </a>
+    </string>
+    <string name="PW3Link3">
+        <a href="https://www.tutorialspoint.com/Member-variables-in-Java">Member Variables in Java </a>
+    </string>
+    <string name="PW3Link4">
+        <a href="https://www.tutorialspoint.com/java/java_methods.htm">Java Methods </a>
+    </string>
+    <string name="PW3Link5">
+        <a href="http://tutorials.jenkov.com/java/constructors.html">Java Constructors</a>
+    </string>
+    <string name="PW3Link6">
+        <a href="https://beginnersbook.com/2014/01/parameterized-constructor-in-java-example/">Java Parameterized  Constructor with Example</a>
+    </string>
+    <string name="PW3Link7">
+        <a href="https://www.tutorialspoint.com/java/java_object_classes.htm#:~:text=Creating%20an%20Object&amp;text=In%20Java%2C%20the%20new%20keyword%20is%20used%20to%20create%20new%20objects.&amp;text=Declaration%20%E2%88%92%20A%20variable%20declaration%20with,a%20call%20to%20a%20constructor.">Creating an Object</a>
+    </string>
+    <string name="PW3Link8">
+        <a href="https://www.informit.com/articles/article.aspx?p=174371">Working with Object in Java Programming</a>
+    </string>
+    <string name="PW3Link9">
+        <a href="https://www.w3schools.com/java/ref_keyword_return.asp">Java Return Keyword</a>
+    </string>
+    <string name="PW3Link10">
+        <a href="https://geektechstuff.com/2019/06/09/returning-values-from-methods-java/">Returning Values from Methods</a>
+    </string>
+    <string name="PW3Link11">
+        <a href="http://underpop.online.fr/j/java/help/controlling-access-to-members-classes-and-objects-a-deeper-look.html.gz">Controlling Access to Members</a>
+    </string>
+
+
+    <string name="PW4Link1">
+        <a href="https://www.tutorialspoint.com/java/java_characters.htm/">Java Character Class</a>
+    </string>
+    <string name="PW4Link2">
+        <a href="https://www.w3schools.com/java/java_booleans.asp">Java Booleans </a>
+    </string>
+    <string name="PW4Link3">
+        <a href="https://www.w3schools.com/java/java_conditions.asp">Java If Else</a>
+    </string>
+    <string name="PW4Link4">
+        <a href="https://www.w3schools.com/java/java_switch.asp">Java Switch Statements </a>
+    </string>
+    <string name="PW4Link5">
+        <a href="https://www.w3schools.com/java/java_while_loop.asp">Java While Loop </a>
+    </string>
+    <string name="PW4Link6">
+        <a href="https://www.w3schools.com/java/java_for_loop.asp">Java For Loop </a>
+    </string>
+    <string name="PW4Link7">
+        <a href="https://www.w3schools.com/java/java_break.asp">Java Break and Continue</a>
+
+    </string>
+
+
+    <string name="PW7Link1">
+        <a href="https://www.w3schools.com/java/java_arrays.asp">Introduction to Java Arrays </a>
+    </string>
+    <string name="PW7Link2">
+        <a href="https://introcs.cs.princeton.edu/java/14array/">Arrays in Java </a>
+    </string>
+    <string name="PW7Link3">
+        <a href="http://tutorials.jenkov.com/java/arrays.html">Java Arrays Complete Resource </a>
+    </string>
+    <string name="PW7Link4">
+        <a href="https://zetcode.com/lang/java/arrays/">Arrays in Java and Other Related Articles </a>
+    </string>
+
+
+    <string name="PW8Link1">
+        <a href="https://www.tutorialspoint.com/java/java_files_io.htm">Java Files and I/O </a>
+    </string>
+    <string name="PW8Link2">
+        <a href="http://tutorials.jenkov.com/java-io/streams.html#:~:text=Java%20IO%20streams%20are%20flows,data%2C%20like%20an%20array%20does.">Java I/O Streams </a>
+    </string>
+    <string name="PW8Link3">
+        <a href="https://www.programiz.com/java-programming/bufferedreader">Java BufferedReader Class </a>
+    </string>
+    <string name="PW8Link4">
+        <a href="https://www.programiz.com/java-programming/scanner">Java Scanner Class </a>
+    </string>
+
+
+    <string name="PW9Link1">
+        <a href="https://www.tutorialspoint.com/java/java_object_classes.htm">Java Object and Classes </a>
+    </string>
+    <string name="PW9Link2">
+        <a href="https://www.w3schools.com/java/java_enums.asp">Java Enums </a>
+    </string>
+    <string name="PW9Link3">
+        <a href="https://www.geeksforgeeks.org/classes-objects-java/">Classes and Objects in Java </a>
+    </string>
+    <string name="PW9Link4">
+        <a href="https://www.tutorialspoint.com/java/java_innerclasses.htm">Java Inner Classes </a>
+    </string>
+    <string name="PW9Link5">
+        <a href="https://www.javatpoint.com/enum-in-java">Java Enum Type </a>
+    </string>
+
+
+    <string name="PW10Link1">
+        <a href="https://www.w3schools.com/java/java_inheritance.asp">Java Inheritance (Subclass and Superclass) </a>
+    </string>
+    <string name="PW10Link2">
+        <a href="https://www.w3schools.com/java/java_polymorphism.asp">Java Polymorphism </a>
+    </string>
+    <string name="PW10Link3">
+        <a href="https://www.tutorialspoint.com/java/java_overriding.htm">Java Overriding </a>
+    </string>
+
+
+    <string name="PW11Link1">
+        <a href="https://www.w3schools.com/java/java_try_catch.asp">Java Exceptions Try... Catch</a>
+    </string>
+    <string name="PW11Link2">
+        <a href="https://www.geeksforgeeks.org/exceptions-in-java/#:~:text=Customized%20Exception%20Handling%20%3A%20Java%20exception,try%20block%2C%20it%20is%20thrown.">Customized Exception Handling </a>
+    </string>
+    <string name="PW11Link3">
+        <a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/catchOrDeclare.html">The Catch or Specify Requirement </a>
+    </string>
+
+
+    <string name="PW16Link1">
+        <a href="https://www.guru99.com/java-swing-gui.html">Java Swing Tutorial: How to Create a GUI in Java with Examples</a>
+    </string>
+    <string name="PW16Link2">
+        <a href="https://www3.ntu.edu.sg/home/ehchua/programming/java/j4a_gui.html">Java Programming Tutorial
+Programming Graphical User Interface (GUI)</a>
+    </string>
+    <string name="PW16Link3">
+        <a href="https://www.clear.rice.edu/comp310/JavaResources/GUI/">Java GUI Programming Primer </a>
+    </string>
 </resources>

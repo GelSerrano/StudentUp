@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".week10"
+    android:background="@drawable/gradient_background">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/bannerteacher"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:clickable="true"
+                        android:id="@+id/backk"
+                        android:padding="20dp"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/arrow"/>
+                    <ImageView
+                        android:padding="20dp"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginLeft="250dp"
+                        android:src="@drawable/student"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:text="Introduction to Object-Oriented Programming"
+                        android:textColor="#fff"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Creating Subclasses"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A class establishes the characteristics and behaviors of an object but reserves no memory space for variables (unless those variables are declared as static). Classes are the plan, and objects are the embodiment of that plan."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Many houses can be created from the same blueprint. They are essentially the same house in different locations with different people living in them. Now suppose you want a house that is similar to another but with some different or additional features. You want to start with the same basic blueprint but modify it to suit new, slightly different, needs. Many housing developments are created this way. The houses in the development have the same core layout, but they have unique features. For instance, they might all be split-level homes with the same basic room configuration, but some have a fireplace or full basement while others do not, or an upgraded gourmet kitchen instead of the standard version."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="It’s likely that the housing developer commissioned a master architect to create a single blueprint to establish the basic design of all houses in the development, then a series of new blueprints that include variations designed to appeal to different buyers. The act of creating the series of blueprints was simplified since they all begin with the same underlying structure, while the variations give them unique characteristics that may be important to the prospective owners."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Creating a new blueprint that is based on an existing blueprint is analogous to the object-oriented concept of inheritance, which is the process in which a new class is derived from an existing one. Inheritance is a powerful software development technique and a defining characteristic of object-oriented programming."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Via inheritance, the new class automatically contains the variables and methods in the original class. Then, to tailor the class as needed, the programmer can add new variables and methods to the derived class or modify the inherited ones."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In general, new classes can be created via inheritance faster, easier, and cheaper than by writing them from scratch. Inheritance is one way to support the idea of software reuse. By using existing software components to create new ones, we capitalize on the effort that went into the design, implementation, and testing of the existing software."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keep in mind that the word class comes from the idea of classifying groups of objects with similar characteristics. Classification schemes often use levels of classes that relate to each other. For example, all mammals share certain characteristics, such as being warm-blooded. Now consider a subset of mammals, such as horses. All horses are mammals and have all of the characteristics of mammals, but they also have unique features that make them different from other mammals, such as dogs."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If we translate this idea into software terms, an existing class called Mammal would have certain variables and methods that describe the state and behavior of mammals. A Horse class could be derived from the existing Mammal class, automatically inheriting the variables and methods contained in Mammal. The Horse class can refer to the inherited variables and methods as if they had been declared locally in that class. New variables and methods can then be added to the derived class to distinguish a horse from other mammals."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The original class that is used to derive a new one is called the parent class, superclass, or base class. The derived class is called a child class, or subclass. In UML, inheritance is represented by an arrow with an open arrowhead pointing from the child class to the parent, as shown in Figure 8.1."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The process of inheritance should establish an is-a relationship between two classes. That is, the child class should be a more specific version of the parent. For example, a horse is a mammal. Not all mammals are horses, but all horses are mammals. For any class X that is derived from class Y, you should be able to say that “X is a Y.” If such a statement doesn’t make sense, then that relationship is probably not an appropriate use of inheritance."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s look at an example. The Words program shown in Listing 8.1 instantiates an object of class Dictionary, which is derived from a class called Book. In the main method, three methods are invoked through the Dictionary object: two that were declared locally in the Dictionary class and one that was inherited from the Book class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image352"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image353"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java uses the reserved word extends to indicate that a new class is being derived from an existing class. The Book class (shown in Listing 8.2) is used to derive the Dictionary class (shown in Listing 8.3 on page 378) simply by using the extends clause in the header of Dictionary. The Dictionary class automatically inherits the definition of the setPages and getPages methods, as well as the pages variable. It is as if those methods and the pages variable were declared inside the Dictionary class. Note that, in the Dictionary class, the computeRatio method explicitly references the pages variable, even though that variable is declared in the Book class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image354"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Also note that although the Book class is needed to create the definition of Dictionary, no Book object is ever instantiated in the program. An instance of a child class does not rely on an instance of the parent class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inheritance is a one-way street. The Book class cannot use variables or methods that are declared explicitly in the Dictionary class. For instance, if we created an object from the Book class, it could not be used to invoke the setDefinitions method. This restriction makes sense because a child class is a more specific version of the parent class. A dictionary has pages because all books have pages; but although a dictionary has definitions, not all books do."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Figure 8.2 shows the inheritance relationship between the Book and Dictionary classes."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image355"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The protected Modifier"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As we’ve seen, visibility modifiers are used to control access to the members of a class. Visibility plays an important role in the process of inheritance as well. Any public method or variable in a parent class can be explicitly referenced by name in"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image356"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="the child class, and through objects of that child class. On the other hand, private methods and variables of the parent class cannot be referenced in the child class or through an object of the child class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This situation causes a dilemma. If we declare a variable with public visibility so that a derived class can reference it, we violate the principle of encapsulation. Therefore, Java provides a third visibility modifier: protected. Note that in the Words example the variable pages is declared with protected visibility in the Book class. When a variable or method is declared with protected visibility, a derived class can reference it. And protected visibility allows the class to retain some encapsulation properties. The encapsulation with protected visibility is not as tight as it would be if the variable or method were declared private, but it is better than if it were declared public. Specifically, a variable or method declared with protected visibility may be accessed by any class in the same package."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In a UML diagram, protected visibility can be indicated by preceding the protected member with a hash mark (#). The pages variable of the Book class has this annotation in Figure 8.2."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Each variable or method retains the effect of its original visibility modifier. For example, the setPages method is still considered to be public in its inherited form in the Dictionary class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s be clear about our terms. All methods and variables, even those declared with private visibility, are inherited by the child class. That is, their definitions exist and memory space is reserved for the variables. It’s just that they can’t be referenced by name. This issue is explored in more detail in section 8.4."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Constructors are not inherited. Constructors are special methods that are used to set up a particular type of object, so it doesn’t make sense for a class called Dictionary to have a constructor called Book. But you can imagine that a child class may want to refer to the constructor of the parent class, which is one of the reasons for the super reference, described next."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The super Reference"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Constructors are not inherited. Constructors are special methods that are used to set up a particular type of object, so it doesn’t make sense for a class called Dictionary to have a constructor called Book. But you can imagine that a child class may want to refer to the constructor of the parent class, which is one of the reasons for the super reference, described next."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Dictionary2 constructor takes two integer values as parameters, representing the number of pages and definitions in the book. Because the Book2 class already has a constructor that performs the work to set up the parts of the dictionary that were inherited, we rely on that constructor to do that work. However, since the constructor is not inherited, we cannot invoke it directly, and so we use the super reference to invoke it in the parent class. The Dictionary2 constructor then proceeds to initialize its definitions variable."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In this example, it would have been just as easy to set the pages variable explicitly in the Dictionary2 constructor instead of using super to call the Book2 constructor. However, it is good practice to let each class “take care of itself.” If we choose to change the way that the Book2 constructor sets up its pages variable, we would also have to remember to make that change in Dictionary2. By using the super reference, a change made in Book2 is automatically reflected in Dictionary2."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A child’s constructor is responsible for calling its parent’s constructor. Generally, the first line of a constructor should use the super reference call to a constructor of the parent class. If no such call exists, Java will automatically make a call to super with no parameters at the beginning of the constructor. This rule ensures that a parent class initializes its variables before the child class constructor begins to"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image357"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="execute. Using the super reference to invoke a parent’s constructor can be done only in the child’s constructor, and if included it must be the first line of the constructor."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Multiple Inheritance"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java’s approach to inheritance is called single inheritance. This term means that a derived class can have only one parent. Some object-oriented languages allow a"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image358"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="child class to have multiple parents. This approach is called multiple inheritance and is occasionally useful for describing objects that could share characteristics of more than one class. For example, suppose we had a class Car and a class Truck and we wanted to create a new class called PickupTruck. A pickup truck is"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image359"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image360"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="somewhat like a car and somewhat like a truck. With single inheritance, we must decide whether it is better to derive the new class from Car or Truck. With multiple inheritance, it can be derived from both, as shown in Figure 8."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Multiple inheritance works well in some situations, but it comes with a price. What if both Truck and Car have methods with the same name? Which method would PickupTruck inherit? The answer to this question is complex, and it depends on the rules of the language that supports multiple inheritance."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overriding Methods"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When a child class defines a method with the same name and signature as a method in the parent class, we say that the child’s version overrides the parent’s version in favor of its own. The need for overriding occurs often in inheritance situations."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The program in Listing 8.7 provides a simple demonstration of method overriding in Java. The Messages class contains a main method that instantiates two objects: one from class Thought and one from class Advice. The Thought class is the parent of the Advice class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The version of message defined in the Thought class is inherited by Advice, but Advice overrides it with an alternative version. The new version of the method prints out an entirely different message and then invokes the parent’s version of the message method using the super reference."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The object that is used to invoke a method determines which version of the method is actually executed. When message is invoked using the parked object in the main method, the Thought version of message is executed. When message is invoked using the dates object, the Advice version of message is executed."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image361"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A method can be defined with the final modifier. A child class cannot override a final method. This technique is used to ensure that a derived class uses a particular definition of a method."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Method overriding is a key element in object-oriented design. It allows two objects that are related by inheritance to use the same naming conventions for methods that accomplish the same general task in different ways. Overriding becomes even more important when it comes to polymorphism."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shadowing Variables"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="It is possible, although not recommended, for a child class to declare a variable with the same name as one that is inherited from the parent. Note the distinction"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image362"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="between redeclaring a variable and simply giving an inherited variable a particular value. If a variable of the same name is declared in a child class, it is called a shadow variable. It is similar in concept to the process of overriding methods but creates confusing subtleties."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because an inherited variable is already available to the child class, there is usually no good reason to redeclare it. Someone reading code with a shadowed variable will find two different declarations that seem to apply to a variable used in the child class. This confusion causes problems and serves no useful purpose. A redeclaration of a particular variable name could change its type, but that is usually unnecessary. In general, shadowing variables should be avoided."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class Hierarchies"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A child class derived from one parent can be the parent of its own child class. Furthermore, multiple classes can be derived from a single parent. Therefore, inheritance relationships often develop into class hierarchies. The diagram in Figure 8.4"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image363"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="shows a class hierarchy that includes the inheritance relationship between the Mammal and Horse classes, discussed earlier."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="There is no limit to the number of children a class can have or to the number of levels to which a class hierarchy can extend. Two children of the same parent are"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image364"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="called siblings. Although siblings share the characteristics passed on by their common parent, they are not related by inheritance because one is not used to derive the other."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In class hierarchies, common features should be kept as high in the hierarchy as reasonably possible. That way, the only characteristics explicitly established in a child class are those that make the class distinct from its parent and from its siblings. This approach maximizes the potential to reuse classes. It also facilitates maintenance activities because when changes are made to the parent, they are automatically reflected in the descendants. Always remember to maintain the is-a relationship when building class hierarchies."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The inheritance mechanism is transitive. That is, a parent passes along a trait to a child class, and that child class passes it along to its children, and so on. An inherited feature might have originated in the immediate parent or possibly several levels higher in a more distant ancestor class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="There is no single best hierarchy organization for all situations. The decisions you make when you are designing a class hierarchy restrict and guide more detailed design decisions and implementation options, so you must make them carefully."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The class hierarchy shown in Figure 8.4 organizes animals by their major biological classifications, such as Mammal, Bird, and Reptile. In a different situation, however, it may be better to organize the same animals in a different way. For example, as shown in Figure 8.5, the class hierarchy might be organized around a function of the animals, such as their ability to fly. In this case, a Parrot class and a Bat class would be siblings derived from a general FlyingAnimal class. This class hierarchy is as valid and reasonable as the original one. The goals of the programs that use the classes are the determining factor, guiding the programmer to a hierarchy design that is best for the situation."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Object Class"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In Java, all classes are derived ultimately from the Object class. If a class definition doesn’t use the extends clause to derive itself explicitly from another class,"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image365"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="then that class is automatically derived from the Object class by default. Therefore, this class definition:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image366"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because all classes are derived from Object, all public methods of Object are inherited by every Java class. They can be invoked through any object created in any Java program. The Object class is defined in the java.lang package of the Java standard class library. Figure 8.6 lists some of the methods of the Object class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As it turns out, we’ve been using Object methods quite often in our examples. The toString method, for instance, is defined in the Object class, so the toString method can be called on any object. As we’ve seen several times, when a println method is called with an object parameter, toString is called to determine what to print. "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="So when we define a toString method in a class, we are actually overriding an inherited definition. The definition for toString that is provided by the Object class returns a string containing the object’s class name followed by a numeric value that is unique for that object. Usually, we override the Object version of toString to fit our own needs. The String class has overridden the toString method so that it returns its stored string value."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image367"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The definition of the equals method provided by the Object class returns true if the two object references actually refer to the same object (that is, if they are aliases). Classes often override the inherited definition of the equals method in favor of a more appropriate definition. For instance, the String class overrides equals so that it returns true only if both strings contain the same characters in the same order."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abstract Classes"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An abstract class represents a generic concept in a class hierarchy. As the name implies, an abstract class represents an abstract entity that is usually insufficiently defined to be useful by itself. Instead, an abstract class may contain a partial description that is inherited by all of its descendants in the class hierarchy. An abstract class is just like any other class, except that it may have some methods that have not been defined yet. Its children, which are more specific, fill in the gaps."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An abstract class cannot be instantiated and usually contains one or more abstract methods, which have no definition. That is, there is no body of code defined for an abstract method, and therefore it cannot be invoked. An abstract class might also contain methods that are not abstract, meaning that the method definition is provided as usual. And an abstract class can contain data declarations as usual."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A class is declared as abstract by including the abstract modifier in the class header. Any class that contains one or more abstract methods must be declared as abstract. In abstract classes, the abstract modifier must be applied to each abstract method. A class declared as abstract does not have to contain abstract methods, however."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consider the class hierarchy shown in Figure 8.7. The Vehicle class at the top of the hierarchy may be too generic for a particular application. Therefore we may choose to implement it as an abstract class. In UML diagrams, the names of abstract classes and abstract methods are shown in italics."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Concepts that apply to all vehicles can be represented in the Vehicle class and are inherited by its descendants. That way, each of its descendants doesn’t have to define the same concept redundantly (and perhaps inconsistently). For example, in Figure 8.7 we declare a variable called speed in the Vehicle class, and all specific vehicles below it in the hierarchy automatically have that variable because of inheritance. Any change we make to the representation of the speed of a vehicle is automatically reflected in all descendant classes. Similarly, in Vehicle we declare"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image368"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="an abstract method called fuelConsumption, whose purpose is to calculate how quickly fuel is being consumed by a particular vehicle. The Vehicle class establishes that all vehicles consume fuel and provides a consistent method interface for computing that value. But the implementation of the fuelConsumption method is left up to each subclass of Vehicle which can tailor its method accordingly."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some concepts don’t apply to all vehicles, so we wouldn’t represent those concepts at the Vehicle level. For instance, we wouldn’t include a variable called numberOfWheels in the Vehicle class, because not all vehicles have wheels. The child classes for which wheels are appropriate can add that concept at the appropriate level in the hierarchy."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="There are no restrictions as to where in a class hierarchy an abstract class can be defined. Usually they are located at the upper levels of a class hierarchy. However, it is possible to derive an abstract class from a nonabstract parent."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usually, a child of an abstract class will provide a specific definition for an abstract method inherited from its parent. Note that this is just a specific case of overriding a method, giving a different definition than the one the parent provides. If a child of an abstract class does not give a definition for every abstract method that it inherits from its parent, then the child class is also considered abstract."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="It would be a contradiction for an abstract method to be modified as final or static. Because a final method cannot be overridden in subclasses, an abstract final method would have no way of being given a definition in subclasses. A static method can be invoked using the class name without declaring an object of the class. Because abstract methods have no implementation, an abstract static method would make no sense."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choosing which classes and methods to make abstract is an important part of the design process. You should make such choices only after careful consideration. By using abstract classes wisely, you can create flexible, extensible software designs."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visibility"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Private members exist for an object of a derived class, even though they can’t be referenced directly. They can, however, be referenced indirectly."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s look at an example that demonstrates this situation. The program shown in Listing 8.10 contains a main method that instantiates a Pizza object and invokes a method to determine how many calories the pizza has per serving due to its fat content."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The FoodItem class shown in Listing 8.11 represents a generic type of food. The constructor of FoodItem accepts the number of grams of fat and the number of servings of that food."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image369"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image370"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image371"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The calories method returns the number of calories due to fat, which the caloriesPerServing method invokes to help compute the number of fat calories per serving."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Pizza class, shown in Listing 8.12, is derived from the FoodItem class, but it adds no special functionality or data. Its constructor calls the constructor of FoodItem using the super reference, asserting that there are eight servings per pizza."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Pizza object called special in the main method is used to invoke the method caloriesPerServing, which is defined as a public method of FoodItem. Note that caloriesPerServing calls calories, which is declared with private visibility. Furthermore, calories references the variable fatGrams and the constant CALORIES_PER_GRAM, which are also declared with private visibility. "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Even though the Pizza class cannot explicitly reference calories, fatGrams, or CALORIES_PER_GRAM, they are available for use indirectly when the Pizza object needs them. A Pizza object cannot be used to invoke the calories method, but it can call a method that can. Note that a FoodItem object was never created or needed."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Designing for inheritance"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As a major characteristic of object-oriented software, inheritance must be carefully and specifically addressed during software design. A little thought about inheritance relationships can lead to a far more elegant design, which pays huge dividends in the long term."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Throughout this chapter, several design issues have been addressed in the discussion of the nuts and bolts of inheritance in Java. The following list summarizes some of the inheritance issues that you should keep in mind during the program design stage:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ Every derivation should be an is-a relationship. The child should be a more specific version of the parent."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ Design a class hierarchy to capitalize on reuse, and potential reuse in the future. "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ As classes and objects are identified in the problem domain, find their commonality. Push common features as high in the class hierarchy as appropriate for consistency and ease of maintenance."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ Override methods as appropriate to tailor or change the functionality of a child."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ■ Add new variables to the child class as needed, but don’t shadow (redefine) any inherited variables."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ Allow each class to manage its own data. Therefore, use the super reference to invoke a parent’s constructor and to call overridden versions of methods if appropriate."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ Even if there are no current uses for them, override general methods such as toString and equals appropriately in child classes so that the inherited versions don’t cause unintentional problems later. "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ Use abstract classes to specify a common class interface for the concrete classes lower in the hierarchy."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ Use visibility modifiers carefully to provide the needed access in derived classes without violating encapsulation"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restricting Inheritance"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We’ve seen the final modifier used in declarations to create constants many times. The other uses of the final modifier involve inheritance and can have a significant influence on software design. Specifically, the final modifier can be used to curtail the abilities related to inheritance."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Earlier in this chapter we mentioned that a method can be declared as final, which means it cannot be overridden in any classes that extend the one it is in. A final method is often used to insist that particular functionality be used in all child classes."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The final modifier can also be applied to an entire class. A final class cannot be extended at all. Consider the following declaration:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image372"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Given this declaration, the Standards class cannot be used in the extends clause of another class. The compiler will generate an error message in such a case. The Standards class can be used normally, but it cannot be the parent of another class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Using the final modifier to restrict inheritance abilities is a key design decision. It should be done in situations in which a child class could possibly be used to change functionality that you, as the designer, specifically want to be handled a certain way."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/bgforb"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/fone"
+                        android:layout_width="70dp"
+                        android:layout_height="95dp"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="10dp"
+                        app:cardMaxElevation="30dp">
+
+                        <LinearLayout
+                            android:id="@+id/quiz"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:padding="10dp"
+                                android:src="@drawable/quizz" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Take Quiz"
+                                android:textColor="#000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="70dp"
+                        android:layout_height="95dp"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="10dp"
+                        app:cardMaxElevation="30dp">
+
+                        <LinearLayout
+                            android:id="@+id/video"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:padding="10dp"
+                                android:src="@drawable/videocamera" />
+                            <!--                    android:background="@drawable/cerclebackgroundpink"-->
+                            <!--                    android:src="@drawable/ic_looks_two_black_24dp"-->
+
+                            <TextView
+                                android:layout_width="104dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:text="Videos"
+                                android:textAlignment="center"
+                                android:textColor="#000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="70dp"
+                        android:layout_height="95dp"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="10dp"
+                        app:cardMaxElevation="30dp">
+
+                        <LinearLayout
+                            android:id="@+id/link"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:padding="10dp"
+                                android:src="@drawable/link" />
+                            <!--                    android:background="@drawable/cerclebackgroundpink"-->
+                            <!--                    android:src="@drawable/ic_looks_two_black_24dp"-->
+
+                            <TextView
+                                android:layout_width="104dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:text="Links"
+                                android:textAlignment="center"
+                                android:textColor="#000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

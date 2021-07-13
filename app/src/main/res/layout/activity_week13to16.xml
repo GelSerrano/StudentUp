@@ -1,0 +1,2749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".week13to16"
+    android:background="@drawable/gradient_background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/bannerteacher"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/backk"
+                    android:padding="20dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/arrow"/>
+                <ImageView
+                    android:padding="20dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="250dp"
+                    android:src="@drawable/student"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:text="Graphical User Interface Programming"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GUI Elements"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The text-based programs we’ve seen in previous examples are command-line applications, which interact with the user through simple prompts and feedback. This type of interface is straightforward to understand, but it lacks the rich user experience possible when a true graphical user interface (GUI) is used. With a GUI, the user is not limited to responding to prompts in a particular order and receiving feedback in one place. Instead, the user can interact as needed with various components such as buttons and text fields. This chapter explores the many issues involved in developing a GUI in Java."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s start with an overview of the concepts that underlie every GUI-based program. At least three kinds of objects are needed to create a GUI in Java:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ components "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ events"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ listeners"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A GUI component is an object that defines a screen element used to display information or allow the user to interact with a program in a certain way. Examples of GUI components include push buttons, text fields, labels, scroll bars, and menus. A container is a special type of component that is used to hold and organize other components."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An event is an object that represents some occurrence in which we may be interested. Often, events correspond to user actions, such as pressing a mouse button or typing a key on the keyboard. Most GUI components generate events to indicate a user action related to that component. For example, a button component will generate an event to indicate that the button has been pushed. A program that is oriented around a GUI, responding to events from the user, is called event-driven."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A listener is an object that “waits” for an event to occur and responds in some way when it does. A big part of designing a GUI-based program is establishing the relationships among the listener, the event it listens for, and the component that will generate the event."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For the most part, we will use components and events that are predefined by classes in the Java class library. We will tailor the behavior of the components, but their basic roles have been established already. We will, however, write our own listener classes to perform whatever actions we desire when events occur."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="So, to create a Java program that uses a GUI, we must:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ instantiate and set up the necessary components, "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ implement listener classes that define what happens when particular events occur, and"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ establish the relationship between the listeners and the components that generate the events of interest."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java components and other GUI-related classes are defined primarily in two packages: java.awt and javax.swing. (Note the x in javax.swing.) The Abstract Windowing Toolkit (AWT) was the original Java GUI package. It still contains many important classes that we will use. The Swing package was added later and provides components that are more versatile than those of the AWT package. Both packages are needed for GUI development, but we will use Swing components whenever there is an option."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In some respects, once you have a basic understanding of event-driven programming, the rest is just detail. There are many types of components you can use that produce many types of events that you may want to acknowledge. But they all work in the same basic way. They all have the same core relationships to one another."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s look at a simple example that contains all of the basic GUI elements. The PushCounter class shown in Listing 6.1 on the next page contains the driver of a program that presents the user with a single push button (labeled “Push Me!”). Each time the button is pushed, a counter is updated and displayed."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The components used in this program include a button, a label to display the count, a panel to hold the button and label, and a frame to display the panel. The panel is defined by the PushCounterPanel class, shown in Listing 6.2. Let’s look at each of these pieces in more detail."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frames and Panels"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A frame is a container that is used to display GUI-based Java applications. A frame is displayed as a separate window with its own title bar. It can be repositioned on the screen and resized as needed by dragging it with the mouse. It contains small buttons in the corner of the frame that allow the frame to be minimized, maximized, and closed. A frame is defined by the JFrame class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A panel is also a container. However, unlike a frame, it cannot be displayed on its own. A panel must be added to another container for it to be displayed. Generally a panel doesn’t move unless you move the container that it’s in. Its primary role is to help organize the other components in a GUI. A panel is defined by the JPanel class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We can classify containers as either heavyweight or lightweight. A heavyweight container is one that is managed by the underlying operating system on which the program is run, whereas a lightweight container is managed by the Java program itself. A frame is a heavyweight component, and a panel is a lightweight component. Another heavyweight container is an applet, which is used to display and"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image387"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="execute a Java program through a Web browser. "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heavyweight components are more complex than lightweight components in general. A frame, for example, has multiple panes, which are responsible for various characteristics of the frame window. All visible elements of a Java interface are displayed in a frame’s content pane."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image388"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image389"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Generally, we can create a Java GUI-based application by creating a frame in which the program interface is displayed. The interface is often organized onto a primary panel, which is added to the frame’s content pane. The components in the primary panel are sometimes organized using other panels as needed."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In the main method of the PushCounter class, the frame for the program is constructed, set up, and displayed. The JFrame constructor takes a string as a parameter, which it displays in the title bar of the frame. The call to the setDefaultCloseOperation method determines what will happen when the close button in the corner of the frame is clicked. In most cases we’ll simply let that button terminate the program, as indicated by the EXIT_ON_CLOSE constant."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The content pane of the frame is obtained using the getContentPane method, immediately after which the add method of the content pane is called to add the panel. The pack method of the frame sets its size appropriately based on its contents—in this case the frame is sized to accommodate the size of the panel it contains. This is a better approach than trying to set the size of the frame explicitly, which should change as the components within the frame change. The call to the setVisible method causes the frame to be displayed on the monitor screen."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You can interact with the frame itself in various ways. You can move the entire frame to another point on the desktop by grabbing the title bar of the frame and dragging it with the mouse. You can also resize the frame by dragging the bottom-right corner of the frame."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A panel is created by instantiating the JPanel class. In the case of the PushCounter program, the panel is represented by the PushCounterPanel class, which is derived from JPanel. So a PushCounterPanel is a JPanel, inheriting all of its methods and attributes. This is a common technique for creating panels."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The constructor of the PushCounterPanel class makes calls to several methods inherited from JPanel. For example, the background color of the panel is set using the setBackground method (the Color class is described in Appendix F). The setPreferredSize method accepts a Dimension object as a parameter, which is used to indicate the width and height of the component in pixels. The size of many components can be set this way, and most also have methods called setMinimumSize and setMaximumSize to help control the look of the interface."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A panel’s add method allows a component to be added to the panel. In the PushCounterPanel constructor, a newly created button and label are added to the panel, and are from that point on considered part of that panel. The order in which components are added to a container often matters. In this case, it detemines that the button appears before the label."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A container is governed by a layout manager, which determines exactly how the components added to the panel will be displayed. The default layout manager for a panel simply displays components in the order they are added, with as many components on one line as possible."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buttons and Action Events"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The PushCounter program displays a button and a label. A label, created from the JLabel class, is a component that displays a line of text in a GUI. A label can also be used to display an image, as shown in later examples. In the PushCounter program, the label displays the number of times the button has been pushed."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Labels can be found in most GUI-based programs. They are very useful for displaying information or for labeling other components in the GUI. However, labels are not interactive. That is, the user does not interact with a label directly. The component that makes the PushCounter program interactive is the button that the user pushes with the mouse."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A push button is a component that allows the user to initiate an action with a press of the mouse. There are other types of button components that we explore in later chapters. A push button is defined by the JButton class. A call to the JButton constructor takes a String parameter that specifies the text shown on the button."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A JButton generates an action event when it is pushed. There are several types of events defined in the Java standard class library, and we explore many of them throughout this chapter. Different components generate different types of events."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The only event of interest in this program occurs when the button is pushed. To respond to the event, we must create a listener object for that event, so we must write a class that represents the listener. In this case, we need an action event listener."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In the PushButton program, the ButtonListener class represents the action listener. We could write the ButtonListener class in its own file, or even in the same file but outside of the PushCounterPanel class. However, then we would have to set up a way to communicate between the listener and the components of the GUI that the listener updates. Instead, we define the ButtonListener class as an inner class, which is a class defined within another class. As such, it automatically has access to the members of the class that contains it. You should only create inner classes in situations in which there is an intimate relationship between the two classes and the inner class is not accessed by any other class. The relationship between a listener and its GUI is one of the few situations in which an inner class is appropriate."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listener classes are written by implementing an interface, which is a list of methods that the implementing class must define. The Java standard class library contains interfaces for many types of events. An action listener is created by implementing the ActionListener interface; therefore, we include the implements clause in the ButtonListener class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The only method listed in the ActionListener interface is the actionPerformed method, so that’s the only method that the ButtonListener class must implement. The component that generates the action event (in this case the button) will call the actionPerformed method when the event occurs, passing in an ActionEvent object that represents the event. Sometimes we will use this event object, and other times it is simply sufficient to know that the event occurred. In this case, we have no need to interact with the event object. When the event occurs, the listener increments the count and resets the text of the label by using the setText method."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember, we not only have to create a listener for an event, we must also set up the relationship between the listener and the component that will generate the event. To do so, we add the listener to the component by calling the appropriate method. In the PushCounterPanel constructor, we call the addActionListener method, passing in a newly instantiated ButtonListener object."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Review this example carefully, noting how it accomplishes the three key steps to creating an interactive GUI-based program. It creates and sets up the GUI components, creates the appropriate listener for the event of interest, and sets up the relationship between the listener and the component that will generate the event."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Determining Event Sources"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s look at an example in which one listener object is used to listen to two different components. The program represented by the LeftRight class, shown in Listing 6.3, displays a label and two buttons. When the Left button is pressed, the label displays the word Left and when the Right button is pressed the label displays the word Right."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image390"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The LeftRightPanel class, shown in Listing 6.4 on the next page, creates one instance of the ButtonListener class, and then adds that listener to both buttons. Therefore, when either button is pressed, the actionPerformed method of the ButtonListener class is invoked."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image391"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image392"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="On each invocation, the actionPerformed method uses an if-else statement to determine which button generated the event. The getSource method is called on the ActionEvent object that the button passes into the actionPerformed method. The getSource method returns a reference to the component that generated the event. The condition of the if statement compares the event source to the reference to the left button. If they don’t match, then the event must have been generated by the right button."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We could have created two separate listener classes, one to listen to the left button and another to listen to the right. In that case the actionPerformed method would not have to determine the source of the event. Whether to have multiple listeners or determine the event source when it occurs is a design decision that should be made depending on the situation."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that the two buttons are put on the same panel called buttonPanel, which is separate from the panel represented by the LeftRightPanel class. By putting both buttons on one panel, we can guarantee their visual relationship to each other even when the frame is resized in various ways. For buttons labeled Left and Right, that is certainly important."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More Components"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In addition to push buttons, there are a variety of other interactive components that can be used in a GUI, each with a particular role to play. Let’s examine a few more."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text Fields"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A text field allows the user to enter typed input from the keyboard. The Fahrenheit program shown in Listing 6.5 presents a GUI that includes a text field into which the user can type a Fahrenheit temperature. When the user presses the Enter (or Return) key, the equivalent Celsius temperature is displayed."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The interface for the Fahrenheit program is set up in the FahrenheitPanel class, shown in Listing 6.6. The text field is an object of the JTextField class. The JTextField constructor takes an integer parameter that specifies the size of the field in number of characters based on the current default font."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The text field and various labels are added to the panel to be displayed. Remember that the default layout manager for a panel puts as many components on a line as it can fit. So if you resize the frame, the orientation of the labels and text field may change."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image393"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image394"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image395"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image396"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A text field generates an action event when the Enter or Return key is pressed (and the cursor is in the text field). Therefore we need to set up a listener object to respond to action events, similar to previous examples."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The text field component calls the actionPerformed method when the user presses the Enter key. The method first retrieves the text from the text field by calling its getText method, which returns a character string. The text is converted to an integer using the parseInt method of the Integer wrapper class. Then the method performs the calculation to determine the equivalent Celsius temperature and sets the text of the appropriate label with the result."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that a push button and a text field generate the same kind of event: an action event. So an alternative to the Fahrenheit program design is to add to the GUI a JButton object that causes the conversion to occur when the user uses the mouse to press the button. For that matter, the same listener object can be used to listen to multiple components at the same time. So the listener could be added to both the text field and the button, giving the user the option. Pressing either the button or the Enter key will cause the conversion to be performed. These variations are left as programming projects."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Boxes"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A check box is a button that can be toggled on or off using the mouse, indicating that a particular boolean condition is set or unset. Although you might have a group of check boxes indicating a set of options, each check box operates independently. That is, each can be set to on or off and the status of one does not influence the others."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The program in Listing 6.7 on the next page displays two check boxes and a label. The check boxes determine whether the text of the label is displayed in bold, italic, both, or neither. Any combination of bold and italic is valid. For example, both check boxes could be checked (on), in which case the text is displayed in both bold and italic. If neither is checked, the text of the label is displayed in a plain style."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The GUI for the StyleOptions program is embodied in the StyleOptionsPanel class shown in Listing 6.8 on page 259. A check box is represented by the JCheckBox class. When a check box changes state from selected (checked) to deselected (unchecked), or vice versa, it generates an item event. The ItemListener interface contains a single method called itemStateChanged. In this example, we use the same listener object to handle both check boxes."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This program also uses the Font class, which represents a particular character font. A Font object is defined by the font name, the font style, and the font size. The font name establishes the general visual characteristics of the characters. We are using the Helvetica font in this program. The style of a Java font can be plain, bold, italic, or bold and italic combined. The listener is set up to change the characteristics of our font style."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The style of a font is represented as an integer, and integer constants defined in the Font class are used to represent the various aspects of the style. The constant PLAIN is used to represent a plain style. The constants BOLD and ITALIC are used to represent bold and italic, respectively. The sum of the BOLD and ITALIC constants indicates a style that is both bold and italic."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image397"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image398"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image399"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The itemStateChanged method of the listener determines what the revised style should be now that one of the check boxes has changed state. It initially sets the style to be plain. Then each check box is consulted in turn using the isSelected method, which returns a boolean value. First, if the Bold check box is selected (checked), then the style is set to bold. Then, if the Italic check box is selected, the ITALIC constant is added to the style variable. Finally, the font of the label is set to a new font with its revised style."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that, given the way the listener is written in this program, it doesn’t matter which check box was clicked to generate the event. The same listener processes both check boxes. It also doesn’t matter whether the changed check box was toggled from selected to unselected or vice versa. The state of both check boxes is examined if either is changed."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Radio Buttons"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A radio button is used with other radio buttons to provide a set of mutually exclusive options. Unlike a check box, a radio button is not particularly useful by itself. It has meaning only when it is used with one or more other radio buttons. Only one option out of the group is valid. At any point in time, one and only one button of the group of radio buttons is selected (on). When a radio button from the group is pushed, the other button in the group that is currently on is automatically toggled off."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The term “radio buttons” comes from the way the buttons worked on an old-fashioned car radio. At any point, one button was pushed to specify the current choice of station; when another was pushed, the button that was in automatically popped out."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The QuoteOptions program, shown in Listing 6.9, displays a label and a group of radio buttons. The radio buttons determine which quote is displayed in the label."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image400"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because only one of the quotes can be displayed at a time, the use of radio buttons is appropriate. For example, if the Comedy radio button is selected, the comedy quote is displayed in the label. If the Philosophy button is then pressed, the Comedy radio button is automatically toggled off and the comedy quote is replaced by a philosophical one."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The QuoteOptionsPanel class, shown in Listing 6.10, sets up and displays the GUI components. A radio button is represented by the JRadioButton class. Because the radio buttons in a set work together, the ButtonGroup class is used to define a set of related radio buttons."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image401"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image402"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image403"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that each button is added to the button group, and also that each button is added individually to the panel. A ButtonGroup object is not a container to organize and display components; it is simply a way to define the group of radio buttons that work together to form a set of dependent options. The ButtonGroup object ensures that the currently selected radio button is turned off when another in the group is selected."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A radio button produces an action event when it is selected. The actionPerformed method of the listener first retrieves the source of the event using the getSource method, and then compares it to each of the three radio buttons in turn. Depending on which button was selected, the text of the label is set to the appropriate quote."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that unlike push buttons, both check boxes and radio buttons are toggle buttons, meaning that at any time they are either on or off. Independent options (choose any combination) are controlled with check boxes. Dependent options (choose one of a set) are controlled with radio buttons. If there is only one option to be managed, a check box can be used by itself. As we mentioned earlier, a radio button, on the other hand, makes sense only in conjunction with one or more other radio buttons."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Also note that check boxes and radio buttons produce different types of events. A check box produces an item event and a radio button produces an action event. The use of different event types is related to the differences in button functionality. A check box produces an event when it is selected or deselected, and the listener could make the distinction if desired. A radio button, on the other hand, produces an event only when it is selected (the currently selected button from the group is deselected automatically)."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sliders"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A slider is a GUI component that allows the user to specify a numeric value within a bounded range. A slider can be presented either vertically or horizontally and can have optional tick marks and labels indicating the range of values."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A program called SlideColor is shown in Listing 6.11. This program presents three sliders that control the RGB components of a color. The color specified by the values of the sliders is shown in a square that is displayed to the right of the sliders."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image404"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image405"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The SlideColorPanel class shown in Listing 6.12 is a panel used to display the three sliders and the color panel. Each slider is created from the JSlider class, which accepts four parameters. The first determines the orientation of the slider using one of two JSlider constants (HORIZONTAL or VERTICAL). The second and third parameters specify the maximum and minimum values of the slider, which are set to 0 and 255 for each of the sliders in the example. The last parameter of the JSlider constructor specifies the slider’s initial value. In our example, the initial value of each slider is 0, which puts the slider knob to the far left when the program initially executes."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The JSlider class has several methods that allow the programmer to tailor the look of a slider. Major tick marks can be set at specific intervals using the setMajorTickSpacing method. Intermediate minor tick marks can be set using the setMinorTickSpacing method. Neither is displayed, however, unless the setPaintTicks method, with a parameter of true, is invoked as well."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image406"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image407"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image408"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Labels indicating the value of the major tick marks are displayed if indicated by a call to the setPaintLabels method."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that in this example, the major tick spacing is set to 50. Starting at 0, each increment of 50 is labeled. The last label is therefore 250, even though the slider value can reach 255."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A slider produces a change event, indicating that the position of the slider and the value it represents has changed. The ChangeListener interface contains a single method called stateChanged. In the SlideColor program, the same listener object is used for all three sliders. In the stateChanged method, which is called whenever any of the sliders are adjusted, the value of each slider is obtained, the labels of all three are updated, and the background color of the color panel is revised. It is actually only necessary to update one of the labels (the one whose corresponding slider changed). However, the effort to determine which slider was adjusted is not warranted. It’s easier—and probably more efficient—to update all three labels each time. Another alternative is to have a unique listener for each slider, though that extra coding effort is not needed either."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A slider is often a good choice when a large range of values is possible but strictly bounded on both ends. Compared to alternatives such as a text field, sliders convey more information to the user and eliminate input errors."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Boxes"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A combo box allows the user to select one of several options from a “drop down” menu. When the user presses a combo box using the mouse, a list of options is displayed from which the user can choose. The current choice is displayed in the combo box. A combo box is defined by the JComboBox class."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A combo box can be either editable or uneditable. By default, a combo box is uneditable. Changing the value of an uneditable combo box can be accomplished only by selecting an item from the list. If the combo box is editable, however, the user can change the value by either selecting an item from the list or typing a particular value into the combo box area."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The options in a combo box list can be established in one of two ways. We can create an array of strings and pass it into the constructor of the JComboBox class. Alternatively, we can use the addItem method to add an item to the combo box after it has been created. An item in a JComboBox can also display an ImageIcon object, in addition to text or by itself."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The JukeBox program shown in Listing 6.13 demonstrates the use of a combo box. The user chooses a song to play using the combo box, and then presses the Play button to begin playing the song. The Stop button can be pressed at any time to stop the song. Selecting a new song while one is playing also stops the current song."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image409"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image410"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The JukeBoxControls class shown in Listing 6.14 on the next page is a panel that contains the components that make up the jukebox GUI. The constructor of the class also loads the audio clips that will be played. An audio clip is obtained first by creating a URL object that corresponds to the wav or au file that defines the clip. The first two parameters to the URL constructor should be 'file' and 'localhost', respectively, if the audio clip is stored on the same machine on which the program is executing. Creating URL objects can potentially throw a checked exception; therefore they are created in a try block. However, this program assumes the audio clips will be loaded successfully and therefore does nothing if an exception is thrown."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Once created, the URL objects are used to create AudioClip objects using the static newAudioClip method of the JApplet class. The audio clips are stored in an array. The first entry in the array, at index 0, is set to null. This entry corresponds to the initial combo box option, which simply encourages the user to make a selection."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image411"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image412"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image413"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The list of songs that is displayed in the combo box is defined in an array of strings. The first entry of the array will appear in the combo box by default and is often used to direct the user. We must take care that the rest of the program does not try to use that option as a valid song."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This program also shows the ability for a push button to display an image. In this example, the Play and Stop buttons are displayed with both a text label and an image icon."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A combo box generates an action event whenever the user makes a selection from it. The JukeBox program uses one action listener class for the combo box and another for both of the push buttons. They could have been combined, using code to distinguish which component fired the event."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The actionPerformed method of the ComboListener class is executed when a selection is made from the combo box. The current audio selection that is playing, if any, is stopped. The current clip is then updated to reflect the new selection."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that the audio clip is not immediately played at that point. The way this program is designed, the user must press the Play button to hear the new selection."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The actionPerformed method of the ButtonListener class is executed when either of the buttons is pushed. The current audio selection that is playing, if any, is stopped. If the Stop button was pressed, the task is complete. If the Play button was pressed, the current audio selection is played again from the beginning."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timers"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A timer, created from the Timer class of the javax.swing package, can be thought of as a GUI component. However, unlike other components, it does not have a visual representation that appears on the screen. Instead, as the name implies, it helps us manage an activity over time."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A timer object generates an action event at regular intervals. To perform an animation, we can set up a timer to generate an action event periodically, and then update the animation graphics in the action listener. The methods of the Timer class are shown in Figure 6.1."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The program shown in Listing 6.15 on the next page displays the image of a smiling face that seems to glide across the program window at an angle, bouncing off of the window edges (though that’s hard to appreciate from a screen shot)."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image414"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image415"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The constructor of the ReboundPanel class, shown in Listing 6.16, creates a Timer object. The first parameter to the Timer constructor is the delay in milliseconds. The second parameter to the constructor is the listener that handles the action events of the timer. The ReboundPanel constructor also sets up the initial position for the image and the number of pixels it will move, in both the vertical and horizontal directions, each time the image is redrawn."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image416"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image417"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The actionPerformed method of the listener updates the current x and y coordinate values, then checks to see if those values cause the image to “run into” the edge of the panel. If so, the movement is adjusted so that the image will make future moves in the opposite direction horizontally, vertically, or both. Note that this calculation takes the image size into account."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="After updating the coordinate values, the actionPerformed method calls repaint to force the component (in this case, the panel) to repaint itself. The call to repaint eventually causes the paintComponent method to be called, which repaints the image in the new location."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The speed of the animation in this program is a function of two factors: the pause between the action events and the distance the image is shifted each time. In this example, the timer is set to generate an action event every 20 milliseconds, and the image is shifted 3 pixels each time it is updated. You can experiment with these values to change the speed of the animation. The goal should be to create the illusion of movement that is pleasing to the eye."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Layout Managers"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Every container is managed by an object called a layout manager that determines how the components in the container are arranged visually. The layout manager is consulted when needed, such as when the container is resized or when a component is added to the container."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A layout manager determines the size and position of each component and may take many factors into account to do so. Every container has a default layout manager, although we can replace it if we prefer another one."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The table in Figure 6.2 describes several of the predefined layout managers provided by the Java standard class library."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image418"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Every layout manager has its own particular properties and rules governing the layout of components. For some layout managers, the order in which you add the components affects their positioning, whereas others provide more specific control. Some layout managers take a component’s preferred size or alignment into account, whereas others don’t. To develop good GUIs in Java, it is important to become familiar with features and characteristics of various layout managers."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We can use the setLayout method of a container to change its layout manager. For example, the following code sets the layout manager of a JPanel, which has a flow layout by default, so that it uses a border layout instead:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image419"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s explore some of these layout managers in more detail. We’ll focus on the most popular layout managers at this point: flow, border, box, and grid. The class presented in Listing 6.17 contains the main method of an application that demonstrates the use and effects of these layout managers."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image420"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image421"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The LayoutDemo program introduces the use of a tabbed pane, a container that allows the user to select (by clicking on a tab) which of several panes is currently visible. A tabbed pane is defined by the JTabbedPane class. The addTab method creates a tab, specifying the name that appears on the tab and the component to be displayed on that pane when it achieves focus by being “brought to the front” and made visible to the user."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interestingly, there is an overlap in the functionality provided by tabbed panes and the card layout manager. Similar to the tabbed pane, a card layout allows several layers to be defined, and only one of those layers is displayed at any given point. However, a container managed by a card layout can be adjusted only under program control, whereas tabbed panes allow the user to indicate directly which tab should be displayed."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In this example, each tab of the tabbed pane contains a panel that is controlled by a different layout manager. The first tab simply contains a panel with an introductory message, as shown in Listing 6.18. As we explore each layout manager in more detail, we examine the class that defines the corresponding panel of this program and discuss its visual effect."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flow Layout"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flow layout is one of the easiest layout managers to use. As we’ve mentioned, the JPanel class uses flow layout by default. Flow layout puts as many components as possible on a row, at their preferred size. When a component cannot fit on a row, it is put on the next row. As many rows as needed are added to fit all components that have been added to the container. Figure 6.3 depicts a container governed by a flow layout manager."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image422"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image423"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The class in Listing 6.19 on the next page represents the panel that demonstrates a flow layout in the LayoutDemo program. It explicitly sets the layout to be a flow layout (though in this case that is unnecessary because JPanel defaults to flow layout). The buttons are then created and added to the panel."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The size of each button is made large enough to accommodate the size of the label that is put on it. Flow layout puts as many of these buttons as possible on one row within the panel, and then starts putting components on another row. When the size of the frame is widened (by dragging the lower-right corner with the mouse, for example), the panel grows as well, and more buttons can fit on a row. When the frame is resized, the layout manager is consulted and the components are reorganized automatically. The display in Listing 6.19 shows two screen shots of the window with different sizes."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The constructor of the FlowLayout class is overloaded to allow the programmer to tailor the characteristics of the layout manager. Within each row, components are either centered, left aligned, or right aligned. The alignment defaults to centered. The horizontal and vertical gap size between components also can be specified when the layout manager is created. The FlowLayout class also has methods to set the alignment and gap sizes after the layout manager is created."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Border Layout"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A border layout has five areas to which components can be added: North, South, East, West, and Center. The areas have a particular positional relationship to each other, as shown in Figure 6.4."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image424"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image425"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image326"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The four outer areas become as big as needed in order to accommodate the component they contain. If no components are added to the North, South, East, or West areas, these areas do not take up any room in the overall layout. The Center area expands to fill any available space."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A particular container might use only a few areas, depending on the functionality of the system. For example, a program might use only the Center, South, and West areas. This versatility makes border layout a very useful layout manager."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The add method for a container governed by a border layout takes as its first parameter the component to be added. The second parameter indicates the area to which it is added. The area is specified using constants defined in the BorderLayout class. Listing 6.20 shows the panel used by the LayoutDemo program to demonstrate the border layout."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image427"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image428"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In the BorderPanel class constructor, the layout manager of the panel is explicitly set to be border layout. The buttons are then created and added to specific panel areas. By default, each button is made wide enough to accommodate its label and tall enough to fill the area to which it has been assigned. As the frame (and the panel) is resized, the size of each button adjusts as needed, with the button in the Center area filling any unused space."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Each area in a border layout displays only one component. That is, only one component is added to each area of a given border layout. A common error is to add two components to a particular area of a border layout, in which case the first component added is replaced by the second, and only the second is seen when the container is displayed. To add multiple components to an area within a border layout, you must first add the components to another container, such as a JPanel, then add the panel to the area."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that although the panel used to display the buttons has a green background, no green is visible in the display for Listing 6.20. By default there are no horizontal or vertical gaps between the areas of a border layout. These gaps can be set with an overloaded constructor or with explicit methods of the BorderLayout class. If the gaps are increased, the underlying panel will show through."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grid Layout"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A grid layout presents a container’s components in a rectangular grid of rows and columns. One component is placed in each grid cell, and all cells are the same size. Figure 6.5 shows the general organization of a grid layout."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The number of rows and columns in a grid layout is established using parameters to the constructor when the layout manager is created. The class in Listing 6.21 shows the panel used by the LayoutDemo program to demonstrate a grid layout. It specifies that the panel should be managed using a grid of two rows and three columns."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As buttons are added to the container, they fill the grid (by default) from left to right and top to bottom. There is no way to explicitly assign a component to a particular location in the grid other than the order in which they are added to the container."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The size of each cell is determined by the container’s overall size. When the container is resized, all of the cells change size proportionally to fill the container."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image429"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image430"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image431"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If the value used to specify either the number of rows or the number of columns is zero, the grid expands as needed in that dimension to accommodate the number of components added to the container. The values for the number of rows and columns cannot both be zero."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By default, there are no horizontal and vertical gaps between the grid cells. The gap sizes can be specified using an overloaded constructor or with the appropriate GridLayout methods."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Box Layout"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A box layout organizes components either vertically or horizontally, in one row or one column, as shown in Figure 6.6. It is easy to use, yet when combined with other"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image432"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="box layouts, it can produce complex GUI designs similar to those that can be accomplished with a grid bag layout, which in general is far more difficult to master."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When a BoxLayout object is created, we specify that it will follow either the X axis (horizontal) or the Y axis (vertical), using constants defined in the BoxLayout class. Unlike other layout managers, the constructor of the BoxLayout class takes as its first parameter the component that it will govern. Therefore a new BoxLayout object must be created for each component. Listing 6.22 on the next page shows the panel used by the LayoutDemo program to demonstrate the box layout."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Components in containers governed by a box layout are organized (top to bottom or left to right) in the order in which they are added to the container."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="There are no gaps between the components in a box layout. Unlike previous layout managers we’ve explored, a box layout does not have a specific vertical or horizontal gap that can be specified for the entire container. Instead, we can add invisible components to the container that take up space between other components. The Box class, which is also part of the Java standard class library, contains static methods that can be used to create these invisible components."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The two types of invisible components used in the BoxPanel class are rigid areas, which have a fixed size, and glue, which specifies where excess space in a container should go. A rigid area is created using the createRigidArea method of the Box class, and takes a Dimension object as a parameter to define the size of the invisible area. Glue is created using the createHorizontalGlue method or createVerticalGlue method, as appropriate."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that in our example, the space between buttons separated by a rigid area remains constant even when the container is resized. Glue, on the other hand, expands or contracts as needed to fill the space."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image433"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image434"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A box layout—more than most of the other layout managers—respects the alignments and the minimum, maximum, and preferred sizes of the components it governs. Therefore, setting the characteristics of the components that go into the container is another way to tailor the visual effect."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Containment Hierarchies"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The way components are grouped into containers, and the way those containers are nested within each other, establishes the containment hierarchy for a GUI. The interplay between the containment hierarchy and the layout managers of the containers involved dictates the overall visual effect of the GUI."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For any Java program, there is generally one primary container, called a top-level container, such as a frame or applet. The top-level container of a program often contains one or more other containers, such as panels. These panels may contain other panels to organize the other components as desired."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keep in mind that each container can have its own tailored layout manager. The final appearance of a GUI is a function of the layout managers chosen for each of the containers and the design of the containment hierarchy. Many combinations are possible, and there is rarely a single best option. We should be guided by the desired system goals and general GUI design guidelines."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keep in mind that each container can have its own tailored layout manager. The final appearance of a GUI is a function of the layout managers chosen for each of the containers and the design of the containment hierarchy. Many combinations are possible, and there is rarely a single best option. We should be guided by the desired system goals and general GUI design guidelines."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mouse and Key Events"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In addition to events that are generated when the user interacts with a component, there are events that are fired when the user interacts with the computer’s mouse and keyboard. We can design a program to capture and respond to these as well."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mouse Events"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java divides the events generated by the user interacting with the mouse into two categories: mouse events and mouse motion events. The tables in Figure 6.7 define these events."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When you click the mouse button over a Java GUI component, three events are generated: one when the mouse button is pushed down (mouse pressed) and two when it is let up (mouse released and mouse clicked). A mouse click is defined as"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image435"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pressing and releasing the mouse button in the same location. If you press the mouse button down, move the mouse, and then release the mouse button, a mouse clicked event is not generated."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A component will generate a mouse entered event when the mouse pointer passes into its graphical space. Likewise, it generates a mouse exited event when the mouse pointer leaves."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mouse motion events, as the name implies, occur while the mouse is in motion. The mouse moved event indicates simply that the mouse is in motion. The mouse dragged event is generated when the user has pressed the mouse button down and moved the mouse without releasing the button. Mouse motion events are generated many times, very quickly, while the mouse is in motion."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In a specific situation, we may care about only one or two mouse events. What we listen for depends on what we are trying to accomplish."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Coordinates program shown in Listing 6.23 on the next page responds to one mouse event. Specifically, it draws a green dot at the location of the mouse pointer whenever the mouse button is pressed, and displays those coordinates. Keep in mind that the coordinate system in Java has the origin in the upper-left corner of a component (such as a panel), with x coordinates increasing to the right and y coordinates increasing downward."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The CoordinatesPanel class, shown in Listing 6.24 on page 297, keeps track of the (x,y) coordinates at which the user has pressed the mouse button most recently. The getX and getY methods of the MouseEvent object return the x and y coordinates of the location where the mouse event occurred."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image436"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image437"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image438"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The listener for the mouse pressed event implements the MouseListener interface. The panel invokes the mousePressed method each time the user presses down on the mouse button while it is over the panel."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that, unlike the listener interfaces that we’ve used in previous examples that contain one method each, the MouseListener interface contains five methods. For this program, the only event in which we are interested is the mouse pressed event. Therefore, the only method in which we have any interest is the mousePressed method. However, implementing an interface means we must provide definitions for all methods in the interface. Therefore, we provide empty methods corresponding to the other events. When those events are generated, the empty methods are called, but no code is executed. At the end of this section we discuss a technique for creating listeners that lets us avoid creating such empty methods."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s look at an example that responds to two mouse-oriented events. The RubberLines program shown in Listing 6.25 draws a line between two points."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image439"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The first point is determined by the location at which the mouse is first pressed down. The second point changes as the mouse is dragged while the mouse button is held down. When the button is released, the line remains fixed between the first and second points. When the mouse button is pressed again, a new line is started."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The RubberLinesPanel class is shown in Listing 6.26. Because we need to listen for both a mouse pressed event and a mouse dragged event, we need a listener that responds to both mouse events and mouse motion events."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image440"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image441"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that the listener class in this example implements both the MouseListener and MouseMotionListener interfaces. It must therefore implement all methods of both interfaces. The two methods of interest, mousePressed and mouseDragged, are implemented to accomplish our goals, and the other methods are given empty definitions to satisfy the interface contract."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When the mousePressed method is called, the variable point1 is set. Then, as the mouse is dragged, the variable point2 is continually reset and the panel repainted. Therefore the line is constantly being redrawn as the mouse is dragged, giving the appearance that one line is being stretched between a fixed point and a moving point. This effect is called rubberbanding and is common in graphical programs."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The starting and ending points of the line are stored as Point objects. The Point class is defined in the java.awt package, and encapsulates the x and y values of a two-dimensional coordinate."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that, in the RubberLinesPanel constructor, the listener object is added to the panel twice: once as a mouse listener and once as a mouse motion listener. The method called to add the listener must correspond to the object passed as the parameter. In this case, we had one object that served as a listener for both categories of events. We could have had two listener classes if desired: one listening for mouse events and one listening for mouse motion events. A component can have multiple listeners for various event categories."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Key Events"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A key event is generated when a keyboard key is pressed. Key events allow a program to respond immediately to the user while he or she is typing or pressing other keyboard keys such as the arrow keys. If key events are being processed, the program can respond as soon as the key is pressed; there is no need to wait for the Enter key to be pressed or for some other component (like a button) to be activated."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Direction program shown in Listing 6.27 responds to key events. An image of an arrow is displayed and the image moves across the screen as the arrow keys are pressed. Actually, four different images are used, one for the arrow pointing in each of the primary directions (up, down, right, and left)."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The DirectionPanel class, shown in Listing 6.28 on page 304, represents the panel on which the arrow image is displayed. The constructor loads the four arrow images, one of which is always considered to be the current image (the one displayed). The current image is set based on the arrow key that was most recently"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image442"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image443"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image444"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image445"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pressed. For example, if the up arrow is pressed, the image with the arrow pointing up is displayed. If an arrow key is continually pressed, the appropriate image “moves” in the appropriate direction."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The arrow images are managed as ImageIcon objects. In this example, the image is drawn using the paintIcon method each time the panel is repainted. The paintIcon method takes four parameters: a component to serve as an image observer, the graphics context on which the image will be drawn, and the (x,y) coordinates where the image is drawn. An image observer is a component that serves to manage image loading; in this case we use the panel as the image observer."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The private inner class called DirectionListener is set up to respond to key events. It implements the KeyListener interface, which defines three methods that we can use to respond to keyboard activity. Figure 6.8 lists these methods."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Specifically, the Direction program responds to key pressed events. Because the listener class must implement all methods defined in the interface, we provide empty methods for the other events."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image446"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The KeyEvent object passed to the keyPressed method of the listener can be used to determine which key was pressed. In the example, we call the getKeyCode method of the event object to get a numeric code that represents the key that was pressed. We use a switch statement to determine which key was pressed and to respond accordingly. The KeyEvent class contains constants that correspond to the numeric code that is returned from the getKeyCode method. If any key other than an arrow key is pressed it is ignored."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Key events fire whenever a key is pressed, but most systems enable the concept of key repetition. That is, when a key is pressed and held down, it’s as if that key is being pressed repeatedly and quickly. Key events are generated in the same way. In the Direction program, the user can hold down an arrow key and watch the image move across the screen quickly."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The component that generates key events is the one that currently has the keyboard focus. Usually the keyboard focus is held by the primary “active” component. A component usually gets the keyboard focus when the user clicks on it with the mouse. The call to the setFocusable method in the panel constructor sets the keyboard focus to the panel."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Direction program sets no boundaries for the arrow image, so it can be moved out of the visible window, then moved back in if desired. You could add code to the listener to stop the image when it reaches one of the window boundaries. This modification is left as a programming project."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extending Adapter Classes"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In previous event-based examples, we’ve created the listener classes by implementing a particular listener interface. For instance, to create a class that listens for mouse events, we created a listener class that implements the MouseListener interface. As we saw in the previous examples in this section, a listener interface often contains event methods that are not important to a particular program, in which case we provided empty definitions to satisfy the interface requirement."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An alternative technique for creating a listener class is to use inheritance and extend an event adapter class. Each listener interface that contains more than one method has a corresponding adapter class that already contains empty definitions for all of the methods in the interface. To create a listener, we can derive a new listener class from the appropriate adapter class and override any event methods in which we are interested. Using this technique, we no longer need to provide empty definitions for unused methods."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The MouseAdapter class, for instance, implements the MouseListener interface and provides empty method definitions for the five mouse event method (mousePressed, mouseClicked, etc.). Therefore, you can create a mouse listener class by extending the MouseAdaptor class instead of implementing the MouseListener interface directly. The new listener class inherits the empty definitions, and therefore doesn’t need to define them."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because of inheritance, we now have a choice when it comes to creating event listeners. We can implement an event listener interface, or we can extend an event adapter class. This is a design decision that should be considered carefully. The best technique depends on the situation."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dialog Boxes"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A component called a dialog box can be helpful to assist in GUI processing. A dialog box is a graphical window that pops up on top of any currently active window so that the user can interact with it. A dialog box can serve a variety of purposes, such as conveying some information, confirming an action, or allowing the user to enter some information. Usually a dialog box has a solitary purpose, and the user’s interaction with it is brief."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Swing package of the Java class library contains a class called JOptionPane that simplifies the creation and use of basic dialog boxes. Figure 6.9 lists some of the methods of JOptionPane."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The basic formats for a JOptionPane dialog box fall into three categories. A message dialog box simply displays an output string. An input dialog box presents"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image447"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a prompt and a single input text field into which the user can enter one string of data. A confirm dialog box presents the user with a simple yes-or-no question."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s look at a program that uses each of these types of dialog boxes. Listing 6.29 shows a program that first presents the user with an input dialog box that requests the user to enter an integer. After the user presses the OK button on the input dialog"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image448"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image349"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="box, a second dialog box (this time a message dialog box) appears, informing the user whether the number entered was even or odd. After the user dismisses that box, a third dialog box appears, to determine whether the user would like to test another number. If the user presses the button labeled Yes, the series of dialog boxes repeats. Otherwise the program terminates."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The first parameter to the showMessageDialog and the showConfirmDialog methods specifies the governing parent component for the dialog box. Using a null reference as this parameter causes the dialog box to appear centered on the screen."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Many of the JOptionPane methods allow the programmer to tailor the contents of the dialog box. Furthermore, the showOptionDialog method can be used to create dialog boxes that combine characteristics of the three basic formats for more elaborate interactions."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dialog boxes should only be used when the immediate attention of the user is necessary. A program that constantly has new windows popping up for different interactions is annoying to the user."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="File Choosers"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A file chooser is a specialized dialog box that allows the user to select a file from a disk or other storage medium. You have probably run many programs that allow you to open a file, such as when you are specifying which file to open in a word processing program. The need to specify a file occurs so often, the JFileChooser class was made part of the Java standard class library for just that purpose."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The program shown in Listing 6.30 on the next page uses a JFileChooser dialog box to select a file. This program also demonstrates the use of another GUI component, a text area, which is similar to a text field but can display multiple lines of text at one time. In this example, after the user selects a file using the file chooser dialog box, the text contained in that file is displayed in a text area."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The file chooser dialog box is displayed when the showOpenDialog method is invoked. It automatically presents the list of files contained in a particular directory. The user can use the controls on the dialog box to navigate to other directories, change the way the files are viewed, and specify which types of files are displayed."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The showOpenDialog method returns an integer representing the status of the operation, which can be checked against constants defined in the JFileChooser class. In this program, if a file was not selected (perhaps by pressing the Cancel button), a default message is displayed in the text area. If the user chose a file, it is opened and its contents are read using the Scanner class. Note that this program assumes the selected file contains text. It does not catch any exceptions, so if the user selects an inappropriate file, the program will terminate when the exception is thrown."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image450"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image451"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A text area component is defined by the JTextArea class. In this program, we pass two parameters to its constructor, specifying the size of the text area in terms of the number of characters (rows and columns) it should display. The text to display is set using the setText method."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A text area component, like a text field, can be set so that it is either editable or noneditable. The user can change the contents of an editable text area by clicking on the text area and typing with the mouse. If the text area is noneditable, it is used to display text only. By default, a JTextArea component is editable."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A JFileChooser component makes it easy to allow users to specify a specific file to use. Another specialized dialog box—one that allows the user to choose a color—is discussed in the next section."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color Choosers"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In many situations we may want to give the user of a program the ability to choose a color. We could accomplish this in various ways. For instance, we could provide a list of colors using a set of radio buttons. However, with the wide variety of colors available, it’s nice to have an easier and more flexible technique to accomplish this common task. A specialized dialog box, often referred to as a color chooser, is a graphical component that serves this purpose."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The JColorChooser class represents a color chooser. It can be used to display a dialog box that lets the user click on a color of choice from a palette presented for that purpose. The user could also specify a color using RGB values or other color representation techniques. Invoking the static showDialog method of the JColorChooser class causes the color chooser dialog box to appear. The parameters to that method specify the parent component for the dialog box, the title that appears in the dialog box frame, and the initial color showing in the color chooser."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Figure 6.10 shows a color chooser dialog box."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image452"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some Important Details"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="There are a variety of small but important details that can add considerable value to the interface of a program. Some enhance the visual effect, while others provide shortcuts to make the user more productive. Let’s examine some of them now."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Borders"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java provides the ability to put a border around any Swing component. A border is not a component itself but rather defines how the edge of any component should be drawn and has an important effect on the design of a GUI. A border provides visual cues as to how GUI components are organized, and can be used to give titles to components. Figure 6.11 lists the predefined borders in the Java standard class library."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The BorderFactory class is useful for creating borders for components. It has many methods for creating specific types of borders. A border is applied to a component by using the component’s setBorder method."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The program in Listing 6.31 on the next page demonstrates several types of borders. It simply creates several panels, sets a different border for each, and then displays them in a larger panel using a grid layout."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image453"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image454"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image455"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image456"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s look at each type of border created in this program. An empty border is applied to the larger panel that holds all the others, to create a buffer of space around the outer edge of the frame. The sizes of the top, left, bottom, and right edges of the empty border are specified in pixels. The line border is created using a particular color and specifies the line thickness in pixels (3 in this case). The line thickness defaults to 1 pixel if left unspecified. The etched border created in this program uses default colors for the highlight and shadow of the etching, but both could be explicitly set if desired."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A bevel border can be either raised or lowered. The default coloring is used in this program, although the coloring of each aspect of the bevel can be tailored as desired, including the outer highlight, inner highlight, outer shadow, and inner shadow. Each of these aspects could be a different color if desired."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A titled border places a title on or around the border. The default position for the title is on the border at the top-left edge. Using the setTitleJustification method of the TitledBorder class, this position can be set to many other places above, below, on, or to the left, right, or center of the border."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A compound border is a combination of two or more borders. The example in this program creates a compound border using a line border and an etched border. The createCompoundBorder method accepts two borders as parameters and makes the first parameter the outer border and the second parameter the inner border. Combinations of three or more borders are created by first creating a compound border using two borders, then making another compound border using it and yet another one."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A matte border specifies the sizes, in pixels, of the top, left, bottom, and right edges of the border. Those edges can be composed of a single color, as they are in this example, or an image icon can be used."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Borders should be used carefully. They can be helpful in drawing attention to appropriate parts of your GUI and can conceptually group related items together. However, if used inappropriately, they can also detract from the elegance of the presentation. Borders should enhance the interface, not complicate or compete with it."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tools and Tips Mnemonics"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Any Swing component can be assigned a tool tip, which is a short line of text that will appear when the cursor is rested momentarily on top of the component. Tool tips are usually used to inform the user about the component, such as the purpose of a button."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A tool tip can be assigned using the setToolTipText method of a component. For example:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image457"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When the button is added to a container and displayed, it appears normally. When the user rolls the mouse pointer over the button, hovering there momentarily, the tool tip text pops up. When the user moves the mouse pointer off of the button, the tool tip text disappears."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A mnemonic is a character that allows the user to push a button or make a menu choice using the keyboard in addition to the mouse. For example, when a mnemonic has been defined for a button, the user can hold down the Alt key and press the mnemonic character to activate the button. Using a mnemonic to activate the button causes the system to behave just as it would if the user had used the mouse to press the button."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A mnemonic character should be chosen from the label on a button or menu item. Once the mnemonic has been established using the setMnemonic method, the character in the label will be underlined to indicate that it can be used as a shortcut. If a letter is chosen that is not in the label, nothing will be underlined and the user won’t know how to use the shortcut. You can set a mnemonic as follows:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image458"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When the button is displayed, the letter C in Calculate is underlined on the button label. When the user presses Alt-C, the button is activated as if the user had pressed it with the mouse."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some components can be disabled if they should not be used. A disabled component will appear “grayed out,” and nothing will happen if the user attempts to interact with it. To disable and enable components, we invoke the setEnabled method of the component, passing it a boolean value to indicate whether the component should be disabled (false) or enabled (true). For example:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image459"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disabling components is a good idea when users should not be allowed to use the functionality of a component. The grayed appearance of the disabled component is an indication that using the component is inappropriate (and, in fact, impossible) at the current time. Disabled components not only convey to the user which actions are appropriate and which aren’t, they also prevent erroneous situations from occurring."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s look at an example that uses tool tips, mnemonics, and disabled components. The program in Listing 6.32 presents the image of a light bulb and provides a button to turn the light bulb on and a button to turn the light bulb off."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="There are actually two images of the light bulb: one showing it turned on and one showing it turned off. These images are brought in as ImageIcon objects. The setIcon method of the label that displays the image is used to set the appropriate image, depending on the current status. "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The LightBulbControls class shown in Listing 6.34 on page 324 is a panel that contains the On and Off buttons. Both of these buttons have tool tips asigned to them, and both use mnemonics. Also, when one of the buttons is enabled, the other is disabled, and vice versa. When the light bulb is on, there is no"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image460"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image361"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image362"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image463"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reason for the On button to be enabled. Likewise, when the light bulb is off, there is no reason for the Off button to be enabled."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Each button has its own listener class. The actionPerformed method of each sets the bulb’s status, toggles the enabled state of both buttons, and causes the panel with the image to repaint itself."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image464"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image465"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that the mnemonic characters used for each button are underlined in the display. When you run the program, you’ll see that the tool tips automatically include an indication of the mnemonic that can be used for the button."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GUI Design"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As we focus on the details that allow us to create GUIs, we may sometimes lose sight of the big picture. We should always keep in mind that our goal is to solve a problem—to create software that is truly useful. Knowing the details of components, events, and other language elements gives us the tools to put GUIs together, but we must guide that knowledge with the following fundamental ideas of good GUI design:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ Know the user. "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ Prevent user errors. "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ Optimize user abilities. "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="■ Be consistent."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The software designer must understand the user’s needs and potential activities in order to develop an interface that will serve that user well. Keep in mind that, to the user, the interface is the software. It is the only way the user interacts with the system. As such, the interface must satisfy the user’s needs."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whenever possible, we should design interfaces so that the user can make as few mistakes as possible. In many situations, we have the flexibility to choose one of several components to accomplish a specific task. We should always try to choose components that will prevent inappropriate actions and avoid invalid input. For example, if an input value must be one of a set of particular values, we should use components that allow the user to make only a valid choice. That is, constraining the user to a few valid choices with, for instance, a set of radio buttons is better than allowing the user to type arbitrary and possibly invalid data into a text field."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not all users are alike. Some are more adept than others at using a particular GUI or GUI components in general. We shouldn’t design with only the lowest common denominator in mind. For example, we should provide shortcuts wherever reasonable. That is, in addition to a normal series of actions that will allow a user to accomplish a task, we should also provide redundant ways to accomplish the same task. Using keyboard shortcuts (mnemonics) is a good example. Sometimes these additional mechanisms are less intuitive, but they may be faster for the experienced user."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finally, consistency is important when dealing with large systems or multiple systems in a common environment. Users become familiar with a particular organization or color scheme; these should not be changed arbitrarily."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_margin="16dp"/>
+
+
+
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/bgforb"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fone"
+                    android:layout_width="70dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp"
+                    app:cardMaxElevation="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/quiz"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:src="@drawable/quizz" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Take Quiz"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp"
+                    app:cardMaxElevation="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/video"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:src="@drawable/videocamera" />
+                        <!--                    android:background="@drawable/cerclebackgroundpink"-->
+                        <!--                    android:src="@drawable/ic_looks_two_black_24dp"-->
+
+                        <TextView
+                            android:layout_width="104dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Videos"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="95dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp"
+                    app:cardMaxElevation="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/link"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:src="@drawable/link" />
+                        <!--                    android:background="@drawable/cerclebackgroundpink"-->
+                        <!--                    android:src="@drawable/ic_looks_two_black_24dp"-->
+
+                        <TextView
+                            android:layout_width="104dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Links"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+        </LinearLayout>

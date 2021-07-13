@@ -136,7 +136,7 @@ public class Frag_prelim extends Fragment {
         makePQ2_Graph(view);
         makePQ3_Graph(view);
         makePQ4_Graph(view);
-        makePQ5_Graph(view);
+//        makePQ5_Graph(view);
         return view;
     }
 
@@ -482,120 +482,120 @@ public class Frag_prelim extends Fragment {
         //end for whole number formatting
 
     }
-
-    private void makePQ5_Graph(View view){
-        shq5  = this.getActivity().getSharedPreferences("P_Q5SharedPref", MODE_PRIVATE);
-        String pquiz5_date1 = shq5.getString("pq5_h1_date", "");
-        String pquiz5_date2 = shq5.getString("pq5_h2_date", "");
-        String pquiz5_date3 = shq5.getString("pq5_h3_date", "");
-        String pquiz5_date4 = shq5.getString("pq5_h4_date", "");
-        String pquiz5_date5 = shq5.getString("pq5_h5_date", "");
-        String pquiz5_date6 = shq5.getString("pq5_h6_date", "");
-        String pquiz5_date7 = shq5.getString("pq5_h7_date", "");
-        String pquiz5_date8 = shq5.getString("pq5_h8_date", "");
-        String pquiz5_date9 = shq5.getString("pq5_h9_date", "");
-        String pquiz5_date10 = shq5.getString("pq5_h10_date", "");
-
-        pq5xAxisValues = new ArrayList<>(Arrays.asList(
-                pquiz5_date1,pquiz5_date2,pquiz5_date3,pquiz5_date4,pquiz5_date5,pquiz5_date6,pquiz5_date7,pquiz5_date8,pquiz5_date9,pquiz5_date10
-        )
-        );
-
-        pq5xAxisstr = new String[]{pquiz5_date1,pquiz5_date2,pquiz5_date3,pquiz5_date4,pquiz5_date5,pquiz5_date6,pquiz5_date7,pquiz5_date8,pquiz5_date9,pquiz5_date10};
-        Log.i("pq5xaxis"," "+pq5xAxisValues);
-
-        ArrayList<ILineDataSet> dataSets5 = new ArrayList<>();
-
-        List<Entry> PQ5scoreEntries = getScoreEntriesPQ5();
-        dataSets5 = new ArrayList<>();
-
-        LineDataSet set5;
-        set5 = new LineDataSet(PQ5scoreEntries, "Score");
-        set5.setColor(getResources().getColor(R.color.pie_color_4));  //line color
-        set5.setValueTextColor(Color.rgb(55, 70, 73));
-        set5.setMode(LineDataSet.Mode.LINEAR);
-        dataSets5.add(set5);
-
-        LineChart mLineGraph5 =  view.findViewById (R.id.linechart5);
-        mLineGraph5.setTouchEnabled(false);
-        mLineGraph5.setDragEnabled(false);
-        mLineGraph5.setScaleEnabled(false);
-        mLineGraph5.setPinchZoom(false);
-        mLineGraph5.setDrawGridBackground(true);
-        mLineGraph5.getAxisRight().setEnabled(false);
-        set5.setLineWidth(3f);
-        set5.setCircleRadius(4f);
-        set5.setDrawCircleHole(true);
-        set5.setCircleHoleRadius(2f);
-        set5.setCircleHoleColor(Color.WHITE);
-        set5.setDrawValues(true);
-        set5.setCircleColor(getResources().getColor(R.color.pie_color_4));
-
-        mLineGraph5.getXAxis().setValueFormatter(new IndexAxisValueFormatter(pq5xAxisValues));
-        XAxis xAxis = mLineGraph5.getXAxis();
-
-        Log.i("xAxistStrlen", pq5xAxisValues.size()+"");
-        xAxis.setLabelCount(pq5xAxisstr.length,true);
-        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
-
-        LineData data = new LineData(dataSets5);
-        mLineGraph5.setData(data);
-        mLineGraph5.animateX(2000);
-        mLineGraph5.invalidate();
-        mLineGraph5.getDescription().setEnabled(false);
-        mLineGraph5.getLegend().setEnabled(false);
-
-        //start for whole number formatting
-        mLineGraph5.getAxisLeft().setValueFormatter(new ValueFormatter() {
-            @Override
-            public String getFormattedValue(float value) {
-                return String.valueOf((int) Math.floor(value));
-            }
-        });
-        int max = PQ5scoreEntries.size();
-        Log.d("scoreEntries:", "max: "+max);// figure out the max value in your dataset
-        mLineGraph5.getAxisLeft().setLabelCount(max);
-
-        vf = new ValueFormatter() { //value format here, here is the overridden method
-            @Override
-            public String getFormattedValue(float value) {
-                return ""+(int)value;
-            }
-        };
-        data.setValueFormatter(vf);
-        set5.setValueTextSize(11f);
-        //end for whole number formatting
-
-        mLineGraph5.getXAxis().setValueFormatter(new IndexAxisValueFormatter(pq5xAxisValues));
-        XAxis xAxis5 = mLineGraph5.getXAxis();
-
-        xAxis5.setLabelRotationAngle(90f);
-        Log.i("xAxistStrlen", pq5xAxisValues.size()+"");
-        xAxis5.setLabelCount(pq5xAxisstr.length,true);
-        xAxis5.setPosition(XAxis.XAxisPosition.BOTTOM);
-
-        LineData data5 = new LineData(dataSets5);
-        mLineGraph5.setData(data);
-        mLineGraph5.animateX(2000);
-        mLineGraph5.invalidate();
-        mLineGraph5.getDescription().setEnabled(false);
-        mLineGraph5.getLegend().setEnabled(false);
-
-        //start for whole number formatting
-        mLineGraph5.getAxisLeft().setValueFormatter(new ValueFormatter() {
-            @Override
-            public String getFormattedValue(float value) {
-                return String.valueOf((int) Math.floor(value));
-            }
-        });
-
-        Log.d("scoreEntries:", "max: "+PQ5scoreEntries.size());// figure out the max value in your dataset
-        mLineGraph5.getAxisLeft().setLabelCount(PQ5scoreEntries.size());
-        data5.setValueFormatter(vf);
-        set5.setValueTextSize(11f);
-        //end for whole number formatting
-
-    }
+//
+//    private void makePQ5_Graph(View view){
+//        shq5  = this.getActivity().getSharedPreferences("P_Q5SharedPref", MODE_PRIVATE);
+//        String pquiz5_date1 = shq5.getString("pq5_h1_date", "");
+//        String pquiz5_date2 = shq5.getString("pq5_h2_date", "");
+//        String pquiz5_date3 = shq5.getString("pq5_h3_date", "");
+//        String pquiz5_date4 = shq5.getString("pq5_h4_date", "");
+//        String pquiz5_date5 = shq5.getString("pq5_h5_date", "");
+//        String pquiz5_date6 = shq5.getString("pq5_h6_date", "");
+//        String pquiz5_date7 = shq5.getString("pq5_h7_date", "");
+//        String pquiz5_date8 = shq5.getString("pq5_h8_date", "");
+//        String pquiz5_date9 = shq5.getString("pq5_h9_date", "");
+//        String pquiz5_date10 = shq5.getString("pq5_h10_date", "");
+//
+//        pq5xAxisValues = new ArrayList<>(Arrays.asList(
+//                pquiz5_date1,pquiz5_date2,pquiz5_date3,pquiz5_date4,pquiz5_date5,pquiz5_date6,pquiz5_date7,pquiz5_date8,pquiz5_date9,pquiz5_date10
+//        )
+//        );
+//
+//        pq5xAxisstr = new String[]{pquiz5_date1,pquiz5_date2,pquiz5_date3,pquiz5_date4,pquiz5_date5,pquiz5_date6,pquiz5_date7,pquiz5_date8,pquiz5_date9,pquiz5_date10};
+//        Log.i("pq5xaxis"," "+pq5xAxisValues);
+//
+//        ArrayList<ILineDataSet> dataSets5 = new ArrayList<>();
+//
+//        List<Entry> PQ5scoreEntries = getScoreEntriesPQ5();
+//        dataSets5 = new ArrayList<>();
+//
+//        LineDataSet set5;
+//        set5 = new LineDataSet(PQ5scoreEntries, "Score");
+//        set5.setColor(getResources().getColor(R.color.pie_color_4));  //line color
+//        set5.setValueTextColor(Color.rgb(55, 70, 73));
+//        set5.setMode(LineDataSet.Mode.LINEAR);
+//        dataSets5.add(set5);
+//
+//        LineChart mLineGraph5 =  view.findViewById (R.id.linechart5);
+//        mLineGraph5.setTouchEnabled(false);
+//        mLineGraph5.setDragEnabled(false);
+//        mLineGraph5.setScaleEnabled(false);
+//        mLineGraph5.setPinchZoom(false);
+//        mLineGraph5.setDrawGridBackground(true);
+//        mLineGraph5.getAxisRight().setEnabled(false);
+//        set5.setLineWidth(3f);
+//        set5.setCircleRadius(4f);
+//        set5.setDrawCircleHole(true);
+//        set5.setCircleHoleRadius(2f);
+//        set5.setCircleHoleColor(Color.WHITE);
+//        set5.setDrawValues(true);
+//        set5.setCircleColor(getResources().getColor(R.color.pie_color_4));
+//
+//        mLineGraph5.getXAxis().setValueFormatter(new IndexAxisValueFormatter(pq5xAxisValues));
+//        XAxis xAxis = mLineGraph5.getXAxis();
+//
+//        Log.i("xAxistStrlen", pq5xAxisValues.size()+"");
+//        xAxis.setLabelCount(pq5xAxisstr.length,true);
+//        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
+//
+//        LineData data = new LineData(dataSets5);
+//        mLineGraph5.setData(data);
+//        mLineGraph5.animateX(2000);
+//        mLineGraph5.invalidate();
+//        mLineGraph5.getDescription().setEnabled(false);
+//        mLineGraph5.getLegend().setEnabled(false);
+//
+//        //start for whole number formatting
+//        mLineGraph5.getAxisLeft().setValueFormatter(new ValueFormatter() {
+//            @Override
+//            public String getFormattedValue(float value) {
+//                return String.valueOf((int) Math.floor(value));
+//            }
+//        });
+//        int max = PQ5scoreEntries.size();
+//        Log.d("scoreEntries:", "max: "+max);// figure out the max value in your dataset
+//        mLineGraph5.getAxisLeft().setLabelCount(max);
+//
+//        vf = new ValueFormatter() { //value format here, here is the overridden method
+//            @Override
+//            public String getFormattedValue(float value) {
+//                return ""+(int)value;
+//            }
+//        };
+//        data.setValueFormatter(vf);
+//        set5.setValueTextSize(11f);
+//        //end for whole number formatting
+//
+//        mLineGraph5.getXAxis().setValueFormatter(new IndexAxisValueFormatter(pq5xAxisValues));
+//        XAxis xAxis5 = mLineGraph5.getXAxis();
+//
+//        xAxis5.setLabelRotationAngle(90f);
+//        Log.i("xAxistStrlen", pq5xAxisValues.size()+"");
+//        xAxis5.setLabelCount(pq5xAxisstr.length,true);
+//        xAxis5.setPosition(XAxis.XAxisPosition.BOTTOM);
+//
+//        LineData data5 = new LineData(dataSets5);
+//        mLineGraph5.setData(data);
+//        mLineGraph5.animateX(2000);
+//        mLineGraph5.invalidate();
+//        mLineGraph5.getDescription().setEnabled(false);
+//        mLineGraph5.getLegend().setEnabled(false);
+//
+//        //start for whole number formatting
+//        mLineGraph5.getAxisLeft().setValueFormatter(new ValueFormatter() {
+//            @Override
+//            public String getFormattedValue(float value) {
+//                return String.valueOf((int) Math.floor(value));
+//            }
+//        });
+//
+//        Log.d("scoreEntries:", "max: "+PQ5scoreEntries.size());// figure out the max value in your dataset
+//        mLineGraph5.getAxisLeft().setLabelCount(PQ5scoreEntries.size());
+//        data5.setValueFormatter(vf);
+//        set5.setValueTextSize(11f);
+//        //end for whole number formatting
+//
+//    }
 
     private List<Entry> getScoreEntriesPQ1() {
         ArrayList<Entry> scoreEntries = new ArrayList<>();
@@ -729,34 +729,34 @@ public class Frag_prelim extends Fragment {
         return scoreEntries.subList(0, scoreEntries.size()); //5 is the number of entries.
     }
 
-    private List<Entry> getScoreEntriesPQ5() {
-        ArrayList<Entry> scoreEntries = new ArrayList<>();
-
-        int pq5h1_score = shq5.getInt("pq5_h1_score", 0);
-        int pq5h2_score = shq5.getInt("pq5_h2_score", 0);
-        int pq5h3_score = shq5.getInt("pq5_h3_score", 0);
-        int pq5h4_score = shq5.getInt("pq5_h4_score", 0);
-        int pq5h5_score = shq5.getInt("pq5_h5_score", 0);
-        int pq5h6_score = shq5.getInt("pq5_h6_score", 0);
-        int pq5h7_score = shq5.getInt("pq5_h7_score", 0);
-        int pq5h8_score = shq5.getInt("pq5_h8_score", 0);
-        int pq5h9_score = shq5.getInt("pq5_h9_score", 0);
-        int pq5h10_score = shq5.getInt("pq5_h10_score", 0);
-
-        scoreEntries.add(new Entry(0, pq5h1_score));
-        scoreEntries.add(new Entry(1, pq5h2_score));
-        scoreEntries.add(new Entry(2, pq5h3_score));
-        scoreEntries.add(new Entry(3, pq5h4_score));
-        scoreEntries.add(new Entry(4, pq5h5_score));
-        scoreEntries.add(new Entry(5, pq5h6_score));
-        scoreEntries.add(new Entry(6, pq5h7_score));
-        scoreEntries.add(new Entry(7, pq5h8_score));
-        scoreEntries.add(new Entry(8, pq5h9_score));
-        scoreEntries.add(new Entry(9, pq5h10_score));
-
-        Log.i("ScoreEntries5","size "+ scoreEntries.size());
-        Log.i("ScoreEntriesval5", scoreEntries+"");
-
-        return scoreEntries.subList(0, scoreEntries.size()); //5 is the number of entries.
-    }
+//    private List<Entry> getScoreEntriesPQ5() {
+//        ArrayList<Entry> scoreEntries = new ArrayList<>();
+//
+//        int pq5h1_score = shq5.getInt("pq5_h1_score", 0);
+//        int pq5h2_score = shq5.getInt("pq5_h2_score", 0);
+//        int pq5h3_score = shq5.getInt("pq5_h3_score", 0);
+//        int pq5h4_score = shq5.getInt("pq5_h4_score", 0);
+//        int pq5h5_score = shq5.getInt("pq5_h5_score", 0);
+//        int pq5h6_score = shq5.getInt("pq5_h6_score", 0);
+//        int pq5h7_score = shq5.getInt("pq5_h7_score", 0);
+//        int pq5h8_score = shq5.getInt("pq5_h8_score", 0);
+//        int pq5h9_score = shq5.getInt("pq5_h9_score", 0);
+//        int pq5h10_score = shq5.getInt("pq5_h10_score", 0);
+//
+//        scoreEntries.add(new Entry(0, pq5h1_score));
+//        scoreEntries.add(new Entry(1, pq5h2_score));
+//        scoreEntries.add(new Entry(2, pq5h3_score));
+//        scoreEntries.add(new Entry(3, pq5h4_score));
+//        scoreEntries.add(new Entry(4, pq5h5_score));
+//        scoreEntries.add(new Entry(5, pq5h6_score));
+//        scoreEntries.add(new Entry(6, pq5h7_score));
+//        scoreEntries.add(new Entry(7, pq5h8_score));
+//        scoreEntries.add(new Entry(8, pq5h9_score));
+//        scoreEntries.add(new Entry(9, pq5h10_score));
+//
+//        Log.i("ScoreEntries5","size "+ scoreEntries.size());
+//        Log.i("ScoreEntriesval5", scoreEntries+"");
+//
+//        return scoreEntries.subList(0, scoreEntries.size()); //5 is the number of entries.
+//    }
 }

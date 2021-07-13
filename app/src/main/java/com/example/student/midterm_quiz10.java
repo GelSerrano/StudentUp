@@ -102,12 +102,12 @@ public class midterm_quiz10 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_midterm_quiz10);
+        setContentView(R.layout.activity_midterm_quiz9);
 
         correct = 0;
 
         // Storing data into SharedPreferences
-        sharedPreferences = getSharedPreferences("P_Q1SharedPref",MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("M_Q10SharedPref",MODE_PRIVATE);
         // Creating an Editor object to edit(write to the file)
         final SharedPreferences.Editor myEdit = sharedPreferences.edit();
 
@@ -679,7 +679,7 @@ public class midterm_quiz10 extends AppCompatActivity {
 
 
 
-        reverseTimer(300, timer);
+        reverseTimer(1500, timer);
 
         databaseReference = FirebaseDatabase.getInstance().getReference().child("Quizzes/week10");
         databaseReference.keepSynced(true);
@@ -722,7 +722,7 @@ public class midterm_quiz10 extends AppCompatActivity {
 
                 Collections.shuffle(ident);
 
-                final Question one = dataSnapshot.child("PrelimMultipleChoice").child(number.get(0)).getValue(Question.class);
+                final Question one = dataSnapshot.child("MidtermMultipleChoice").child(number.get(0)).getValue(Question.class);
                 //Question1
 
                 ArrayList<String> q1choice = new ArrayList<String>();
@@ -786,7 +786,7 @@ public class midterm_quiz10 extends AppCompatActivity {
                     }
                 });
 
-                final Question two = dataSnapshot.child("PrelimMultipleChoice").child(number.get(1)).getValue(Question.class);
+                final Question two = dataSnapshot.child("MidtermMultipleChoice").child(number.get(1)).getValue(Question.class);
                 //Question2
                 ArrayList<String> q2choice = new ArrayList<String>();
                 q2choice.add(0, two.getOption1());
@@ -849,7 +849,7 @@ public class midterm_quiz10 extends AppCompatActivity {
 
 
                 //Question3
-                final Question three = dataSnapshot.child("PrelimMultipleChoice").child(number.get(2)).getValue(Question.class);
+                final Question three = dataSnapshot.child("MidtermMultipleChoice").child(number.get(2)).getValue(Question.class);
                 ArrayList<String> q3choice = new ArrayList<String>();
                 q3choice.add(0, three.getOption1());
                 q3choice.add(0, three.getOption2());
@@ -911,7 +911,7 @@ public class midterm_quiz10 extends AppCompatActivity {
                 });
 
                 //Question4
-                final Question four = dataSnapshot.child("PrelimMultipleChoice").child(number.get(3)).getValue(Question.class);
+                final Question four = dataSnapshot.child("MidtermMultipleChoice").child(number.get(3)).getValue(Question.class);
                 ArrayList<String> q4choice = new ArrayList<String>();
                 q4choice.add(0, four.getOption1());
                 q4choice.add(0, four.getOption2());
@@ -973,7 +973,7 @@ public class midterm_quiz10 extends AppCompatActivity {
                 });
 
                 //question 5
-                final Question five = dataSnapshot.child("PrelimMultipleChoice").child(number.get(4)).getValue(Question.class);
+                final Question five = dataSnapshot.child("MidtermMultipleChoice").child(number.get(4)).getValue(Question.class);
                 ArrayList<String> q5choice = new ArrayList<String>();
                 q5choice.add(0, five.getOption1());
                 q5choice.add(0, five.getOption2());
@@ -1036,7 +1036,7 @@ public class midterm_quiz10 extends AppCompatActivity {
 
 
                 //question 6
-                final Question six = dataSnapshot.child("PrelimMultipleChoice").child(number.get(5)).getValue(Question.class);
+                final Question six = dataSnapshot.child("MidtermMultipleChoice").child(number.get(5)).getValue(Question.class);
                 ArrayList<String> q6choice = new ArrayList<String>();
                 q6choice.add(0, six.getOption1());
                 q6choice.add(0, six.getOption2());
@@ -1099,7 +1099,7 @@ public class midterm_quiz10 extends AppCompatActivity {
 
 
                 //question 7
-                final Question seven = dataSnapshot.child("PrelimMultipleChoice").child(number.get(6)).getValue(Question.class);
+                final Question seven = dataSnapshot.child("MidtermMultipleChoice").child(number.get(6)).getValue(Question.class);
                 ArrayList<String> q7choice = new ArrayList<String>();
                 q7choice.add(0, seven.getOption1());
                 q7choice.add(0, seven.getOption2());
@@ -1162,7 +1162,7 @@ public class midterm_quiz10 extends AppCompatActivity {
 
 
                 //question 8
-                final Question eight = dataSnapshot.child("PrelimMultipleChoice").child(number.get(7)).getValue(Question.class);
+                final Question eight = dataSnapshot.child("MidtermMultipleChoice").child(number.get(7)).getValue(Question.class);
                 ArrayList<String> q8choice = new ArrayList<String>();
                 q8choice.add(0, eight.getOption1());
                 q8choice.add(0, eight.getOption2());
@@ -1226,7 +1226,7 @@ public class midterm_quiz10 extends AppCompatActivity {
 
 
                 //question 9
-                final Question nine = dataSnapshot.child("PrelimMultipleChoice").child(number.get(8)).getValue(Question.class);
+                final Question nine = dataSnapshot.child("MidtermMultipleChoice").child(number.get(8)).getValue(Question.class);
                 ArrayList<String> q9choice = new ArrayList<String>();
                 q9choice.add(0, eight.getOption1());
                 q9choice.add(0, eight.getOption2());
@@ -1288,7 +1288,7 @@ public class midterm_quiz10 extends AppCompatActivity {
                 });
 
                 //question 9
-                final Question ten = dataSnapshot.child("PrelimMultipleChoice").child(number.get(9)).getValue(Question.class);
+                final Question ten = dataSnapshot.child("MidtermMultipleChoice").child(number.get(9)).getValue(Question.class);
                 ArrayList<String> q10choice = new ArrayList<String>();
                 q10choice.add(0, eight.getOption1());
                 q10choice.add(0, eight.getOption2());
@@ -1350,7 +1350,7 @@ public class midterm_quiz10 extends AppCompatActivity {
 
 
 
-                final Question eleven = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(0)).getValue(Question.class);
+                final Question eleven = dataSnapshot.child("MidtermTrueOrFalse").child(tf.get(0)).getValue(Question.class);
                 question11.setText(eleven.getQuestion());
                 a11.setText(eleven.getOption1());
                 b11.setText(eleven.getOption2());
@@ -1380,7 +1380,7 @@ public class midterm_quiz10 extends AppCompatActivity {
                 });
 
 
-                final Question twelve = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(1)).getValue(Question.class);
+                final Question twelve = dataSnapshot.child("MidtermTrueOrFalse").child(tf.get(1)).getValue(Question.class);
                 question12.setText(twelve.getQuestion());
                 a12.setText(twelve.getOption1());
                 b12.setText(twelve.getOption2());
@@ -1412,7 +1412,7 @@ public class midterm_quiz10 extends AppCompatActivity {
 
 
 
-                final Question thirteen = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(2)).getValue(Question.class);
+                final Question thirteen = dataSnapshot.child("MidtermTrueOrFalse").child(tf.get(2)).getValue(Question.class);
                 question13.setText(thirteen.getQuestion());
                 a13.setText(thirteen.getOption1());
                 b13.setText(thirteen.getOption2());
@@ -1443,7 +1443,7 @@ public class midterm_quiz10 extends AppCompatActivity {
 
 
 
-                final Question forthteen = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(3)).getValue(Question.class);
+                final Question forthteen = dataSnapshot.child("MidtermTrueOrFalse").child(tf.get(3)).getValue(Question.class);
                 question14.setText(forthteen.getQuestion());
                 a14.setText(forthteen.getOption1());
                 b14.setText(forthteen.getOption2());
@@ -1473,7 +1473,7 @@ public class midterm_quiz10 extends AppCompatActivity {
                 });
 
 
-                final Question fifteen = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(4)).getValue(Question.class);
+                final Question fifteen = dataSnapshot.child("MidtermTrueOrFalse").child(tf.get(4)).getValue(Question.class);
                 question15.setText(fifteen.getQuestion());
                 a15.setText(fifteen.getOption1());
                 b15.setText(fifteen.getOption2());
@@ -1503,7 +1503,7 @@ public class midterm_quiz10 extends AppCompatActivity {
                 });
 
 
-                final Question sixteen = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(5)).getValue(Question.class);
+                final Question sixteen = dataSnapshot.child("MidtermTrueOrFalse").child(tf.get(5)).getValue(Question.class);
                 question16.setText(sixteen.getQuestion());
                 a16.setText(sixteen.getOption1());
                 b16.setText(sixteen.getOption2());
@@ -1533,7 +1533,7 @@ public class midterm_quiz10 extends AppCompatActivity {
                 });
 
 
-                final Question seventeen = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(6)).getValue(Question.class);
+                final Question seventeen = dataSnapshot.child("MidtermTrueOrFalse").child(tf.get(6)).getValue(Question.class);
                 question17.setText(seventeen.getQuestion());
                 a17.setText(seventeen.getOption1());
                 b17.setText(seventeen.getOption2());
@@ -1564,7 +1564,7 @@ public class midterm_quiz10 extends AppCompatActivity {
 
 
 
-                final Question eighteen = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(7)).getValue(Question.class);
+                final Question eighteen = dataSnapshot.child("MidtermTrueOrFalse").child(tf.get(7)).getValue(Question.class);
                 question18.setText(eighteen.getQuestion());
                 a18.setText(eighteen.getOption1());
                 b18.setText(eighteen.getOption2());
@@ -1595,7 +1595,7 @@ public class midterm_quiz10 extends AppCompatActivity {
 
 
 
-                final Question nineteen = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(8)).getValue(Question.class);
+                final Question nineteen = dataSnapshot.child("MidtermTrueOrFalse").child(tf.get(8)).getValue(Question.class);
                 question19.setText(nineteen.getQuestion());
                 a19.setText(nineteen.getOption1());
                 b19.setText(nineteen.getOption2());
@@ -1625,7 +1625,7 @@ public class midterm_quiz10 extends AppCompatActivity {
                 });
 
 
-                final Question twenty = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(9)).getValue(Question.class);
+                final Question twenty = dataSnapshot.child("MidtermTrueOrFalse").child(tf.get(9)).getValue(Question.class);
                 question20.setText(twenty.getQuestion());
                 a20.setText(twenty.getOption1());
                 b20.setText(twenty.getOption2());
@@ -1656,23 +1656,23 @@ public class midterm_quiz10 extends AppCompatActivity {
 
 
                 //Question21
-                final Question twentyone = dataSnapshot.child("PrelimIdentification").child(ident.get(0)).getValue(Question.class);
+                final Question twentyone = dataSnapshot.child("MidtermIdentification").child(ident.get(0)).getValue(Question.class);
                 question21.setText(twentyone.getQuestion());
 
                 //Question22
-                final Question twentytwo = dataSnapshot.child("PrelimIdentification").child(ident.get(1)).getValue(Question.class);
+                final Question twentytwo = dataSnapshot.child("MidtermIdentification").child(ident.get(1)).getValue(Question.class);
                 question22.setText(twentytwo.getQuestion());
 
                 //Question23
-                final Question twentythree = dataSnapshot.child("PrelimIdentification").child(ident.get(2)).getValue(Question.class);
+                final Question twentythree = dataSnapshot.child("MidtermIdentification").child(ident.get(2)).getValue(Question.class);
                 question23.setText(twentythree.getQuestion());
 
                 //Question24
-                final Question twentyfour = dataSnapshot.child("PrelimIdentification").child(ident.get(3)).getValue(Question.class);
+                final Question twentyfour = dataSnapshot.child("MidtermIdentification").child(ident.get(3)).getValue(Question.class);
                 question24.setText(twentyfour.getQuestion());
 
                 //Question25
-                final Question twentyfive = dataSnapshot.child("PrelimIdentification").child(ident.get(4)).getValue(Question.class);
+                final Question twentyfive = dataSnapshot.child("MidtermIdentification").child(ident.get(4)).getValue(Question.class);
                 question25.setText(twentyfive.getQuestion());
 
 
@@ -1718,6 +1718,7 @@ public class midterm_quiz10 extends AppCompatActivity {
                         } else {
                             wrong++;
                         }
+
 
                         //storing history stuff
                         String mq10_h1_pref = sharedPreferences.getString("mq10_h1_date", null);
@@ -1841,7 +1842,7 @@ public class midterm_quiz10 extends AppCompatActivity {
                         }
                         //end of storing history stuff
 
-                        sharedPreferences  = getSharedPreferences("M_Q7SharedPref", MODE_PRIVATE);
+                        sharedPreferences  = getSharedPreferences("M_Q10SharedPref", MODE_PRIVATE);
                         int q10_h1_s = sharedPreferences.getInt("mq10_h1_score", 0);
                         String q10_h1_d = sharedPreferences.getString("mq10_h1_date", "");
                         int q10_h2_s = sharedPreferences.getInt("mq10_h2_score", 0);
@@ -1873,6 +1874,7 @@ public class midterm_quiz10 extends AppCompatActivity {
                         Log.i("SP_content", "h8: "+ q10_h8_d +" "+ q10_h8_s );
                         Log.i("SP_content", "h9: "+ q10_h9_d +" "+ q10_h9_s );
                         Log.i("SP_content", "h10: "+ q10_h10_d +" "+ q10_h10_s );
+                        //quiz history
 
 
                         //save prelim quiz 1 result

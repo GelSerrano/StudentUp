@@ -121,7 +121,7 @@ public class final_quiz16 extends AppCompatActivity {
 
         correct = 0;
         // Storing data into SharedPreferences
-        sharedPreferences = getSharedPreferences("F_Q13SharedPref",MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("F_Q16SharedPref",MODE_PRIVATE);
         final SharedPreferences.Editor myEdit = sharedPreferences.edit();
 
         //getDate
@@ -1274,7 +1274,7 @@ public class final_quiz16 extends AppCompatActivity {
         ans39 = findViewById(R.id.ans39);
         ans40 = findViewById(R.id.ans40);
 
-        reverseTimer(300, timer);
+        reverseTimer(1500, timer);
 
         databaseReference = FirebaseDatabase.getInstance().getReference().child("Quizzes/week13to16");
         databaseReference.keepSynced(true);
@@ -1344,7 +1344,7 @@ public class final_quiz16 extends AppCompatActivity {
                 Collections.shuffle(ident);
 
 
-                final Question one = dataSnapshot.child("PrelimMultipleChoice").child(number.get(0)).getValue(Question.class);
+                final Question one = dataSnapshot.child("FinalsMultipleChoice").child(number.get(0)).getValue(Question.class);
                 //Question1
 
                 ArrayList<String> q1choice = new ArrayList<String>();
@@ -1408,7 +1408,7 @@ public class final_quiz16 extends AppCompatActivity {
                     }
                 });
 
-                final Question two = dataSnapshot.child("PrelimMultipleChoice").child(number.get(1)).getValue(Question.class);
+                final Question two = dataSnapshot.child("FinalsMultipleChoice").child(number.get(1)).getValue(Question.class);
                 //Question2
                 ArrayList<String> q2choice = new ArrayList<String>();
                 q2choice.add(0, two.getOption1());
@@ -1471,7 +1471,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //Question3
-                final Question three = dataSnapshot.child("PrelimMultipleChoice").child(number.get(2)).getValue(Question.class);
+                final Question three = dataSnapshot.child("FinalsMultipleChoice").child(number.get(2)).getValue(Question.class);
                 ArrayList<String> q3choice = new ArrayList<String>();
                 q3choice.add(0, three.getOption1());
                 q3choice.add(0, three.getOption2());
@@ -1533,7 +1533,7 @@ public class final_quiz16 extends AppCompatActivity {
                 });
 
                 //Question4
-                final Question four = dataSnapshot.child("PrelimMultipleChoice").child(number.get(3)).getValue(Question.class);
+                final Question four = dataSnapshot.child("FinalsMultipleChoice").child(number.get(3)).getValue(Question.class);
                 ArrayList<String> q4choice = new ArrayList<String>();
                 q4choice.add(0, four.getOption1());
                 q4choice.add(0, four.getOption2());
@@ -1595,7 +1595,7 @@ public class final_quiz16 extends AppCompatActivity {
                 });
 
                 //question 5
-                final Question five = dataSnapshot.child("PrelimMultipleChoice").child(number.get(4)).getValue(Question.class);
+                final Question five = dataSnapshot.child("FinalsMultipleChoice").child(number.get(4)).getValue(Question.class);
                 ArrayList<String> q5choice = new ArrayList<String>();
                 q5choice.add(0, five.getOption1());
                 q5choice.add(0, five.getOption2());
@@ -1658,7 +1658,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //question 6
-                final Question six = dataSnapshot.child("PrelimMultipleChoice").child(number.get(5)).getValue(Question.class);
+                final Question six = dataSnapshot.child("FinalsMultipleChoice").child(number.get(5)).getValue(Question.class);
                 ArrayList<String> q6choice = new ArrayList<String>();
                 q6choice.add(0, six.getOption1());
                 q6choice.add(0, six.getOption2());
@@ -1721,7 +1721,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //question 7
-                final Question seven = dataSnapshot.child("PrelimMultipleChoice").child(number.get(6)).getValue(Question.class);
+                final Question seven = dataSnapshot.child("FinalsMultipleChoice").child(number.get(6)).getValue(Question.class);
                 ArrayList<String> q7choice = new ArrayList<String>();
                 q7choice.add(0, seven.getOption1());
                 q7choice.add(0, seven.getOption2());
@@ -1784,7 +1784,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //question 8
-                final Question eight = dataSnapshot.child("PrelimMultipleChoice").child(number.get(7)).getValue(Question.class);
+                final Question eight = dataSnapshot.child("FinalsMultipleChoice").child(number.get(7)).getValue(Question.class);
                 ArrayList<String> q8choice = new ArrayList<String>();
                 q8choice.add(0, eight.getOption1());
                 q8choice.add(0, eight.getOption2());
@@ -1848,7 +1848,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //question 9
-                final Question nine = dataSnapshot.child("PrelimMultipleChoice").child(number.get(8)).getValue(Question.class);
+                final Question nine = dataSnapshot.child("FinalsMultipleChoice").child(number.get(8)).getValue(Question.class);
                 ArrayList<String> q9choice = new ArrayList<String>();
                 q9choice.add(0, nine.getOption1());
                 q9choice.add(0, nine.getOption2());
@@ -1910,7 +1910,7 @@ public class final_quiz16 extends AppCompatActivity {
                 });
 
                 //question 10
-                final Question ten = dataSnapshot.child("PrelimMultipleChoice").child(number.get(9)).getValue(Question.class);
+                final Question ten = dataSnapshot.child("FinalsMultipleChoice").child(number.get(9)).getValue(Question.class);
                 ArrayList<String> q10choice = new ArrayList<String>();
                 q10choice.add(0, ten.getOption1());
                 q10choice.add(0, ten.getOption2());
@@ -1971,7 +1971,7 @@ public class final_quiz16 extends AppCompatActivity {
                 });
 
                 //11
-                final Question eleven = dataSnapshot.child("PrelimMultipleChoice").child(number.get(10)).getValue(Question.class);
+                final Question eleven = dataSnapshot.child("FinalsMultipleChoice").child(number.get(10)).getValue(Question.class);
                 ArrayList<String> q11choice = new ArrayList<String>();
                 q11choice.add(0, eleven.getOption1());
                 q11choice.add(0, eleven.getOption2());
@@ -2034,7 +2034,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //12
-                final Question twelve = dataSnapshot.child("PrelimMultipleChoice").child(number.get(11)).getValue(Question.class);
+                final Question twelve = dataSnapshot.child("FinalsMultipleChoice").child(number.get(11)).getValue(Question.class);
                 ArrayList<String> q12choice = new ArrayList<String>();
                 q12choice.add(0, twelve.getOption1());
                 q12choice.add(0, twelve.getOption2());
@@ -2095,7 +2095,7 @@ public class final_quiz16 extends AppCompatActivity {
                 });
 
                 //13
-                final Question thirteen = dataSnapshot.child("PrelimMultipleChoice").child(number.get(12)).getValue(Question.class);
+                final Question thirteen = dataSnapshot.child("FinalsMultipleChoice").child(number.get(12)).getValue(Question.class);
                 ArrayList<String> q13choice = new ArrayList<String>();
                 q13choice.add(0, thirteen.getOption1());
                 q13choice.add(0, thirteen.getOption2());
@@ -2156,7 +2156,7 @@ public class final_quiz16 extends AppCompatActivity {
                 });
 
                 //14
-                final Question fourteen = dataSnapshot.child("PrelimMultipleChoice").child(number.get(13)).getValue(Question.class);
+                final Question fourteen = dataSnapshot.child("FinalsMultipleChoice").child(number.get(13)).getValue(Question.class);
                 ArrayList<String> q14choice = new ArrayList<String>();
                 q14choice.add(0, fourteen.getOption1());
                 q14choice.add(0, fourteen.getOption2());
@@ -2218,7 +2218,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //15
-                final Question fifteen = dataSnapshot.child("PrelimMultipleChoice").child(number.get(14)).getValue(Question.class);
+                final Question fifteen = dataSnapshot.child("FinalsMultipleChoice").child(number.get(14)).getValue(Question.class);
                 ArrayList<String> q15choice = new ArrayList<String>();
                 q15choice.add(0, fifteen.getOption1());
                 q15choice.add(0, fifteen.getOption2());
@@ -2281,7 +2281,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //15
-                final Question fourtyone = dataSnapshot.child("PrelimMultipleChoice").child(number.get(15)).getValue(Question.class);
+                final Question fourtyone = dataSnapshot.child("FinalsMultipleChoice").child(number.get(15)).getValue(Question.class);
                 ArrayList<String> q41choice = new ArrayList<String>();
                 q41choice.add(0, fourtyone.getOption1());
                 q41choice.add(0, fourtyone.getOption2());
@@ -2345,7 +2345,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //15
-                final Question fourtytwo = dataSnapshot.child("PrelimMultipleChoice").child(number.get(16)).getValue(Question.class);
+                final Question fourtytwo = dataSnapshot.child("FinalsMultipleChoice").child(number.get(16)).getValue(Question.class);
                 ArrayList<String> q42choice = new ArrayList<String>();
                 q42choice.add(0, fourtytwo.getOption1());
                 q42choice.add(0, fourtytwo.getOption2());
@@ -2409,7 +2409,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //15
-                final Question fourtythree = dataSnapshot.child("PrelimMultipleChoice").child(number.get(17)).getValue(Question.class);
+                final Question fourtythree = dataSnapshot.child("FinalsMultipleChoice").child(number.get(17)).getValue(Question.class);
                 ArrayList<String> q43choice = new ArrayList<String>();
                 q43choice.add(0, fourtythree.getOption1());
                 q43choice.add(0, fourtythree.getOption2());
@@ -2470,7 +2470,7 @@ public class final_quiz16 extends AppCompatActivity {
                 });
 
                 //15
-                final Question fourtyfour = dataSnapshot.child("PrelimMultipleChoice").child(number.get(18)).getValue(Question.class);
+                final Question fourtyfour = dataSnapshot.child("FinalsMultipleChoice").child(number.get(18)).getValue(Question.class);
                 ArrayList<String> q44choice = new ArrayList<String>();
                 q44choice.add(0, fourtyfour.getOption1());
                 q44choice.add(0, fourtyfour.getOption2());
@@ -2531,7 +2531,7 @@ public class final_quiz16 extends AppCompatActivity {
                 });
 
                 //15
-                final Question fourtyfive = dataSnapshot.child("PrelimMultipleChoice").child(number.get(19)).getValue(Question.class);
+                final Question fourtyfive = dataSnapshot.child("FinalsMultipleChoice").child(number.get(19)).getValue(Question.class);
                 ArrayList<String> q45choice = new ArrayList<String>();
                 q45choice.add(0, fourtyfive.getOption1());
                 q45choice.add(0, fourtyfive.getOption2());
@@ -2594,7 +2594,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
 
-                final Question sixteen = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(0)).getValue(Question.class);
+                final Question sixteen = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(0)).getValue(Question.class);
                 question16.setText(sixteen.getQuestion());
                 a16.setText(sixteen.getOption1());
                 b16.setText(sixteen.getOption2());
@@ -2624,7 +2624,7 @@ public class final_quiz16 extends AppCompatActivity {
                 });
 
 
-                final Question seventeen = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(1)).getValue(Question.class);
+                final Question seventeen = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(1)).getValue(Question.class);
                 question17.setText(seventeen.getQuestion());
                 a17.setText(seventeen.getOption1());
                 b17.setText(seventeen.getOption2());
@@ -2655,7 +2655,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
 
-                final Question eighteen = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(2)).getValue(Question.class);
+                final Question eighteen = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(2)).getValue(Question.class);
                 question18.setText(eighteen.getQuestion());
                 a18.setText(eighteen.getOption1());
                 b18.setText(eighteen.getOption2());
@@ -2686,7 +2686,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
 
-                final Question nineteen = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(3)).getValue(Question.class);
+                final Question nineteen = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(3)).getValue(Question.class);
                 question19.setText(nineteen.getQuestion());
                 a19.setText(nineteen.getOption1());
                 b19.setText(nineteen.getOption2());
@@ -2716,7 +2716,7 @@ public class final_quiz16 extends AppCompatActivity {
                 });
 
 
-                final Question twenty = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(4)).getValue(Question.class);
+                final Question twenty = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(4)).getValue(Question.class);
                 question20.setText(twenty.getQuestion());
                 a20.setText(twenty.getOption1());
                 b20.setText(twenty.getOption2());
@@ -2748,7 +2748,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
 
-                final Question twentyone = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(5)).getValue(Question.class);
+                final Question twentyone = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(5)).getValue(Question.class);
                 question21.setText(twentyone.getQuestion());
                 a21.setText(twenty.getOption1());
                 b21.setText(twenty.getOption2());
@@ -2779,7 +2779,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //22
-                final Question twentytwo = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(6)).getValue(Question.class);
+                final Question twentytwo = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(6)).getValue(Question.class);
                 question22.setText(twentytwo.getQuestion());
                 a22.setText(twentytwo.getOption1());
                 b22.setText(twentytwo.getOption2());
@@ -2809,7 +2809,7 @@ public class final_quiz16 extends AppCompatActivity {
                 });
 
                 //23
-                final Question twentythree = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(7)).getValue(Question.class);
+                final Question twentythree = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(7)).getValue(Question.class);
                 question23.setText(twentythree.getQuestion());
                 a23.setText(twentythree.getOption1());
                 b23.setText(twentythree.getOption2());
@@ -2839,7 +2839,7 @@ public class final_quiz16 extends AppCompatActivity {
                 });
 
                 //24
-                final Question twentyfour = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(8)).getValue(Question.class);
+                final Question twentyfour = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(8)).getValue(Question.class);
                 question24.setText(twentyfour.getQuestion());
                 a24.setText(twentyfour.getOption1());
                 b24.setText(twentyfour.getOption2());
@@ -2869,7 +2869,7 @@ public class final_quiz16 extends AppCompatActivity {
                 });
 
                 //25
-                final Question twentyfive = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(9)).getValue(Question.class);
+                final Question twentyfive = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(9)).getValue(Question.class);
                 question25.setText(twentyfive.getQuestion());
                 a25.setText(twentyfive.getOption1());
                 b25.setText(twentyfive.getOption2());
@@ -2900,7 +2900,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //26
-                final Question twentysix = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(10)).getValue(Question.class);
+                final Question twentysix = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(10)).getValue(Question.class);
                 question26.setText(twentysix.getQuestion());
                 a26.setText(twentysix.getOption1());
                 b26.setText(twentysix.getOption2());
@@ -2931,7 +2931,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //27
-                final Question twentyseven = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(11)).getValue(Question.class);
+                final Question twentyseven = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(11)).getValue(Question.class);
                 question27.setText(twentyseven.getQuestion());
                 a27.setText(twentyseven.getOption1());
                 b27.setText(twentyseven.getOption2());
@@ -2962,7 +2962,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //28
-                final Question twentyeight = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(12)).getValue(Question.class);
+                final Question twentyeight = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(12)).getValue(Question.class);
                 question28.setText(twentyeight.getQuestion());
                 a28.setText(twentyeight.getOption1());
                 b28.setText(twentyeight.getOption2());
@@ -2992,7 +2992,7 @@ public class final_quiz16 extends AppCompatActivity {
                 });
 
                 //29
-                final Question twentynine = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(13)).getValue(Question.class);
+                final Question twentynine = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(13)).getValue(Question.class);
                 question29.setText(twentynine.getQuestion());
                 a29.setText(twentynine.getOption1());
                 b29.setText(twentynine.getOption2());
@@ -3023,7 +3023,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //30
-                final Question thirty = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(14)).getValue(Question.class);
+                final Question thirty = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(14)).getValue(Question.class);
                 question30.setText(thirty.getQuestion());
                 a30.setText(thirty.getOption1());
                 b30.setText(thirty.getOption2());
@@ -3054,7 +3054,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //30
-                final Question fourtysix = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(15)).getValue(Question.class);
+                final Question fourtysix = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(15)).getValue(Question.class);
                 question46.setText(fourtysix.getQuestion());
                 a46.setText(fourtysix.getOption1());
                 b46.setText(fourtysix.getOption2());
@@ -3085,7 +3085,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //30
-                final Question fourtyseven = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(16)).getValue(Question.class);
+                final Question fourtyseven = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(16)).getValue(Question.class);
                 question47.setText(fourtyseven.getQuestion());
                 a47.setText(fourtyseven.getOption1());
                 b47.setText(fourtyseven.getOption2());
@@ -3116,7 +3116,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //30
-                final Question fourtyeight = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(17)).getValue(Question.class);
+                final Question fourtyeight = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(17)).getValue(Question.class);
                 question48.setText(fourtyeight.getQuestion());
                 a48.setText(fourtyeight.getOption1());
                 b48.setText(fourtyeight.getOption2());
@@ -3147,7 +3147,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //30
-                final Question fourtynine = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(18)).getValue(Question.class);
+                final Question fourtynine = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(18)).getValue(Question.class);
                 question49.setText(fourtynine.getQuestion());
                 a49.setText(fourtynine.getOption1());
                 b49.setText(fourtynine.getOption2());
@@ -3178,7 +3178,7 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                 //30
-                final Question fifty = dataSnapshot.child("PrelimTrueOrFalse").child(tf.get(19)).getValue(Question.class);
+                final Question fifty = dataSnapshot.child("FinalsTrueOrFalse").child(tf.get(19)).getValue(Question.class);
                 question50.setText(fifty.getQuestion());
                 a50.setText(fifty.getOption1());
                 b50.setText(fifty.getOption2());
@@ -3210,34 +3210,34 @@ public class final_quiz16 extends AppCompatActivity {
 
 // identification
 
-                final Question thirtyone = dataSnapshot.child("PrelimIdentification").child(ident.get(0)).getValue(Question.class);
+                final Question thirtyone = dataSnapshot.child("FinalsIdentification").child(ident.get(0)).getValue(Question.class);
                 question31.setText(thirtyone.getQuestion());
 
-                final Question thirtytwo = dataSnapshot.child("PrelimIdentification").child(ident.get(1)).getValue(Question.class);
+                final Question thirtytwo = dataSnapshot.child("FinalsIdentification").child(ident.get(1)).getValue(Question.class);
                 question32.setText(thirtytwo.getQuestion());
 
-                final Question thirtythree = dataSnapshot.child("PrelimIdentification").child(ident.get(2)).getValue(Question.class);
+                final Question thirtythree = dataSnapshot.child("FinalsIdentification").child(ident.get(2)).getValue(Question.class);
                 question33.setText(thirtythree.getQuestion());
 
-                final Question thirtyfour = dataSnapshot.child("PrelimIdentification").child(ident.get(3)).getValue(Question.class);
+                final Question thirtyfour = dataSnapshot.child("FinalsIdentification").child(ident.get(3)).getValue(Question.class);
                 question34.setText(thirtyfour.getQuestion());
 
-                final Question thirtyfive = dataSnapshot.child("PrelimIdentification").child(ident.get(4)).getValue(Question.class);
+                final Question thirtyfive = dataSnapshot.child("FinalsIdentification").child(ident.get(4)).getValue(Question.class);
                 question35.setText(thirtyfive.getQuestion());
 
-                final Question thirtysix = dataSnapshot.child("PrelimIdentification").child(ident.get(5)).getValue(Question.class);
+                final Question thirtysix = dataSnapshot.child("FinalsIdentification").child(ident.get(5)).getValue(Question.class);
                 question36.setText(thirtysix.getQuestion());
 
-                final Question thirtyseven = dataSnapshot.child("PrelimIdentification").child(ident.get(6)).getValue(Question.class);
+                final Question thirtyseven = dataSnapshot.child("FinalsIdentification").child(ident.get(6)).getValue(Question.class);
                 question37.setText(thirtyseven.getQuestion());
 
-                final Question thirtyeight = dataSnapshot.child("PrelimIdentification").child(ident.get(7)).getValue(Question.class);
+                final Question thirtyeight = dataSnapshot.child("FinalsIdentification").child(ident.get(7)).getValue(Question.class);
                 question38.setText(thirtyeight.getQuestion());
 
-                final Question thirtynine = dataSnapshot.child("PrelimIdentification").child(ident.get(8)).getValue(Question.class);
+                final Question thirtynine = dataSnapshot.child("FinalsIdentification").child(ident.get(8)).getValue(Question.class);
                 question39.setText(thirtynine.getQuestion());
 
-                final Question fourty = dataSnapshot.child("PrelimIdentification").child(ident.get(9)).getValue(Question.class);
+                final Question fourty = dataSnapshot.child("FinalsIdentification").child(ident.get(9)).getValue(Question.class);
                 question40.setText(fourty.getQuestion());
 
 
@@ -3324,112 +3324,113 @@ public class final_quiz16 extends AppCompatActivity {
 
 
                         //storing history stuff
-                        String fq13_h1_pref = sharedPreferences.getString("fq13_h1_date", null);
-                        if(fq13_h1_pref == null) {
-                            myEdit.putString("fq13_h1_date",currdate);
-                            myEdit.putInt("fq13_h1_score", correct);
+                        //storing history stuff
+                        String fq16_h1_pref = sharedPreferences.getString("fq16_h1_date", null);
+                        if(fq16_h1_pref == null) {
+                            myEdit.putString("fq16_h1_date",currdate);
+                            myEdit.putInt("fq16_h1_score", correct);
                             myEdit.commit();
 
                             myEdit.putString("test","test");
-                            Log.i("SP_", "fq13_h1 processed");
+                            Log.i("SP_", "fq16_h1 processed");
 
                         } else {
-                            String fq13_h2_pref = sharedPreferences.getString("fq13_h2_date", null);
-                            if (fq13_h2_pref == null) {
-                                myEdit.putString("fq13_h2_date", currdate);
-                                myEdit.putInt("fq13_h2_score", correct);
+                            String fq16_h2_pref = sharedPreferences.getString("fq16_h2_date", null);
+                            if (fq16_h2_pref == null) {
+                                myEdit.putString("fq16_h2_date", currdate);
+                                myEdit.putInt("fq16_h2_score", correct);
                                 myEdit.commit();
-                                Log.i("SP_", "fq13_h2 processed");
+                                Log.i("SP_", "fq16_h2 processed");
                             } else {
-                                String fq13_h3_pref = sharedPreferences.getString("fq13_h3_date", null);
-                                if (fq13_h3_pref == null) {
-                                    myEdit.putString("fq13_h3_date", currdate);
-                                    myEdit.putInt("fq13_h3_score", correct);
+                                String fq16_h3_pref = sharedPreferences.getString("fq16_h3_date", null);
+                                if (fq16_h3_pref == null) {
+                                    myEdit.putString("fq16_h3_date", currdate);
+                                    myEdit.putInt("fq16_h3_score", correct);
                                     myEdit.commit();
-                                    Log.i("SP_", "fq13_h3 processed");
+                                    Log.i("SP_", "fq16_h3 processed");
                                 } else {
 
-                                    String fq13_h4_pref = sharedPreferences.getString("fq13_h4_date", null);
-                                    if (fq13_h4_pref == null) {
-                                        myEdit.putString("fq13_h4_date", currdate);
-                                        myEdit.putInt("fq13_h4_score", correct);
+                                    String fq16_h4_pref = sharedPreferences.getString("fq16_h4_date", null);
+                                    if (fq16_h4_pref == null) {
+                                        myEdit.putString("fq16_h4_date", currdate);
+                                        myEdit.putInt("fq16_h4_score", correct);
                                         myEdit.commit();
-                                        Log.i("SP_", "fq13_h4 processed");
+                                        Log.i("SP_", "fq16_h4 processed");
                                     } else {
-                                        String fq13_h5_pref = sharedPreferences.getString("fq13_h5_date", null);
-                                        if (fq13_h5_pref == null) {
-                                            myEdit.putString("fq13_h5_date", currdate);
-                                            myEdit.putInt("fq13_h5_score", correct);
+                                        String fq16_h5_pref = sharedPreferences.getString("fq16_h5_date", null);
+                                        if (fq16_h5_pref == null) {
+                                            myEdit.putString("fq16_h5_date", currdate);
+                                            myEdit.putInt("fq16_h5_score", correct);
                                             myEdit.commit();
-                                            Log.i("SP_", "fq13_h5 processed");
+                                            Log.i("SP_", "fq16_h5 processed");
                                         } else{
-                                            String fq13_h6_pref = sharedPreferences.getString("fq13_h6_date", null);
-                                            if (fq13_h6_pref == null) {
-                                                myEdit.putString("fq13_h6_date", currdate);
-                                                myEdit.putInt("fq13_h6_score", correct);
+                                            String fq16_h6_pref = sharedPreferences.getString("fq16_h6_date", null);
+                                            if (fq16_h6_pref == null) {
+                                                myEdit.putString("fq16_h6_date", currdate);
+                                                myEdit.putInt("fq16_h6_score", correct);
                                                 myEdit.commit();
-                                                Log.i("SP_", "fq13_h6 processed");
+                                                Log.i("SP_", "fq16_h6 processed");
                                             }else{
-                                                String fq13_h7_pref = sharedPreferences.getString("fq13_h7_date", null);
-                                                if (fq13_h7_pref == null) {
-                                                    myEdit.putString("fq13_h7_date", currdate);
-                                                    myEdit.putInt("fq13_h7_score", correct);
+                                                String fq16_h7_pref = sharedPreferences.getString("fq16_h7_date", null);
+                                                if (fq16_h7_pref == null) {
+                                                    myEdit.putString("fq16_h7_date", currdate);
+                                                    myEdit.putInt("fq16_h7_score", correct);
                                                     myEdit.commit();
-                                                    Log.i("SP_", "fq13_h7 processed");
+                                                    Log.i("SP_", "fq16_h7 processed");
                                                 }else{
-                                                    String fq13_h8_pref = sharedPreferences.getString("fq13_h8_date", null);
-                                                    if (fq13_h8_pref == null) {
-                                                        myEdit.putString("fq13_h8_date", currdate);
-                                                        myEdit.putInt("fq13_h8_score", correct);
+                                                    String fq16_h8_pref = sharedPreferences.getString("fq16_h8_date", null);
+                                                    if (fq16_h8_pref == null) {
+                                                        myEdit.putString("fq16_h8_date", currdate);
+                                                        myEdit.putInt("fq16_h8_score", correct);
                                                         myEdit.commit();
-                                                        Log.i("SP_", "fq13_h8 processed");
+                                                        Log.i("SP_", "fq16_h8 processed");
                                                     }else{
-                                                        String fq13_h9_pref = sharedPreferences.getString("fq13_h9_date", null);
-                                                        if (fq13_h9_pref == null) {
-                                                            myEdit.putString("fq13_h9_date", currdate);
-                                                            myEdit.putInt("fq13_h9_score", correct);
+                                                        String fq16_h9_pref = sharedPreferences.getString("fq16_h9_date", null);
+                                                        if (fq16_h9_pref == null) {
+                                                            myEdit.putString("fq16_h9_date", currdate);
+                                                            myEdit.putInt("fq16_h9_score", correct);
                                                             myEdit.commit();
-                                                            Log.i("SP_", "fq13_h9 processed");
+                                                            Log.i("SP_", "fq16_h9 processed");
                                                         }else{
-                                                            String fq13_h10_pref = sharedPreferences.getString("fq13_h10_date", null);
-                                                            if (fq13_h10_pref == null) {
-                                                                myEdit.putString("fq13_h10_date", currdate);
-                                                                myEdit.putInt("fq13_h10_score", correct);
+                                                            String fq16_h10_pref = sharedPreferences.getString("fq16_h10_date", null);
+                                                            if (fq16_h10_pref == null) {
+                                                                myEdit.putString("fq16_h10_date", currdate);
+                                                                myEdit.putInt("fq16_h10_score", correct);
                                                                 myEdit.commit();
-                                                                Log.i("SP_", "fq13_h10 processed");
+                                                                Log.i("SP_", "fq16_h10 processed");
                                                             }else{
                                                                 Log.i("SP_","history is full");
 
                                                                 //adjusts entries 2 to 1, 3 to 2 and so on
-                                                                myEdit.putString("fq13_h1_date",  sharedPreferences.getString("fq13_h2_date", ""));
-                                                                myEdit.putInt("fq13_h1_score", sharedPreferences.getInt("fq13_h2_score", 0));
+                                                                myEdit.putString("fq16_h1_date",  sharedPreferences.getString("fq16_h2_date", ""));
+                                                                myEdit.putInt("fq16_h1_score", sharedPreferences.getInt("fq16_h2_score", 0));
 
-                                                                myEdit.putString("fq13_h2_date",  sharedPreferences.getString("fq13_h3_date", ""));
-                                                                myEdit.putInt("fq13_h2_score", sharedPreferences.getInt("fq13_h3_score", 0));
+                                                                myEdit.putString("fq16_h2_date",  sharedPreferences.getString("fq16_h3_date", ""));
+                                                                myEdit.putInt("fq16_h2_score", sharedPreferences.getInt("fq16_h3_score", 0));
 
-                                                                myEdit.putString("fq13_h3_date",  sharedPreferences.getString("fq13_h4_date", ""));
-                                                                myEdit.putInt("fq13_h3_score", sharedPreferences.getInt("fq13_h4_score", 0));
+                                                                myEdit.putString("fq16_h3_date",  sharedPreferences.getString("fq16_h4_date", ""));
+                                                                myEdit.putInt("fq16_h3_score", sharedPreferences.getInt("fq16_h4_score", 0));
 
-                                                                myEdit.putString("fq13_h4_date",  sharedPreferences.getString("fq13_h5_date", ""));
-                                                                myEdit.putInt("fq13_h4_score", sharedPreferences.getInt("fq13_h5_score", 0));
+                                                                myEdit.putString("fq16_h4_date",  sharedPreferences.getString("fq16_h5_date", ""));
+                                                                myEdit.putInt("fq16_h4_score", sharedPreferences.getInt("fq16_h5_score", 0));
 
-                                                                myEdit.putString("fq13_h5_date",  sharedPreferences.getString("fq13_h6_date", ""));
-                                                                myEdit.putInt("fq13_h5_score", sharedPreferences.getInt("fq13_h6_score", 0));
+                                                                myEdit.putString("fq16_h5_date",  sharedPreferences.getString("fq16_h6_date", ""));
+                                                                myEdit.putInt("fq16_h5_score", sharedPreferences.getInt("fq16_h6_score", 0));
 
-                                                                myEdit.putString("fq13_h6_date",  sharedPreferences.getString("fq13_h7_date", ""));
-                                                                myEdit.putInt("fq13_h6_score", sharedPreferences.getInt("fq13_h7_score", 0));
+                                                                myEdit.putString("fq16_h6_date",  sharedPreferences.getString("fq16_h7_date", ""));
+                                                                myEdit.putInt("fq16_h6_score", sharedPreferences.getInt("fq16_h7_score", 0));
 
-                                                                myEdit.putString("fq13_h7_date",  sharedPreferences.getString("fq13_h8_date", ""));
-                                                                myEdit.putInt("fq13_h7_score", sharedPreferences.getInt("fq13_h8_score", 0));
+                                                                myEdit.putString("fq16_h7_date",  sharedPreferences.getString("fq16_h8_date", ""));
+                                                                myEdit.putInt("fq16_h7_score", sharedPreferences.getInt("fq16_h8_score", 0));
 
-                                                                myEdit.putString("fq13_h8_date",  sharedPreferences.getString("fq13_h9_date", ""));
-                                                                myEdit.putInt("fq13_h8_score", sharedPreferences.getInt("fq13_h9_score", 0));
+                                                                myEdit.putString("fq16_h8_date",  sharedPreferences.getString("fq16_h9_date", ""));
+                                                                myEdit.putInt("fq16_h8_score", sharedPreferences.getInt("fq16_h9_score", 0));
 
-                                                                myEdit.putString("fq13_h9_date",  sharedPreferences.getString("fq13_h10_date", ""));
-                                                                myEdit.putInt("fq13_h9_score", sharedPreferences.getInt("fq13_h10_score", 0));
+                                                                myEdit.putString("fq16_h9_date",  sharedPreferences.getString("fq16_h10_date", ""));
+                                                                myEdit.putInt("fq16_h9_score", sharedPreferences.getInt("fq16_h10_score", 0));
                                                                 //adjusts entries 2 to 1, 3 to 2 and so on
-                                                                myEdit.putString("fq13_h10_date", currdate);
-                                                                myEdit.putInt("fq13_h10_score", correct);
+                                                                myEdit.putString("fq16_h10_date", currdate);
+                                                                myEdit.putInt("fq16_h10_score", correct);
                                                                 myEdit.commit();
 
                                                             }
@@ -3445,38 +3446,38 @@ public class final_quiz16 extends AppCompatActivity {
                         }
                         //end of storing history stuff
 
-                        sharedPreferences  = getSharedPreferences("F_Q13SharedPref", MODE_PRIVATE);
-                        int q13_h1_s = sharedPreferences.getInt("fq13_h1_score", 0);
-                        String q13_h1_d = sharedPreferences.getString("fq13_h1_date", "");
-                        int q13_h2_s = sharedPreferences.getInt("fq13_h2_score", 0);
-                        String q13_h2_d = sharedPreferences.getString("fq13_h2_date", "");
-                        int q13_h3_s = sharedPreferences.getInt("fq13_h3_score", 0);
-                        String q13_h3_d = sharedPreferences.getString("fq13_h3_date", "");
-                        int q13_h4_s = sharedPreferences.getInt("fq13_h4_score", 0);
-                        String q13_h4_d = sharedPreferences.getString("fq13_h4_date", "");
-                        int q13_h5_s = sharedPreferences.getInt("fq13_h5_score", 0);
-                        String q13_h5_d = sharedPreferences.getString("fq13_h5_date", "");
-                        int q13_h6_s = sharedPreferences.getInt("fq13_h6_score", 0);
-                        String q13_h6_d = sharedPreferences.getString("fq13_h6_date", "");
-                        int q13_h7_s = sharedPreferences.getInt("fq13_h7_score", 0);
-                        String q13_h7_d = sharedPreferences.getString("fq13_h7_date", "");
-                        int q13_h8_s = sharedPreferences.getInt("fq13_h8_score", 0);
-                        String q13_h8_d = sharedPreferences.getString("fq13_h8_date", "");
-                        int q13_h9_s = sharedPreferences.getInt("fq13_h9_score", 0);
-                        String q13_h9_d = sharedPreferences.getString("fq13_h9_date", "");
-                        int q13_h10_s = sharedPreferences.getInt("fq13_h10_score", 0);
-                        String q13_h10_d = sharedPreferences.getString("fq13_h10_date", "");
+                        sharedPreferences  = getSharedPreferences("F_Q16SharedPref", MODE_PRIVATE);
+                        int q16_h1_s = sharedPreferences.getInt("fq16_h1_score", 0);
+                        String q16_h1_d = sharedPreferences.getString("fq16_h1_date", "");
+                        int q16_h2_s = sharedPreferences.getInt("fq16_h2_score", 0);
+                        String q16_h2_d = sharedPreferences.getString("fq16_h2_date", "");
+                        int q16_h3_s = sharedPreferences.getInt("fq16_h3_score", 0);
+                        String q16_h3_d = sharedPreferences.getString("fq16_h3_date", "");
+                        int q16_h4_s = sharedPreferences.getInt("fq16_h4_score", 0);
+                        String q16_h4_d = sharedPreferences.getString("fq16_h4_date", "");
+                        int q16_h5_s = sharedPreferences.getInt("fq16_h5_score", 0);
+                        String q16_h5_d = sharedPreferences.getString("fq16_h5_date", "");
+                        int q16_h6_s = sharedPreferences.getInt("fq16_h6_score", 0);
+                        String q16_h6_d = sharedPreferences.getString("fq16_h6_date", "");
+                        int q16_h7_s = sharedPreferences.getInt("fq16_h7_score", 0);
+                        String q16_h7_d = sharedPreferences.getString("fq16_h7_date", "");
+                        int q16_h8_s = sharedPreferences.getInt("fq16_h8_score", 0);
+                        String q16_h8_d = sharedPreferences.getString("fq16_h8_date", "");
+                        int q16_h9_s = sharedPreferences.getInt("fq16_h9_score", 0);
+                        String q16_h9_d = sharedPreferences.getString("fq16_h9_date", "");
+                        int q16_h10_s = sharedPreferences.getInt("fq16_h10_score", 0);
+                        String q16_h10_d = sharedPreferences.getString("fq16_h10_date", "");
                         Log.i("SP_content", "" );
-                        Log.i("SP_content", "h1: "+ q13_h1_d +" "+ q13_h1_s );
-                        Log.i("SP_content", "h2: "+ q13_h2_d +" "+ q13_h2_s );
-                        Log.i("SP_content", "h3: "+ q13_h3_d +" "+ q13_h3_s );
-                        Log.i("SP_content", "h4: "+ q13_h4_d +" "+ q13_h4_s );
-                        Log.i("SP_content", "h5: "+ q13_h5_d +" "+ q13_h5_s );
-                        Log.i("SP_content", "h6: "+ q13_h6_d +" "+ q13_h6_s );
-                        Log.i("SP_content", "h7: "+ q13_h7_d +" "+ q13_h7_s );
-                        Log.i("SP_content", "h8: "+ q13_h8_d +" "+ q13_h8_s );
-                        Log.i("SP_content", "h9: "+ q13_h9_d +" "+ q13_h9_s );
-                        Log.i("SP_content", "h10: "+ q13_h10_d +" "+ q13_h10_s );
+                        Log.i("SP_content", "h1: "+ q16_h1_d +" "+ q16_h1_s );
+                        Log.i("SP_content", "h2: "+ q16_h2_d +" "+ q16_h2_s );
+                        Log.i("SP_content", "h3: "+ q16_h3_d +" "+ q16_h3_s );
+                        Log.i("SP_content", "h4: "+ q16_h4_d +" "+ q16_h4_s );
+                        Log.i("SP_content", "h5: "+ q16_h5_d +" "+ q16_h5_s );
+                        Log.i("SP_content", "h6: "+ q16_h6_d +" "+ q16_h6_s );
+                        Log.i("SP_content", "h7: "+ q16_h7_d +" "+ q16_h7_s );
+                        Log.i("SP_content", "h8: "+ q16_h8_d +" "+ q16_h8_s );
+                        Log.i("SP_content", "h9: "+ q16_h9_d +" "+ q16_h9_s );
+                        Log.i("SP_content", "h10: "+ q16_h10_d +" "+ q16_h10_s );
 
 
                         AlertDialog dialog = new AlertDialog.Builder(final_quiz16.this)

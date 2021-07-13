@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -43,8 +45,21 @@ public class MainActivity extends AppCompatActivity {
                 opensAssessment();
             }
         });
+        FloatingActionButton floatingActionButton = (FloatingActionButton)findViewById(R.id.floatingActionButton);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                openn();
+            }
+        });
 
     }
+
+//    private void openn() {
+//        Intent intent =new Intent(this,samplepage.class);
+//        startActivity(intent);
+//    }
+
     private void openPDF() {
         Intent intent = new Intent(this,Menu_PDF.class);
         startActivity(intent);
